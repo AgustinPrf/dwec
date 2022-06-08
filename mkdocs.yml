@@ -2,6 +2,6 @@ site_name: AgustinPrueba
 site_url: https://agustin.com/
 nav:
   - Home: index.md
-  - Zobre mí : Unidad_1.md
+  - Unidad 1 : Unidad_1.md
 
-theme: readthedocs
+#theme: readthedocs
