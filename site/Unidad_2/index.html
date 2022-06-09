@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://agustin.com/Unidad_2/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Unidad 2 - DWEC</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">DWEC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Inicio</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../Unidad_1/" class="nav-link">Unidad 1</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Unidad 2</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../Unidad_1/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#1-introduccion" class="nav-link">1. INTRODUCCIÓN</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#2-comentarios" class="nav-link">2. Comentarios</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#3-variables" class="nav-link">3. Variables </a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#4-mostrar-por-pantalla-y-leer-del-teclado" class="nav-link">4. Mostrar por pantalla y leer del teclado</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#5-operadores" class="nav-link">5. Operadores</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#6-estructuras-de-control-y-bucles" class="nav-link">6. Estructuras de control y bucles </a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#7-funciones" class="nav-link">7. Funciones</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#8-variables-locales-y-globales" class="nav-link">8. Variables locales y globales</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="1-introduccion"><strong>1. <u>INTRODUCCIÓN</u></strong></h2>
+<p>Javascript es un lenguaje de programación que permite ejecutar código en el cliente (<em>nuestro navegador</em>) ampliando la funcionalidad nuestros sitios web. Para añadir JavaScript se usa la etiqueta <strong>script</strong>.
+Este puede estar en cualquier lugar de la página. El código se ejecuta de forma secuencial a como el navegador lo va encontrando.</p>
+<pre><code class="language-javascript">    &lt;SCRIPT LANGUAGE=&quot;JavaScript&quot;&gt;
+    &lt;!--
+        Aquí va el código
+        // Esto es un comentario en Javascript de una linea
+    --&gt;
+    &lt;/SCRIPT&gt;
+</code></pre>
+<h2 id="2-comentarios"><strong>2. <u>Comentarios</u></strong></h2>
+<p>En Javascript los comentarios se pueden hacer con:</p>
+<ul>
+<li>//    →  <em>Comentarios de una línea.</em></li>
+<li>/* */ →  <em>Comentarios de varias líneas.</em></li>
+</ul>
+<p>Desde Javascript es posible reescribir el código HTML de la página mediante la orden </p>
+<p><center><strong>document.write(<em>texto</em>)</strong></center></p>
+<p>Este ejemplo podría ser un pequeño <em>"hola mundo"</em> que al ejecutarse modificará el HTML de la página.</p>
+<pre><code class="language-javascript">    &lt;SCRIPT LANGUAGE=&quot;JavaScript&quot;&gt;
+
+        document.write (&quot;Hola mundo&quot;);
+        /* 
+            Esto es un comentario 
+            en Javascript multilinea 
+        */  
+    &lt;/SCRIPT&gt;
+</code></pre>
+<p>Otra vía para mostrar información al usuario desde una ventana emergente, es el comando <strong>alert(<em>texto</em>).</strong></p>
+<pre><code class="language-javascript">    &lt;SCRIPT LANGUAGE=&quot;JavaScript&quot;&gt;
+
+        alert(&quot;Hola mundo&quot;);
+
+    &lt;/SCRIPT&gt;
+</code></pre>
+<p>Hay una forma mucho más práctica y ordenada de usar código Javascript. Se pueden incluir uno o varios ficheros con código Javascript. Se pueden incluir tantos como se desee. Un ejemplo de inclusión de ficheros.</p>
+<pre><code class="language-javascript">    &lt;script type=&quot;text/javascript&quot; src=&quot;rutaDelArchivo1.js&quot;/&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;rutaDelArchivo2.js&quot;/&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;rutaDelArchivo3.js&quot;/&gt;
+</code></pre>
+<h2 id="3-variables"><strong><u>3. Variables </u></strong></h2>
+<p>Las variables son elementos del lenguaje que permiten almacenar distintos valores en cada momento. Se puede almacenar un valor en una variable y consultar este valor posteriormente. También podemos modificar su contenido siempre que queramos.
+Para declarar las variables en JavaScript se utiliza la palabra reservada <strong>var</strong>.</p>
+<pre><code class="language-javascript">    var ejemplo;
+    var resultado;
+    ejemplo= &quot;Hola&quot;;
+    resultado=3+7;
+</code></pre>
+<p>En JavaScript todas las variables y nombres de función son <em>sensibles a mayúsculas y minúsculas</em>. Esto significa que la capitalización importa. Escribe los nombres de las variables en JavaScript en <strong>camelCase</strong>. En camelCase, los nombres de variables de múltiples palabras tienen la primera palabra en minúsculas y la primera letra de cada palabra posterior en mayúsculas.</p>
+<h3 id="tipos-de-variables"><strong>Tipos de variables</strong></h3>
+<p>JavaScript proporciona ocho tipos de datos diferentes:</p>
+<ul>
+<li><strong>undefined</strong>, null, boolean, string, symbol, bigint, number, y object.</li>
+<li><strong>Números</strong>, puede contener cualquier tipo de número real (0.3,1.7,2.9) o entero (5,3,-1).</li>
+<li><strong>Operadores, lógicos o boolean</strong>: puede contener uno de los siguientes valores: true, false, 1 y 0.</li>
+<li><strong>Cadenas de caracteres o String</strong>, cualquier combinación de caracteres (letras, números, signos especiales y espacios). Las cadenas se delimitan mediante comillas dobles o simples (“Lolo”,”lalO”). Para concatenar cadenas puede usarse el operador +  (“Soy” + “ el “ + “ AMO” formaría la cadena “Soy el AMO”).</li>
+<li><strong>Undefined</strong>: Valor no definido, es decir, la variable no tiene asignado un valor.</li>
+</ul>
+<pre><code class="language-javascript">    var edad=23, nueva_edad, incremento;
+    var nombre=&quot;Rosa García&quot;;
+    incremento=4;
+    nueva_edad=edad+incremento;
+    alert(nombre+ &quot; dentro de &quot;+incremento +&quot; años tendrá &quot;+ nueva_edad+&quot;años&quot;);
+</code></pre>
+<p>Puedes utilizar la función <strong>typeof</strong> para consultar el tipo de la variable o dato:</p>
+<pre><code class="language-javascript">    console.log(typeof(5))
+</code></pre>
+<p>###  <strong>Arrays</strong>
+Un array (también llamado vector o arreglo) es una variable que contiene diversos valores. Lo creamos con “new Array()” o inicializando los elementos. Podemos referenciar esos valores indicando su posición en el array. Los arrays poseen una propiedad llamada “length” que podemos utilizar para conocer el número de elementos del array.</p>
+<pre><code class="language-javascript">                    // Array definido 1 a 1
+    var miVector=new Array();
+    miVector[0]=22;
+    miVector[1]=12;
+    miVector[2]=33;
+                    //Array definido en una linea
+    var otroArray=[1,2,&quot;Cancamusa&quot;];
+                    // Valores dentro del array
+    alert(miVector[1]);
+    alert(otroArray[2]);
+                    // Valor completo del array
+    alert(miVector);
+                    // Tamaño del array
+    alert(miVector.length);
+</code></pre>
+<p>###  <strong>Conversiones entre tipos</strong>
+Javascript no define explícitamente el tipo de datos de sus variables. Según se almacenen, pueden ser cadenas (Entrecomillados), enteros (sin parte decimal) o decimales (con parte decimal).
+Elementos como la función “prompt” para leer de teclado, leen los elementos siempre como cadena. Para estos casos y otros, merece la pena usar funciones de conversión de datos.</p>
+<pre><code class="language-javascript">    var num=”100”;      // Es una cadena
+    var num2=”100.13”;      // Es una cadena
+    var num3=11;            // Es un entero
+    var n=parseInt(num);        // Almacena un entero. 
+    var n2=parseFloat(num);     // Almacena un decimal
+    var n3=num3.toString();     // Almacena una cadena
+</code></pre>
+<h2 id="4-mostrar-por-pantalla-y-leer-del-teclado"><strong><u>4. Mostrar por pantalla y leer del teclado</u></strong></h2>
+<h3 id="alert-confirm-prompt"><strong>alert() , confirm(), prompt()</strong></h3>
+<p>El método <strong>alert()</strong> permite mostrar al usuario información literal o el contenido de variables en una ventana independiente. La ventana contendrá la información a mostrar y el botón aceptar.</p>
+<p><center></p>
+<pre><code>alert(&quot;Bienvenido Agustín&quot;);
+</code></pre>
+<p></center></p>
+<p>A través del método <strong>confirm()</strong> se activa un cuadro de diálogo que contiene los botones Aceptar y Cancelar.
+* <strong>True</strong>  → Se ha pulsado la opción aceptar (botón).
+* <strong>False</strong> → Se ha pulsado la opción cancelar (botón). </p>
+<p>Con ayuda de este método el usuario puede decidir sobre preguntas concretas e influir de ese modo directamente en la página.</p>
+<pre><code class="language-javascript">    var respuesta;
+    respuesta=confirm (&quot;¿Desea cancelar la subscripción?&quot;);
+    alert(&quot;Usted ha contestado que &quot;+respuesta);
+</code></pre>
+<p>El método <em>prompt()</em> abre un cuadro de diálogo en pantalla en el que se pide al usuario que introduzca algún dato. Si se pulsa el botón Cancelar, el valor de devolución es false/null. Pulsando en Aceptar se obtiene el valor true y la cadena de caracteres introducida se guarda para su posterior procesamiento.</p>
+<pre><code>    var provincia;
+    provincia=prompt(&quot;Introduzca la provincia &quot;,&quot;Granada&quot;);
+    alert(&quot;Usted ha introducido la siguiente información &quot;+provincia)
+</code></pre>
+<h3 id="template-literals"><strong>Template Literals</strong></h3>
+<p>Desde ES2015 también podemos poner una cadena entre ` (acento grave) y en ese caso podemos poner dentro variables y expresiones que serán evaluadas al ponerlas dentro de <strong>${}</strong>. También se respetan los saltos de línea, tabuladores, etc que haya dentro.   </p>
+<pre><code class="language-javascript">    let edad=40
+    console.log(`El usuario tiene: ${edad} años`)
+</code></pre>
+<h2 id="5-operadores"><strong><u>5. Operadores</u></strong></h2>
+<p>Combinando variables y valores, se pueden formular expresiones más complejas. Las expresiones son una parte esencial de los programas. Para formular expresiones se utilizan los operadores.</p>
+<h3 id="operadores-de-asignacion"><strong> Operadores de asignación</strong></h3>
+<p>Los operadores de asignación se utilizan para asignar valores a las variables. Alguno de ellos también incluyen operaciones.</p>
+<table>
+<thead>
+<tr>
+<th>Operador</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>=</td>
+<td>Asigna a la variable de la parte izquierda el valor de la parte derecha.</td>
+</tr>
+<tr>
+<td>+=</td>
+<td>Suma los operandos izquierdo y derecho y asigna el resultado al operando izquierdo.</td>
+</tr>
+<tr>
+<td>-=</td>
+<td>Resta el operando derecho del operando izquierdo y asigna el resultado al operando izquierdo.</td>
+</tr>
+<tr>
+<td>*=</td>
+<td>Multiplica ambos operandos y asigna el resultado al operando izquierdo.</td>
+</tr>
+<tr>
+<td>/=</td>
+<td>Divide ambos operandos y asigna el resultado al operando izquierdo.</td>
+</tr>
+<tr>
+<td>%=</td>
+<td>Divide ambos operandos y asigna el resto al operando izquierdo.</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-javascript">    var num1=3;
+    var num2=5;
+    num2+=num1;
+    num2-=num1;
+    num2*=num1;
+    num2/=num1;
+    num2%=num1;
+</code></pre>
+<h3 id="operadores-aritmeticos"><strong>Operadores aritméticos</strong></h3>
+<p>Los operadores aritméticos se utilizan para hacer cálculos aritméticos.</p>
+<table>
+<thead>
+<tr>
+<th>Operador</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>Sumar</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Restar</td>
+</tr>
+<tr>
+<td>*</td>
+<td>Multiplicar</td>
+</tr>
+<tr>
+<td>/</td>
+<td>Dividir</td>
+</tr>
+<tr>
+<td>%</td>
+<td>Calcular resto de una división</td>
+</tr>
+</tbody>
+</table>
+<p>Además de estos operadores, también existen operadores aritméticos unitarios: incremento (++), disminución (--) y la negación unitaria (-). Los operadores de incremento y disminución pueden estar tanto delante como detrás de una variable. Estos operadores aumentan o disminuyen en 1, respectivamente, el valor de una variable. </p>
+<p>La diferencia entre ambas posiciones reside en el momento en que se ejecuta la operación.</p>
+<table>
+<thead>
+<tr>
+<th>Operador<br />   (x=5)</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>y= ++ x</td>
+<td>Primero el incremento y después la asignación.            y=6</td>
+</tr>
+<tr>
+<td>y = x++</td>
+<td>Primero la asignación y después el incremento.            y=5</td>
+</tr>
+<tr>
+<td>y = -- x</td>
+<td>Primero el decremento y después la asignación.           y=4</td>
+</tr>
+<tr>
+<td>y = x--</td>
+<td>Primero la asignación y después el decremento.           y=5</td>
+</tr>
+<tr>
+<td>y =-x</td>
+<td>Se asigna a y el valor negativo de x, pero x no varía.   y=-5</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-javascript">    var num1=5, num2=8,resultado1, resultado2; 
+    resultado1=((num1+num2)*200)/100;
+    resultado2=resultado1%3;
+    resultado1=++num1;
+    resultado2=num2++;
+    resultado1=--num1;
+    resultado2=num2--;
+</code></pre>
+<h3 id="operadores-de-comparacion"><strong>Operadores de comparación</strong></h3>
+<p>Para comparar dos valores entre sí, se utiliza el operador de comparación. Como valor de retorno se obtiene un valor lógico o booleano: true o false. </p>
+<table>
+<thead>
+<tr>
+<th>Operador</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>==</td>
+<td>Devuelve el valor true cuando los dos operandos son iguales.</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>Devuelve el valor true cuando los dos operandos son distintos.</td>
+</tr>
+<tr>
+<td>></td>
+<td>Devuelve el valor true cuando el operando de la izquierda es mayor que el de la derecha.</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>Devuelve el valor true cuando el operando de la derecha es menor que el de la izquierda.</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>Devuelve el valor true cuando el operando de la izquierda es mayor o igual que el de la derecha.</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>Devuelve el valor true cuando el operando de la derecha es menor o igual que el de la izquierda.</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-javascript">    var a=4;b=5;
+    alert(&quot;El resultado de la expresión 'a==b' es igual a &quot;+(a==b));
+    alert(&quot;El resultado de la expresión 'a!=b' es igual a &quot;+(a!=b));
+    alert(&quot;El resultado de la expresión 'a&gt;b' es igual a &quot;+(a&gt;b));
+    alert(&quot;El resultado de la expresión 'a&lt;b' es igual a &quot;+(a&lt;b));
+    alert(&quot;El resultado de la expresión 'a&gt;=b' es igual a &quot;+(a&gt;=b));
+    alert(&quot;El resultado de la expresión 'a&lt;=b' es igual a &quot;+(a&lt;=b));
+</code></pre>
+<h3 id="operadores-logicos"><strong>Operadores lógicos</strong></h3>
+<p>Los operadores lógicos se utilizan para el procesamiento de los valores booleanos. A su vez el valor que devuelven también es booleano: true o false.</p>
+<table>
+<thead>
+<tr>
+<th>Operador</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&amp;&amp;</td>
+<td>Y lógica. El valor de devolución es true cuando ambos operandos son verdaderos.</td>
+</tr>
+<tr>
+<td>||</td>
+<td>O lógica. El valor de devolución es true cuando alguno de los operandos es verdadero o lo son los dos.</td>
+</tr>
+<tr>
+<td>!</td>
+<td>No lógica. El valor de devolución es true cuando el valor es falso.</td>
+</tr>
+</tbody>
+</table>
+<p>Ejemplo de resultado de distintas operaciones realizadas con operadores lógicos.</p>
+<pre><code class="language-javascript">    alert(”resultado 'false&amp;&amp;false' es igual a &quot;+(false&amp;&amp;false));
+    alert(&quot;resultado 'false&amp;&amp;true' es igual a &quot;+(false&amp;&amp;true));
+    alert(&quot;resultado 'true&amp;&amp;false' es igual a &quot;+(true&amp;&amp;false));
+    alert(&quot;resultado 'true&amp;&amp;true' es igual a &quot;+(true&amp;&amp;true));
+    alert(&quot;resultado 'false||false' es igual a &quot;+(false||false));
+    alert(“resultado 'false||true' es igual a &quot;+(false||true));
+    alert(&quot;resultado 'true||false' es igual a &quot;+(true||false));
+    alert(&quot;resultado 'true||true' es igual a &quot;+(true||true));
+    alert(&quot;resultado '!false' es igual a &quot;+(!false));
+</code></pre>
+<h2 id="6-estructuras-de-control-y-bucles"><strong> <u>6. Estructuras de control y bucles </u></strong></h2>
+<h3 id="if-y-else"><strong>IF y ELSE</strong></h3>
+<p>Para controlar el flujo de información en los programas JavaScript existen una serie de estructuras condicionales y bucles que permiten alterar el orden secuencial de ejecución. La instrucción <strong>if</strong>  permite la ejecución de un bloque u otro de instrucciones en función de una condición.</p>
+<pre><code class="language-javascript">    if (condición) {
+        // bloque instrucciones,se ejecutan si la condición se cumple
+    }
+    else{
+        // bloque instrucciones, se ejecutan si la condición no se cumple
+    }
+</code></pre>
+<p>Las llaves solo son obligatorias cuando haya varias instrucciones seguidas pertenecientes a la ramificación. 
+Si no pones llaves, el if se aplicará únicamente a la siguiente instrucción(primera instrucción).</p>
+<pre><code class="language-javascript">    let edadAna,edadLuis;
+    edadAna=parseInt(prompt(&quot;Introduce la edad de Ana&quot;,&quot;&quot;));
+    edadLuis=parseInt(prompt(&quot;Introduce la edad de Luis&quot;,&quot;&quot;));
+    if (edadAna &gt; edadLuis){
+        alert(&quot;Ana es mayor que Luis.&quot;);
+        alert(` Ana tiene ${edadAna} años y Luis ${edadAna}`);
+    }
+    else{
+        alert(&quot;Ana es menor o de igual edad que Luis.&quot;);
+        alert(&quot; Ana tiene &quot; + edadAna + &quot; años y Luis &quot; + edadLuis);
+    } 
+</code></pre>
+<p>Para las condiciones ramificadas más complicadas, a menudo se utilizan las ramificaciones anidadas. En ellas se definen consultas if dentro de otras consultas if.</p>
+<pre><code class="language-javascript">    var edadAna,edadLuis;
+    edadAna=parseInt(prompt(&quot;Introduce la edad de Ana&quot;,&quot;&quot;));
+    edadLuis=parseInt(prompt(&quot;Introduce la edad de Luis&quot;,&quot;&quot;));
+    if (edadAna &gt; edadLuis){
+        alert(&quot;Ana es mayor que Luis.&quot;);
+    }
+    else{
+        if (edadAna&lt;edadLuis){
+            alert(&quot;Ana es menor que Luis.&quot;);
+        }else{
+            alert(&quot;Ana tiene la misma edad que Luis.&quot;); 
+        }
+    } 
+    alert(` Ana tiene ${edadAna} años y Luis ${edadAna}`);
+</code></pre>
+<h3 id="bucle-for"><strong>Bucle FOR</strong></h3>
+<p>Cuando la ejecución de un programa llega a un bucle for, lo primero que hace es ejecutar la <strong>“inicialización del índice”</strong>, que solo se ejecuta un vez, a continuación analiza la <strong>“condición de prueba”</strong> y si esta se cumple ejecuta las instrucciones del bucle. Cuando finaliza la ejecución de las instrucciones del bucle se realiza la <strong>“modificación del índice”</strong> .</p>
+<pre><code class="language-javascript">for (inicialización_índice; condición_prueba; Modificación_índice){
+    // Bloque de instrucciones...
+}
+</code></pre>
+<p>Ejemplo: números pares del 2 al 30</p>
+<pre><code class="language-javascript">    for (i=2;i&lt;=30;i+=2) {
+        alert(i);
+    }
+    alert(&quot; Ya se han escrito los números pares del 0 al 30&quot;);
+</code></pre>
+<p>### <strong>Bucle WHILE</strong>
+Con el bucle while se pueden ejecutar un grupo de instrucciones mientras se cumpla una condición. Si la condición nunca se cumple, entonces tampoco se ejecuta ninguna instrucción.</p>
+<pre><code class="language-javascript">    while (condición){
+        // Bloque de instrucciones...
+    }
+</code></pre>
+<p>Ejemplo : Escribe los números pares de 0 a 30</p>
+<pre><code>    i=2;
+    while (i&lt;=30) {
+        alert (i);
+        i+=2;
+    } 
+    alert(&quot;Ya se han mostrado los números pares del 0 al 30&quot;);
+</code></pre>
+<h3 id="bucle-do-while"><strong>Bucle DO-WHILE</strong></h3>
+<p>La diferencia del bucle do-while frente al bucle while reside en el momento en que se comprueba la condición: </p>
+<ul>
+<li>El bucle <strong>do-while</strong> no la comprueba hasta el final. Lo que significa que el bucle do-while se recorrerá, una vez, como mínimo, aunque no se cumpla la condición.</li>
+</ul>
+<pre><code class="language-javascript">    do {
+        // Bloque de instrucciones...
+    } while(condición)
+    Ejemplo: Preguntar por una clave hasta que se introduzca la correcta
+    do {
+        auxclave=prompt(&quot;introduce la clave &quot;,&quot;vivaYo&quot;)
+    } while (auxclave!=&quot;EstaeslaclaveJEJEJE&quot;)
+
+    alert (&quot;Has acertado la clave&quot;);
+</code></pre>
+<h3 id="instrucciones-break-y-continue"><strong>Instrucciones BREAK y CONTINUE</strong></h3>
+<p>En los bucles for, while y do-while se pueden utilizar las instrucciones <strong>break</strong> y <strong>continue</strong> para modificar el comportamiento del bucle. </p>
+<ul>
+<li><strong>Break</strong>  → Hace que el bucle se interrumpa inmediatamente, aun cuando no se haya ejecutado todavía el bucle completo.      </li>
+</ul>
+<p>Ejemplo: Pregunta por la clave y permitir tres respuestas incorrectas</p>
+<pre><code class="language-javascript">var auxclave=true , var numveces=0;
+while (auxclave != &quot;anonimo&quot; &amp;&amp; auxclave){ 
+    auxclave=prompt(&quot;Introduce la clave &quot;,&quot;&quot;);
+    numveces++;
+    if (numveces == 3)
+        break;
+}
+if (auxclave==&quot;SuperClave&quot;) alert(&quot;La clave es correcta&quot;);
+else alert(&quot;La clave no es correcta correcta&quot;);
+</code></pre>
+<ul>
+<li><strong>Continue</strong>  → Hace retornar a la secuencia de ejecución a la cabecera del bucle, volviendo a ejecutar la condición o a incrementar los índices cuando sea un bucle for. </li>
+</ul>
+<p>Ejemplo: Presenta todos los números pares del 0 al 50 excepto los que sean múltiplos de 3</p>
+<pre><code>    var i;
+    for (i=2;i&lt;=50;i+=2){
+        if ((i%3)==0) 
+            continue;
+        alert(i);
+    }
+</code></pre>
+<h2 id="7-funciones"><strong> <u>7. Funciones</u> </strong></h2>
+<p>Se declaran con la palabra reservada <strong>function</strong> y se les pasan los parámetros entre paréntesis. La función puede devolver un valor usando <strong>return</strong> (<em>si no tiene return es como si devolviera undefined</em>).
+ ~~~ javascript
+    function nombrefuncion (parámetro1, parámetro2...){
+    ...
+        // Bloque de instrucciones
+    ...
+        //si la función devuelve algún valor añadimos:
+        return valor;
+    }
+ ~~~
+Ejemplo:Funciones que devuelve la suma de dos valores que se pasan por parámetros y que escriben el nombre del profesor.</p>
+<pre><code class="language-javascript">// Definiciones de las funciones
+    function suma (a,b){ 
+        return a+b;
+    }
+    function profe (){
+        alert (&quot;El profesor es: Agustin Aguilera&quot;);
+    }
+// Código que se ejecuta
+    let op1=5;op2=25;
+    let resultado;
+// Llamadas a funciones
+    resultado=suma(op1,op2); 
+    console.log (op1+&quot;+&quot;+op2+&quot;=&quot;+resultado);    
+    profe();
+</code></pre>
+<h3 id="uso-del-array-arguments"><strong>Uso del array arguments</strong></h3>
+<p>También es posible acceder a los parámetros desde el <strong>array arguments[]</strong> si no sabemos cuántos recibiremos:</p>
+<pre><code class="language-javascript">    function suma () {
+            var result = 0;
+            for (var i=0; i&lt;arguments.length; i++)
+                result += arguments[i];
+        return result;
+    }
+</code></pre>
+<h3 id="uso-de-funciones-anonimas"><strong>Uso de funciones anónimas</strong></h3>
+<p>Podemos definir una función sin darle un nombre. Dicha función puede asignarse a una variable, autoejecutarse o asignarse a un manejador de eventos. </p>
+<pre><code class="language-javascript">    var suma = function (a,b){ 
+        return a+b;
+    }
+</code></pre>
+<h3 id="funciones-lambda-o-funciones-flecha"><strong>funciones lambda o funciones flecha</strong></h3>
+<p>Para escribir la sintaxis de una función flecha, debemos tener en <u><strong>consideración</strong></u>:</p>
+<ul>
+<li>Eliminamos la palabra function </li>
+<li>Ponemos el símbolo =&gt; </li>
+<li>Si sólo tiene 1 parámetro podemos eliminar los paréntesis de los parámetros </li>
+<li>Si la función sólo tiene 1 línea podemos eliminar las { } y la palabra return         </li>
+</ul>
+<pre><code class="language-javascript"> // Función anónima
+ var suma = function (a,b){ 
+    return a+b;
+}
+ // Función flecha   
+  var suma = (a,b) =&gt; {return a+ b}
+  var suma = (a,b) =&gt;  a+ b
+</code></pre>
+<h2 id="8-variables-locales-y-globales"><strong> <u>8. Variables locales y globales</u> </strong></h2>
+<p>Ahora que ya conocemos las funciones es muy importante diferenciar entre variables globales y locales:</p>
+<ul>
+<li><strong>Variables globales</strong> →  Pueden utilizarse en cualquier parte del código y son declaradas fuera de toda función.</li>
+<li><strong>Variables locales</strong> →  Se definen con la instrucción <strong>let</strong> dentro de una función y solo pueden ser utilizadas dentro de esta.</li>
+</ul>
+<pre><code class="language-javascript">    var v_global1=20;
+
+    function prueba(){
+        let v_local1=10; //Definición de variable local
+        let v_local2=v_global1+v_local1;
+        //En la función se puede acceder a las variables globales 
+        // y locales definidas dentro de ella
+        alert (&quot;Suma de v. local y la global : &quot;+ v_local2);
+    }
+    prueba();
+
+    alert (&quot;La variable global es &quot;+vbleglobal1);
+    //Desde fuera de la función las variables locales definidas en ella no son accesibles
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

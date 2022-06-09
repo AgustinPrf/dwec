@@ -1,7 +1,8 @@
-site_name: AgustinPrueba
+site_name: DWEC
 site_url: https://agustin.com/
 nav:
-  - Home: index.md
+  - Inicio: index.md
   - Unidad 1 : Unidad_1.md
+  - Unidad 2 : Unidad_2.md
 
 #theme: readthedocs
