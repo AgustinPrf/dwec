@@ -1,137 +1,732 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
         <link rel="canonical" href="https://agustin.com/Unidad_1/">
-        <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>UD 1 - DWEC</title>
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
-
-        <script src="../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
-    </head>
-
-    <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href="..">DWEC</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href=".." class="nav-link">Inicio</a>
-                            </li>
-                            <li class="navitem active">
-                                <a href="./" class="nav-link">UD 1</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../Unidad_2/" class="nav-link">UD 2</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../Unidad_3/" class="nav-link">UD 3</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../Unidad_4/" class="nav-link">UD 4</a>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="nav-item">
-                                <a rel="prev" href=".." class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../Unidad_2/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.4">
+    
+    
+      
+        <title>UD 1 - "Herramientas" - DWEC</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4a0965b7.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="2"><a href="#1-desarrollo-web" class="nav-link">1. DESARROLLO WEB</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#2-estructura-cliente-servidor" class="nav-link">2. ESTRUCTURA CLIENTE SERVIDOR</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#3-lenguajes-de-programacion-en-clientes-web" class="nav-link">3. LENGUAJES DE PROGRAMACIÓN EN CLIENTES WEB</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#4-navegadores" class="nav-link">4. NAVEGADORES</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#5-principales-navegadores" class="nav-link">5. PRINCIPALES NAVEGADORES</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#6-herramientas-para-el-desarrollo-consola-web" class="nav-link">6. HERRAMIENTAS PARA EL DESARROLLO: CONSOLA WEB</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#7-entorno-de-desarrollo" class="nav-link">7. ENTORNO DE DESARROLLO</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#8-control-de-versiones-git-github" class="nav-link">8. CONTROL DE VERSIONES: GIT – GITHUB</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#9-integracion-de-codigo-javascript-con-html" class="nav-link">9. INTEGRACIÓN DE CÓDIGO JAVASCRIPT CON HTML</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-        </ul>
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-desarrollo-web" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
-</div></div>
-                    <div class="col-md-9" role="main">
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="DWEC" class="md-header__button md-logo" aria-label="DWEC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DWEC
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              UD 1 - "Herramientas"
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="DWEC" class="md-nav__button md-logo" aria-label="DWEC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    DWEC
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Inicio
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          UD 1 - "Herramientas"
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        UD 1 - "Herramientas"
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-desarrollo-web" class="md-nav__link">
+    1. DESARROLLO WEB
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-estructura-cliente-servidor" class="md-nav__link">
+    2. ESTRUCTURA CLIENTE SERVIDOR
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-lenguajes-de-programacion-en-clientes-web" class="md-nav__link">
+    3. LENGUAJES DE PROGRAMACIÓN EN CLIENTES WEB
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-navegadores" class="md-nav__link">
+    4. NAVEGADORES
+  </a>
+  
+    <nav class="md-nav" aria-label="4. NAVEGADORES">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definicion-de-navegador" class="md-nav__link">
+    Definición de navegador
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funciones-del-navegador" class="md-nav__link">
+    Funciones del navegador
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-principales-navegadores" class="md-nav__link">
+    5. PRINCIPALES NAVEGADORES
+  </a>
+  
+    <nav class="md-nav" aria-label="5. PRINCIPALES NAVEGADORES">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsoft-edge-antiguo-internet-explorer" class="md-nav__link">
+    Microsoft Edge  -  Antiguo Internet Explorer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozilla-firefox" class="md-nav__link">
+    Mozilla Firefox
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#google-chrome" class="md-nav__link">
+    Google Chrome
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#safari" class="md-nav__link">
+    Safari
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opera" class="md-nav__link">
+    Opera
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#que-navegador-se-recomienda-para-realizar-el-curso" class="md-nav__link">
+    ¿Que navegador se recomienda para realizar el curso?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-herramientas-para-el-desarrollo-consola-web" class="md-nav__link">
+    6. HERRAMIENTAS PARA EL DESARROLLO: CONSOLA WEB
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-entorno-de-desarrollo" class="md-nav__link">
+    7. ENTORNO DE DESARROLLO
+  </a>
+  
+    <nav class="md-nav" aria-label="7. ENTORNO DE DESARROLLO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#visual-studio-code" class="md-nav__link">
+    Visual Studio Code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#control-de-versiones-en-visual-studio-code" class="md-nav__link">
+    Control de versiones en Visual Studio Code
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-control-de-versiones-git-github" class="md-nav__link">
+    8. CONTROL DE VERSIONES: GIT – GITHUB
+  </a>
+  
+    <nav class="md-nav" aria-label="8. CONTROL DE VERSIONES: GIT – GITHUB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ordenes-basicas-en-git" class="md-nav__link">
+    *Órdenes básicas en git
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    Github
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-integracion-de-codigo-javascript-con-html" class="md-nav__link">
+    9. INTEGRACIÓN DE CÓDIGO JAVASCRIPT CON HTML
+  </a>
+  
+    <nav class="md-nav" aria-label="9. INTEGRACIÓN DE CÓDIGO JAVASCRIPT CON HTML">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etiqueta-script" class="md-nav__link">
+    Etiqueta script
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fichero-externo" class="md-nav__link">
+    Fichero externo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#en-codigo-html" class="md-nav__link">
+    En código html
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etiqueta-noscript" class="md-nav__link">
+    Etiqueta noscript
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_2/" class="md-nav__link">
+        UD 2 - "Sintaxis"
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_3/" class="md-nav__link">
+        UD 3
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_4/" class="md-nav__link">
+        UD 4
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-desarrollo-web" class="md-nav__link">
+    1. DESARROLLO WEB
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-estructura-cliente-servidor" class="md-nav__link">
+    2. ESTRUCTURA CLIENTE SERVIDOR
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-lenguajes-de-programacion-en-clientes-web" class="md-nav__link">
+    3. LENGUAJES DE PROGRAMACIÓN EN CLIENTES WEB
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-navegadores" class="md-nav__link">
+    4. NAVEGADORES
+  </a>
+  
+    <nav class="md-nav" aria-label="4. NAVEGADORES">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definicion-de-navegador" class="md-nav__link">
+    Definición de navegador
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funciones-del-navegador" class="md-nav__link">
+    Funciones del navegador
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-principales-navegadores" class="md-nav__link">
+    5. PRINCIPALES NAVEGADORES
+  </a>
+  
+    <nav class="md-nav" aria-label="5. PRINCIPALES NAVEGADORES">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsoft-edge-antiguo-internet-explorer" class="md-nav__link">
+    Microsoft Edge  -  Antiguo Internet Explorer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozilla-firefox" class="md-nav__link">
+    Mozilla Firefox
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#google-chrome" class="md-nav__link">
+    Google Chrome
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#safari" class="md-nav__link">
+    Safari
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opera" class="md-nav__link">
+    Opera
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#que-navegador-se-recomienda-para-realizar-el-curso" class="md-nav__link">
+    ¿Que navegador se recomienda para realizar el curso?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-herramientas-para-el-desarrollo-consola-web" class="md-nav__link">
+    6. HERRAMIENTAS PARA EL DESARROLLO: CONSOLA WEB
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-entorno-de-desarrollo" class="md-nav__link">
+    7. ENTORNO DE DESARROLLO
+  </a>
+  
+    <nav class="md-nav" aria-label="7. ENTORNO DE DESARROLLO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#visual-studio-code" class="md-nav__link">
+    Visual Studio Code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#control-de-versiones-en-visual-studio-code" class="md-nav__link">
+    Control de versiones en Visual Studio Code
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-control-de-versiones-git-github" class="md-nav__link">
+    8. CONTROL DE VERSIONES: GIT – GITHUB
+  </a>
+  
+    <nav class="md-nav" aria-label="8. CONTROL DE VERSIONES: GIT – GITHUB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ordenes-basicas-en-git" class="md-nav__link">
+    *Órdenes básicas en git
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    Github
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-integracion-de-codigo-javascript-con-html" class="md-nav__link">
+    9. INTEGRACIÓN DE CÓDIGO JAVASCRIPT CON HTML
+  </a>
+  
+    <nav class="md-nav" aria-label="9. INTEGRACIÓN DE CÓDIGO JAVASCRIPT CON HTML">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etiqueta-script" class="md-nav__link">
+    Etiqueta script
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fichero-externo" class="md-nav__link">
+    Fichero externo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#en-codigo-html" class="md-nav__link">
+    En código html
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etiqueta-noscript" class="md-nav__link">
+    Etiqueta noscript
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+  <h1>UD 1 - "Herramientas"</h1>
 
 <h2 id="1-desarrollo-web"><strong>1. <u>DESARROLLO WEB</u></strong></h2>
 <p>La web fue inicialmente concebida y creada por Tim Berners-Lee, un especialista del laboratorio europeo de partículas (CERN) en 1989. En sus mismas palabras, había una "necesidad de una herramienta colaborativa que soportara el conocimiento científico" en un contexto internacional. Él y su compañero Robert Cailliau crearon un prototipo web, lo mostraron a la comunidad para sus pruebas y comentarios.
@@ -405,81 +1000,79 @@ La rapidez de carga de las páginas se consigue al tener el código de JavaScrip
     &lt;/p&gt;
     &lt;noscript&gt;
 &lt;body&gt;
-</code></pre></div>
-            </div>
-        </div>
+</code></pre>
 
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = "..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../js/base.js" defer></script>
-        <script src="../search/main.js" defer></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
+              
+            </article>
+            
+          </div>
         </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Inicio" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Inicio
             </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../Unidad_2/" class="md-footer__link md-footer__link--next" aria-label="Next: UD 2 - &#34;Sintaxis&#34;" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              UD 2 - "Sintaxis"
             </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
 </div>
-
-    </body>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f758a944.min.js"></script>
+      
+    
+  </body>
 </html>
