@@ -2,7 +2,8 @@ site_name: DWEC
 site_url: https://agustin.com/
 nav:
   - Inicio: index.md
-  - Unidad 1 : Unidad_1.md
-  - Unidad 2 : Unidad_2.md
+  - UD 1 : Unidad_1.md
+  - UD 2 : Unidad_2.md
+  - UD 3 : Unidad_3.md
 
 #theme: readthedocs
