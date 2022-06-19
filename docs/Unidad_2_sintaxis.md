@@ -1,4 +1,4 @@
-##**<u><span style="color:blue">1.- INTRODUCCIÓN</span> </u>**
+##**<u style="color:#2980B9">1.- INTRODUCCIÓN</u>**
 Javascript es un lenguaje de programación que permite ejecutar código en el cliente (*nuestro navegador*) ampliando la funcionalidad nuestros sitios web. Para añadir JavaScript se usa la etiqueta **script**.
 Este puede estar en cualquier lugar de la página. El código se ejecuta de forma secuencial a como el navegador lo va encontrando.
 
@@ -11,7 +11,7 @@ Este puede estar en cualquier lugar de la página. El código se ejecuta de form
 	</SCRIPT>
 ~~~
 
-##**<u><span style="color:blue">2.- Comentarios</span> </u>**
+##**<u style="color:#2980B9">2.- Comentarios </u>**
 En Javascript los comentarios se pueden hacer con:
 
 * //  	→  *Comentarios de una línea.*
@@ -46,7 +46,7 @@ Hay una forma mucho más práctica y ordenada de usar código Javascript. Se pue
 	<script type="text/javascript" src="rutaDelArchivo2.js"/>
 	<script type="text/javascript" src="rutaDelArchivo3.js"/>
 ~~~
-##**<u><span style="color:blue">3. Variables </span> </u>**
+##**<u style="color:#2980B9">3. Variables </u>**
 
 Las variables son elementos del lenguaje que permiten almacenar distintos valores en cada momento. Se puede almacenar un valor en una variable y consultar este valor posteriormente. También podemos modificar su contenido siempre que queramos.
 Para declarar las variables en JavaScript se utiliza la palabra reservada **var**.
@@ -58,7 +58,7 @@ Para declarar las variables en JavaScript se utiliza la palabra reservada **var*
 ~~~
 En JavaScript todas las variables y nombres de función son *sensibles a mayúsculas y minúsculas*. Esto significa que la capitalización importa. Escribe los nombres de las variables en JavaScript en **camelCase**. En camelCase, los nombres de variables de múltiples palabras tienen la primera palabra en minúsculas y la primera letra de cada palabra posterior en mayúsculas.
 
-###  **Tipos de variables**
+###**<span style="color:#2980B9">Tipos de variables</span>**
 JavaScript proporciona ocho tipos de datos diferentes:
 
 * **undefined**, null, boolean, string, symbol, bigint, number, y object.
@@ -109,8 +109,8 @@ Elementos como la función “prompt” para leer de teclado, leen los elementos
 	var n2=parseFloat(num); 	// Almacena un decimal
 	var n3=num3.toString(); 	// Almacena una cadena
 ~~~
-##**<u><span style="color:blue">4. Mostrar por pantalla y leer del teclado</span> </u>**
-### **alert() , confirm(), prompt()**
+##**<u style="color:#2980B9">4. Mostrar por pantalla y leer del teclado </u>**
+###**<span style="color:#2980B9">alert() , confirm(), prompt()</span>**
 El método **alert()** permite mostrar al usuario información literal o el contenido de variables en una ventana independiente. La ventana contendrá la información a mostrar y el botón aceptar.
 
 <center>
@@ -140,7 +140,7 @@ El método *prompt()* abre un cuadro de diálogo en pantalla en el que se pide a
 	alert("Usted ha introducido la siguiente información "+provincia)
 ~~~
 
-### **Template Literals**
+###**<span style="color:#2980B9">Template Literals</span>**
 Desde ES2015 también podemos poner una cadena entre ` (acento grave) y en ese caso podemos poner dentro variables y expresiones que serán evaluadas al ponerlas dentro de **${}**. También se respetan los saltos de línea, tabuladores, etc que haya dentro.	
 
 ~~~javascript
@@ -148,10 +148,10 @@ Desde ES2015 también podemos poner una cadena entre ` (acento grave) y en ese c
 	console.log(`El usuario tiene: ${edad} años`)
 ~~~
 
-##**<u><span style="color:blue">5. Operadores</span> </u>**
+##**<u style="color:#2980B9">5. Operadores</u>**
 Combinando variables y valores, se pueden formular expresiones más complejas. Las expresiones son una parte esencial de los programas. Para formular expresiones se utilizan los operadores.
 
-### ** Operadores de asignación**
+###**<span style="color:#2980B9"> Operadores de asignación</span>**
 Los operadores de asignación se utilizan para asignar valores a las variables. Alguno de ellos también incluyen operaciones.
 
 | Operador | Descripción                                                  |
@@ -173,7 +173,7 @@ Los operadores de asignación se utilizan para asignar valores a las variables. 
 	num2%=num1;
 ~~~
 
-### **Operadores aritméticos**
+###**<span style="color:#2980B9">Operadores aritméticos</span>**
 Los operadores aritméticos se utilizan para hacer cálculos aritméticos.
 
 | Operador | Descripción                    |
@@ -205,7 +205,7 @@ La diferencia entre ambas posiciones reside en el momento en que se ejecuta la o
 	resultado1=--num1;
 	resultado2=num2--;
 ~~~
-###  **Operadores de comparación**
+###**<span style="color:#2980B9">Operadores de comparación</span>**
 Para comparar dos valores entre sí, se utiliza el operador de comparación. Como valor de retorno se obtiene un valor lógico o booleano: true o false. 
 
 | Operador | Descripción                                                  |
@@ -226,7 +226,7 @@ Para comparar dos valores entre sí, se utiliza el operador de comparación. Com
 	alert("El resultado de la expresión 'a>=b' es igual a "+(a>=b));
 	alert("El resultado de la expresión 'a<=b' es igual a "+(a<=b));
 ~~~
-### **Operadores lógicos**
+###**<span style="color:#2980B9">Operadores lógicos</span>**
 Los operadores lógicos se utilizan para el procesamiento de los valores booleanos. A su vez el valor que devuelven también es booleano: true o false.
 
 | Operador | Descripción                                                  |
@@ -249,8 +249,8 @@ Ejemplo de resultado de distintas operaciones realizadas con operadores lógicos
 	alert("resultado 'true||true' es igual a "+(true||true));
 	alert("resultado '!false' es igual a "+(!false));
 ~~~
-## ** <u>6. Estructuras de control y bucles </span> </u>**
-### **IF y ELSE**
+## ** <u style="color:#2980B9">6. Estructuras de control y bucles </u>**
+###**<span style="color:#2980B9">IF y ELSE</span>**
 Para controlar el flujo de información en los programas JavaScript existen una serie de estructuras condicionales y bucles que permiten alterar el orden secuencial de ejecución. La instrucción **if**  permite la ejecución de un bloque u otro de instrucciones en función de una condición.
 
 
@@ -297,7 +297,7 @@ Para las condiciones ramificadas más complicadas, a menudo se utilizan las rami
 	alert(` Ana tiene ${edadAna} años y Luis ${edadAna}`);
 ~~~
 
-### **Bucle FOR**
+###**<span style="color:#2980B9">Bucle FOR</span>**
 Cuando la ejecución de un programa llega a un bucle for, lo primero que hace es ejecutar la **“inicialización del índice”**, que solo se ejecuta un vez, a continuación analiza la **“condición de prueba”** y si esta se cumple ejecuta las instrucciones del bucle. Cuando finaliza la ejecución de las instrucciones del bucle se realiza la **“modificación del índice”** .
 ~~~javascript
 for (inicialización_índice; condición_prueba; Modificación_índice){
@@ -311,7 +311,9 @@ Ejemplo: números pares del 2 al 30
 	}
 	alert(" Ya se han escrito los números pares del 0 al 30");
 ~~~
- ### **Bucle WHILE**
+
+###**<span style="color:#2980B9">Bucle WHILE</span>**
+ 
 Con el bucle while se pueden ejecutar un grupo de instrucciones mientras se cumpla una condición. Si la condición nunca se cumple, entonces tampoco se ejecuta ninguna instrucción.
 
 ~~~javascript
@@ -329,7 +331,7 @@ Ejemplo : Escribe los números pares de 0 a 30
 	alert("Ya se han mostrado los números pares del 0 al 30");
 ~~~
 
-### **Bucle DO-WHILE**
+###**<span style="color:#2980B9">Bucle DO-WHILE</span>**
 La diferencia del bucle do-while frente al bucle while reside en el momento en que se comprueba la condición: 
 
 * El bucle **do-while** no la comprueba hasta el final. Lo que significa que el bucle do-while se recorrerá, una vez, como mínimo, aunque no se cumpla la condición.
@@ -345,7 +347,7 @@ La diferencia del bucle do-while frente al bucle while reside en el momento en q
 
 	alert ("Has acertado la clave");
 ~~~
-###  **Instrucciones BREAK y CONTINUE**
+###**<span style="color:#2980B9">Instrucciones BREAK y CONTINUE</span>**
 En los bucles for, while y do-while se pueden utilizar las instrucciones **break** y **continue** para modificar el comportamiento del bucle. 
 
 * **Break**  → Hace que el bucle se interrumpa inmediatamente, aun cuando no se haya ejecutado todavía el bucle completo.      
@@ -376,7 +378,7 @@ Ejemplo: Presenta todos los números pares del 0 al 50 excepto los que sean múl
 	}
 ~~~
 
-## ** <u>7. Funciones</u> **
+##**<u style="color:#2980B9"> 7.- Funciones</u> **
 Se declaran con la palabra reservada **function** y se les pasan los parámetros entre paréntesis. La función puede devolver un valor usando **return** (*si no tiene return es como si devolviera undefined*).
  ~~~ javascript
 	function nombrefuncion (parámetro1, parámetro2...){
@@ -405,7 +407,7 @@ Ejemplo:Funciones que devuelve la suma de dos valores que se pasan por parámetr
 	profe();
 ~~~
 
-### **Uso del array arguments**
+###**<span style="color:#2980B9">Uso del array arguments</span>**
 También es posible acceder a los parámetros desde el **array arguments[]** si no sabemos cuántos recibiremos:
 
 ~~~javascript
@@ -417,7 +419,7 @@ También es posible acceder a los parámetros desde el **array arguments[]** si 
 	}
 ~~~
 
-### **Uso de funciones anónimas**
+###**<span style="color:#2980B9">Uso de funciones anónimas</span>**
 Podemos definir una función sin darle un nombre. Dicha función puede asignarse a una variable, autoejecutarse o asignarse a un manejador de eventos. 
 ~~~javascript
 	var suma = function (a,b){ 
@@ -425,7 +427,7 @@ Podemos definir una función sin darle un nombre. Dicha función puede asignarse
 	}
 ~~~
 
-###  **funciones lambda o funciones flecha**
+###**<span style="color:#2980B9">funciones lambda o funciones flecha</span>**
 Para escribir la sintaxis de una función flecha, debemos tener en <u>**consideración**</u>:
 
 * Eliminamos la palabra function 
@@ -444,7 +446,7 @@ Para escribir la sintaxis de una función flecha, debemos tener en <u>**consider
 ```
 
 
-## ** <u>8. Variables locales y globales</u> **
+##**<span style="color:#2980B9"><u>8. Variables locales y globales</u></span> **
 
  Ahora que ya conocemos las funciones es muy importante diferenciar entre variables globales y locales:
 

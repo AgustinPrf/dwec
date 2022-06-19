@@ -1,4 +1,4 @@
-##**<u><span style="color:blue">1. JERARQUÍA DE OBJETOS NATIVOS DE JAVASCRIPT</span> </u>**
+##**<u style="color:#2980B9">1. JERARQUÍA DE OBJETOS NATIVOS DE JAVASCRIPT</u>**
 Entre otras posibilidades, Javascript es un lenguaje que de forma nativa posee gran cantidad de funciones y objetos predefinidos. Estas funciones y objetos nos pueden ser útiles para realizar un código mas eficiente, claro y ahorrarnos tiempo re-inventado la rueda.
 JavaScript define una jerarquía de objetos que podemos reflejar de forma aproximada en un esquema similar al siguiente:
 
@@ -17,8 +17,8 @@ Para el desarrollo del módulo vamos a considerar las siguientes clasificaciones
 
 <center>![Todos los objetosnavegadores](./imagenes/unidad_3/todos_objetos_windows.jpg)</center>
 
-##**<u><span style="color:blue">2. OBJETOS IMPORTANTES</span> </u>**
-### **Windows**
+##**<u style="color:#2980B9">2. OBJETOS IMPORTANTES</u>**
+###**<span style="color:#2980B9">Windows</span>**
 El objeto Window es un objeto que tiene propiedades y controla elementos de lo que ocurre en la "ventana" del navegador.
 Los métodos que estudiamos en el tema anterior como alert, prompt, etc. forman parte del objeto Window.Para hacer llamada a estos métodos no hace falta nombrar explícitamente Window (el navegador ya se encarga de ello).
 Algunos de los métodos mas importantes no estudiados previamente son:
@@ -38,10 +38,10 @@ Algunos de los métodos mas importantes no estudiados previamente son:
 	// Cancelamos el ultimo timeout
 	clearTimeout(idC);
 ~~~
-### **2.2 Document**
+###**<span style="color:#2980B9">2.2 Document</span>**
 Cada documento cargado en una ventana del navegador, será un objeto de tipo document. El objeto document proporciona a los scripts, el acceso a todos los elementos HTML dentro de una página. Este objeto forma parte además del objeto window , y puede ser accedido a través de la propiedad window.document o directamente document (ya que podemos omitir la referencia a la window actual).
 
-El objeto document nos permite acceder a las siguientes **<u>colecciones</span> </u>**:
+El objeto document nos permite acceder a las siguientes **<u>colecciones</u>**:
 
 | Colección | Descripción                                                  |
 | --------- | ------------------------------------------------------------ |
@@ -51,7 +51,7 @@ El objeto document nos permite acceder a las siguientes **<u>colecciones</span> 
 | images[]  | Es un array que contiene todas las imágenes del documento.   |
 | links[]   | Es un array que contiene todos los enlaces del documento.    |
 
-El objeto document nos permite acceder a las siguientes **<u>propiedades y métodos:</span> </u>**
+El objeto document nos permite acceder a las siguientes **<u>propiedades y métodos:</u>**
 
 | Propiedad/Método | Descripción                                                  |
 | ---------------- | ------------------------------------------------------------ |
@@ -69,13 +69,13 @@ El objeto document nos permite acceder a las siguientes **<u>propiedades y méto
 
 
 
-##**<u><span style="color:blue">3. GESTIÓN DE VENTANAS</span> </u>**
+##**<u style="color:#2980B9">3. GESTIÓN DE VENTANAS</u>**
 
 JavaScript permite gestionar diferentes aspectos relacionados con las ventanas como por ejemplo, abrir nuevas
 ventanas al presionar un botón. Cada una de estas ventanas tiene un tamaño, posición y estilo diferente.
 Aclarar que estas ventanas emergentes suelen tener un contenido dinámico.
 
-### **Abrir una Ventana**
+###**<span style="color:#2980B9">Abrir una Ventana</span>**
 Es una operación muy común en las páginas web y en algunas ocasiones se abren sin que el usuario haga nada. HTML permite abrir nuevas ventanas pero no permite ningún control posterior sobre ellas.
 Con JavaScript es posible abrir una ventana vacía mediante el método open():
 <center>
@@ -96,7 +96,7 @@ nuevaVentana=window.open("http://www.misitioWeb.com/ads","Publicidad","height=10
 ~~~
 </center>
 
-### **Cerrar una Ventana**
+###**<span style="color:#2980B9">Cerrar una Ventana**
 Para cerrar una ventana se puede invocar el método close():
 
 <center>
@@ -104,7 +104,7 @@ Para cerrar una ventana se puede invocar el método close():
 	myWindow1.document.write('<input type=button value=Cerrar onClick=window.close()>');
 ~~~
 </center>
-### **Comunicación entre Ventanas**
+###**<span style="color:#2980B9">Comunicación entre Ventanas</span>**
 Desde una ventana se pueden abrir o cerrar nuevas ventanas. La primera se denomina ventana principal, mientras que las segundas se denominan ventanas secundarias. Desde la ventana principal se puede acceder a las ventanas secundarias.
 En el siguiente ejemplo se muestra cómo acceder a una ventana secundaria:
 
@@ -125,7 +125,7 @@ En el siguiente ejemplo se muestra cómo acceder a una ventana secundaria:
 ~~~
 
 
-##**<u><span style="color:blue">4. ARRAYS</span> </u>**
+##**<u style="color:#2980B9">4. ARRAYS</u>**
 Son un tipo de objeto y no tienen tamaño fijo sino que podemos añadirle elementos en cualquier momento. Podemos crearlos como instancias del objeto Array:
 ~~~javascript
 	let a=new Array(); // a = []
@@ -147,7 +147,7 @@ Sus elementos pueden ser de cualquier tipo, incluso podemos tener elementos de t
 	console.log(a[6]); // imprime undefined
 ~~~
 
-### **4.1 Propiedades de un array**
+###**<span style="color:#2980B9">Propiedades de un array</span>**
 Length → Esta propiedad devuelve la longitud de un array:
 ~~~javascript
 	let a=['Lunes', 'Martes', 2, 4, 6];
@@ -159,7 +159,7 @@ Podemos reducir el tamaño de un array cambiando esta propiedad:
 	// ahora a=['Lunes', 'Martes', 2]
 ~~~
 
-### **Añadir un elemento**
+###**<span style="color:#2980B9">Añadir un elemento</span>**
 Añadir/Eliminar Elementos
 
 | Método                      | Descripción                                                  |
@@ -188,7 +188,7 @@ let ultimo=a.pop(); // a=['Lunes', 'Martes', 2, 4] y ultimo=6
 let primero=a.shift(); // a=['Martes', 2, 4] y primero='Lunes'4.3 Crear un array derivado
 ```
 
-### **Crear array derivado**
+###**<span style="color:#2980B9">Crear array derivado</span>**
 
 | Método                            | Descripción                                                  |
 | --------------------------------- | ------------------------------------------------------------ |
@@ -211,7 +211,7 @@ let a=['Lunes', 'Martes', 2, 4, 6];
 let cadena=a.join('-');					// cadena='Lunes-Martes-2-4-6'
 ```
 
-### **Búsqueda y comprobación**
+###**<span style="color:#2980B9">Búsqueda y comprobación</span>**
 
 | Método                | Descripción                                                  |
 | --------------------- | ------------------------------------------------------------ |
@@ -228,7 +228,7 @@ let arrayNotas = [5.2, 3.9, 6, 9.75, 7.5, 3];
 arrayNotas.includes(7.5);								// true 
 ```
 
-### **Ordenación**
+###**<span style="color:#2980B9">Ordenación</span>**
 
 | Método      | Descripción                                            |
 | ----------- | ------------------------------------------------------ |
@@ -242,7 +242,7 @@ let b=a.sort();			// b=[13, 2, 45, 5 , "Bien", "Mal", "adios", "hola"]
 
 
 
-### **Array Functions**
+###**<span style="color:#2980B9">Array Functions</span>**
 
 Son métodos propios de arrays, que permiten operar sobre todos los elementos del array para alcanzar un objetivo concreto.
 
@@ -272,7 +272,7 @@ Son métodos propios de arrays, que permiten operar sobre todos los elementos de
   let valor = array. find ( e => e[0] == ‘b’); 			//’bb’
 ```
 
-##**<u><span style="color:blue">5. MAP</span> </u>**
+##**<u style="color:#2980B9">5. MAP</u>**
 Es una colección de parejas de [clave,valor]. Un objeto en Javascript es un tipo particular de Map en que las claves sólo pueden ser texto o números.
 
 | Método                        | Descripción                                                  |
@@ -303,7 +303,7 @@ persona.forEach(function(valor,clave,mapa){
 })
 ```
 
-Otra alternativa sería utilizar **<u>for.....of</span> </u>**
+Otra alternativa sería utilizar **<u>for.....of</u>**
 
 ```javascript
 let persona = new Map([
@@ -319,7 +319,7 @@ for (const [clave, valor] of persona.entries()) {
 
 
 
-##**<u><span style="color:blue">6. SET</span> </u>**
+##**<u style="color:#2980B9">6. SET</u>**
 Es como un Map pero que no almacena los valores sino sólo la clave. Podemos verlo como una colección que no permite duplicados. Tiene la propiedad **size** que devuelve su tamaño y los métodos .**add** (añade un elemento), .**delete** (lo elimina) o .**has** (indica si el elemento pasado se encuentra o no en la colección) y también podemos recorrerlo con .**forEach**.
 
 | Método                | Descripción                                                  |
@@ -343,18 +343,18 @@ let ganadoresNoDuplicados = Array.from(new Set(ganadores)); // ['Márquez, 'Ross
 
 
 
-##**<u><span style="color:blue">7. OBJETO NUMBER</span> </u>**
+##**<u style="color:#2980B9">7. OBJETO NUMBER</u>**
 Number, es utilizado para valores enteros y decimales.
 
 * NaN → **N** ot **a** **N** umber
 
-### **Constantes**
+###**<span style="color:#2980B9">Constantes</span>**
 | Constante                    | Descripción           |
 | ---------------------------- | --------------------- |
 | Number.**POSITIVE_INFINITY** | Infinito positivo: +∞ |
 | Number.**NEGATIVE_INFINITY** | Infinito negativo: -∞ |
 
-### **Comprobar números** 
+###**<span style="color:#2980B9">Comprobar números</span>** 
 
 
 
@@ -366,7 +366,7 @@ Number, es utilizado para valores enteros y decimales.
 
 
 
-### ** Conversión numérica**
+###**<span style="color:#2980B9"> Conversión numérica</span>**
 | Propiedad                  | Descripción                                           |
 | -------------------------- | ----------------------------------------------------- |
 | **Number.parseInt**(*s)*   | Convierte una cadena de texto s en un número entero.  |
@@ -374,7 +374,7 @@ Number, es utilizado para valores enteros y decimales.
 
 
 
-### **Representación numérica**
+###**<span style="color:#2980B9">Representación numérica</span>**
 | Propiedad         | Descripción                                                  |
 | ----------------- | ------------------------------------------------------------ |
 | .toExponential(n) | Convierte el número a notación exponencial con n decimales.  |
@@ -413,8 +413,8 @@ let nObj = new Number(4); // Objeto Numérico
 
 
 
-##**<u><span style="color:blue">8. OBJETO MATH</span> </u>**
-### **Constantes**
+##**<u style="color:#2980B9">8. OBJETO MATH</u>**
+###**<span style="color:#2980B9">Constantes**
 
 | Propiedad      | Descripción        |
 | -------------- | ------------------ |
@@ -425,7 +425,7 @@ let nObj = new Number(4); // Objeto Numérico
 
 
 
-### **Métodos matemáticos**
+###**<span style="color:#2980B9">Métodos matemáticos</span>**
 
 | Propiedad            | Descripción                                                  |
 | -------------------- | ------------------------------------------------------------ |
@@ -438,7 +438,7 @@ let nObj = new Number(4); // Objeto Numérico
 
 
 
-### **Métodos de redondeo**
+###**<span style="color:#2980B9">Métodos de redondeo</span>**
 | Propiedad     | Descripción                                         |
 | ------------- | --------------------------------------------------- |
 | Math.round(x) | Devuelve el redondeo de x . Entero más cercano      |
@@ -472,15 +472,15 @@ let nObj = new Number(4); // Objeto Numérico
 
 
 
-##**<u><span style="color:blue">9. OBJETO STRING</span> </u>**
+##**<u style="color:#2980B9">9. OBJETO STRING</u>**
 
-### ** Propiedades**
+###**<span style="color:#2980B9"> Propiedades</span>**
 
 | Propiedad | Descripción                                                  |
 | --------- | ------------------------------------------------------------ |
 | . length  | Devuelve el número de carácteres de la variable de tipo string en cuestión. |
 
-### **Métodos posicionales**
+###**<span style="color:#2980B9">Métodos posicionales</span>**
 
 | Propiedad                 | Descripción                                                  |
 | ------------------------- | ------------------------------------------------------------ |
@@ -489,7 +489,7 @@ let nObj = new Number(4); // Objeto Numérico
 | .indexOf ( str )          | Devuelve la primera posición del texto str.                  |
 | .indexOf ( str, from )    | Idem al anterior, partiendo desde la posición from.          |
 
-### **Métodos de búsqueda**
+###**<span style="color:#2980B9">Métodos de búsqueda</span>**
 
 | Propiedad           | Descripción                                                  |
 | ------------------- | ------------------------------------------------------------ |
@@ -497,7 +497,7 @@ let nObj = new Number(4); // Objeto Numérico
 | . search(regex)     | Busca si hay un patrón que encaje con regex y devuelve la posición. |
 | . match(regex)      | Idem a la anterior, pero devuelve las coincidencias encontradas. |
 
-### **Métodos de transformar**
+###**<span style="color:#2980B9">Métodos de transformar</span>**
 
 | Propiedad                     | Descripción                                                  |
 | ----------------------------- | ------------------------------------------------------------ |
@@ -512,7 +512,7 @@ let nObj = new Number(4); // Objeto Numérico
 | . padStart( len, str )        | Rellena el principio de la cadena con str hasta llegar al tamaño len. |
 | . padEnd( len, str )          | Rellena el final de la cadena con str hasta llegar al tamaño len. |
 
-### **Concatenación**
+###**<span style="color:#2980B9">Concatenación</span>**
 
 | Propiedad     | Descripción                                         |
 | ------------- | --------------------------------------------------- |
@@ -566,8 +566,8 @@ let sObj = new String (‘cadena’)// Objeto String
 
 
 
-##**<u><span style="color:blue">10. OBJETO DATE</span> </u>**
-### **Constructores**
+##**<u style="color:#2980B9">10. OBJETO DATE</u>**
+###**<span style="color:#2980B9">Constructores</span>**
 
 | Propiedad                          | Descripción                                                  |
 | ---------------------------------- | ------------------------------------------------------------ |
@@ -577,7 +577,7 @@ let sObj = new String (‘cadena’)// Objeto String
 | new Date( y, m, d, h, min, s, ms ) | Crea una fecha UTC a partir de componentes numéricos*.       |
 | Date.now()                         | Devuelve el Tiempo UNIX de la fecha actual. Equivalente a +new Date(). |
 
-### **Getter de fechas**
+###**<span style="color:#2980B9">Getter de fechas</span>**
 
 | Propiedad            | Descripción                                                  |
 | -------------------- | ------------------------------------------------------------ |
@@ -594,7 +594,7 @@ let sObj = new String (‘cadena’)// Objeto String
 
 
 
-### **Setter de fechas**
+###**<span style="color:#2980B9">Setter de fechas</span>**
 
 | Propiedad                                         | Descripción                                                  |
 | ------------------------------------------------- | ------------------------------------------------------------ |
@@ -609,7 +609,7 @@ let sObj = new String (‘cadena’)// Objeto String
 
 
 
-### **Formato de fechas**
+###**<span style="color:#2980B9">Formato de fechas</span>**
 
 | Propiedad             | Descripción                                                  |
 | --------------------- | ------------------------------------------------------------ |

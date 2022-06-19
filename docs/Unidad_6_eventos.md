@@ -1,9 +1,9 @@
-##**<u><span style="color:blue">1.- INTRODUCCIÓN</span> </u>**
+##**<u style="color:#2980B9">1.- INTRODUCCIÓN</u>**
 Los eventos son manejadores que nos proporciona el navegador para que cuando detecte que se produzca una
 acción (evento), se ejecute un código asociado a esa acción. En esta unidad trataremos los eventos existentes
 en Javascript y las distintas formas de manejarlos.
 
-##**<u><span style="color:blue">2.- EVENTOS</span> </u>**
+##**<u style="color:#2980B9">2.- EVENTOS</u>**
 Para poder controlar un evento se necesita un manejador. Básicamente, el manejador es la palabra reservada
 que indica la acción que va a manejar.
 En el caso del evento click , el manejador sería onClick.
@@ -12,7 +12,7 @@ En el caso del evento click , el manejador sería onClick.
 <IMG SRC="mundo.jpg" onclick="alert('Click en imagen');">
 ```
 
-##**Principales eventos**
+###**<span style="color:#2980B9">Principales eventos</span>**
 A continuación mostramos un listado de los principales eventos existentes en Javascript:
 
 * **onfocus**  → *Al obtener un foco.*
@@ -54,9 +54,9 @@ A continuación mostramos un listado de los principales eventos existentes en Ja
  El total de eventos disponibles está descrito en
   http://www.w3schools.com/jsref/dom_obj_event.asp
 
-##**<u><span style="color:blue">3.- MODELOS DE GESTIÓN DE EVENTOS</span> </u>**
+##**<u style="color:#2980B9">3.- MODELOS DE GESTIÓN DE EVENTOS</u>**
 
-##**Manejo de eventos desde elementos XHTML**
+###**<span style="color:#2980B9">Manejo de eventos desde elementos XHTML</span>**
 La forma más sencilla (aunque menos práctica para tener un código limpio y ordenado) de indicar que hay un evento asociado a un elemento XHTML es indicándolo en el propio código.
 
 ```javascript
@@ -74,7 +74,7 @@ También en lugar de ejecutar una serie de instrucciones, es posible llamar a un
 />
 ```
 
-##**Asignación de eventos desde código a objetos XHTML**
+###**<span style="color:#2980B9">Asignación de eventos desde código a objetos XHTML</span>**
 Podemos asignar/modificar mediante código el manejador de un evento predefinido en un objeto XHTML de una forma similar a esta. Supongamos que tenemos un objeto con id="miObjeto" que posee el evento "onclick" sin asignar y la función "mostrarMensaje".
 Podemos referenciar al elemento XHTML y asignar la función como manejador del evento como vemos en este código
 
@@ -88,7 +88,7 @@ document.getElementById("miObjeto").onclick=mostrarMensaje;
 Atención: fijaros que pone "mostrarMensaje". Así asigna la función como manejadora del evento. Si ponemos "mostrarMensaje()"
 no funcionará, ya que ejecutará la función y asignará su resultado al manejador.
 
-##**Declarando eventos desde código**
+##**<span style="color:#2980B9">Declarando eventos desde código</span>**
 Podemos declarar eventos mediante código usando addEventListener(evento,manejador).
 
 ```javascript
@@ -108,7 +108,7 @@ document.getElementById("miObjeto").addEventListener("dblclick",
 	});
 ```
 
-##**<u><span style="color:blue">4. TIPOS DE EVENTOS</span> </u>**
+##**<u style="color:#2980B9">4. TIPOS DE EVENTOS</u>**
 La especificación DOM define cuatro grupos de eventos dividiéndolos según su origen:
 
 * Eventos del **ratón**. 
@@ -117,7 +117,7 @@ La especificación DOM define cuatro grupos de eventos dividiéndolos según su 
 * Eventos **DOM**.
 * Eventos **FORM**
 
-##**Eventos del ratón**
+##**<span style="color:#2980B9">Eventos del ratón</span>**
 Los eventos que se incluyen en esta clasificación son los siguientes:
 
 * **Click** → *Este evento se produce cuando pulsamos sobre el botón izquierdo del ratón. El manejador de este evento es onclick.*
@@ -165,7 +165,7 @@ Orden de ejecución de los eventos del ratón:
 </body>
 ```
 
-##**Eventos del teclado**
+##**<span style="color:#2980B9">Eventos del teclado</span>**
 Los eventos que se incluyen en esta clasificación son los siguientes:
 
 * **Keydown** → *Este evento se produce cuando pulsamos una tecla del teclado. Si mantenemos pulsada una tecla de forma continua, el evento se* produce una y otra vez hasta que soltemos la misma. El  manejador de este evento es onkeydown.
@@ -184,7 +184,7 @@ El objeto event contiene las siguientes propiedades para los eventos de teclado:
 
 <center>![Eventos Teclado](./imagenes/unidad_6/eventos_teclado.jpg)</center>
 
-##** Eventos HTML**
+##**<span style="color:#2980B9">Eventos HTML</span>**
 Los eventos que se incluyen en esta clasificación son los siguientes:
 
 * **Load** → *El evento load hace referencia a la carga de distintas partes de la página. Este se produce en el objeto Window cuando la página se ha* cargado por completo. En el elemento "img" actúa cuando
@@ -208,7 +208,7 @@ la imagen se ha cargado. En el elemento "object" se acciona al cargar el objeto 
 	},false);
 ```
 
-##**Eventos DOM**
+##**<span style="color:#2980B9">Eventos DOM</span>**
 Los eventos que se incluyen en esta clasificación son los siguientes:
 
 * **DOMSubtreeModified** → *Este evento se produce cuando añadimos o eliminamos nodos en el subárbol de un elemento o documento.*
@@ -231,8 +231,8 @@ Los eventos que se incluyen en esta clasificación son los siguientes:
 	}
 ```
 
-##**<u><span style="color:blue">5. GESTIÓN DE EVENTOS</span> </u>**
-##**Uso del objeto this**
+##**<u style="color:#2980B9">5. GESTIÓN DE EVENTOS</u>**
+##**<span style="color:#2980B9">Uso del objeto this</span>**
 Cuando ejecutas código dentro de un evento, existe un objeto llamado "this". Este objeto es una referencia al elemento que se ha producido el evento. Ejemplo, si el evento se ha producido un evento al hacer clic a una imagen con id="miImagen", el objeto "this" será lo mismo que poner "document.getElementById("miImagen");
 
 ```javascript
@@ -245,7 +245,7 @@ Cuando ejecutas código dentro de un evento, existe un objeto llamado "this". Es
 </div>
 ```
 
-##**Obteniendo información del objeto event**
+##**<span style="color:#2980B9">Obteniendo información del objeto event</span>**
 Cuando se crea una función como manejador, al producirse el evento el navegador automáticamente manda como parámetro un objeto de tipo event.
 
 ```javascript
@@ -278,7 +278,7 @@ Este objeto posee cierta información útil del evento que se ha producido.
 	document.onkeyup=mostrarMensaje;
 ```
 
-##**Ejemplo Ampliado**
+##**<span style="color:#2980B9">Ejemplo Ampliado</span>**
 
 ```javascript
 										// uso THIS

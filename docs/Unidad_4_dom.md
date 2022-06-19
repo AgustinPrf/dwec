@@ -1,10 +1,10 @@
-##**<u><span style="color:blue">1.- MODELO DE OBJETOS DEL DOCUMENTO(DOM)</span> </u>**
+##**<u style="color:#2980B9">1.- MODELO DE OBJETOS DEL DOCUMENTO(DOM)</u>**
 La creación del Document Object Model o DOM es una de las innovaciones que más ha influido en el desarrollo de las páginas web dinámicas y de las aplicaciones web más complejas. DOM permite a los programadores web acceder y manipular las páginas XHTML como si fueran documentos XML. De hecho, DOM se diseñó originalmente para manipular de forma sencilla los documentos XML.
 A pesar de sus orígenes, DOM se ha convertido en una utilidad disponible para la mayoría de lenguajes de programación (Java, PHP, JavaScript) y cuyas únicas diferencias se encuentran en la forma de implementarlo. Para mas información general de DOM:
 * https://es.wikipedia.org/wiki/Document_Object_Model
 * http://www.w3schools.com/js/js_htmldom.asp
 
-### **Árbol de nodos**
+###**<span style="color:#2980B9">Árbol de nodos</span>**
 Una de las tareas habituales en la programación de aplicaciones web con JavaScript consiste en la manipulación de las páginas web. De esta forma, es habitual obtener el valor almacenado por algunos
 elementos (por ejemplo los elementos de un formulario), crear un elemento (párrafos, div, etc.) de forma dinámica y añadirlo a la página, aplicar una animación a un elemento (que aparezca/desaparezca, que se desplace, etc.).
 Todas estas tareas habituales son muy sencillas de realizar gracias a DOM. Sin embargo, para poder utilizar las utilidades de DOM, es necesario "transformar" la página original. Una página HTML normal no es más que una sucesión de caracteres, por lo que es un formato muy difícil de manipular. Por ello, los navegadores web transforman automáticamente todas las páginas web en una estructura más eficiente de manipular. El siguiente código html, es transformado de forma automática por el navegador, en la siguiente estructura deobjetos DOM con forma de árbol:
@@ -12,7 +12,7 @@ Todas estas tareas habituales son muy sencillas de realizar gracias a DOM. Sin e
 <center>![Todos los navegadores](./imagenes/unidad_4/hml.jpg)</center>
 <center>![Todos los navegadores](./imagenes/unidad_4/hml_arbol.jpg)</center>
 
-### **Tipos de nodos**
+###**<span style="color:#2980B9">Tipos de nodos</span>**
 La especificación completa de DOM define 12 tipos de nodos, aunque las páginas XHTML habituales se
 pueden manipular manejando solamente cuatro o cinco tipos de nodos básicos :
 * Document → Nodo raíz del que derivan todos los demás nodos del árbol.
@@ -26,7 +26,7 @@ pueden manipular manejando solamente cuatro o cinco tipos de nodos básicos :
 Los otros tipos de nodos existentes que no se van a considerar son :
 *  DocumentType , CDataSection , DocumentFragment , Entity , EntityReference , ProcessingInstruction y Notation .
 
-### **Propiedades de un nodo**
+###**<span style="color:#2980B9">Propiedades de un nodo</span>**
 Las principales propiedades de un nodo(de tipo element) son:
 * elemento.innerHTML: todo lo que hay entre la etiqueta que abre elemento y la que lo cierra, incluyendo otras etiquetas HTML.
 
@@ -56,12 +56,12 @@ Las principales propiedades de un nodo(de tipo element) son:
 ***
 ***
 
-##**<u><span style="color:blue">2 .- ACCESO AL DOCUMENTO DESDE CÓDIGO</span> </u>**
+##**<u style="color:#2980B9">2 .- ACCESO AL DOCUMENTO DESDE CÓDIGO</u>**
 Cuando el árbol de nodos DOM ha sido construido por el navegador de forma automática, podemos acceder a cualquier nodo.En el caso de existir más de un elemento, estos se van almacenando en un array(colección). Las siguientes funciones van a sustituir a la función document.write() que hemos utilizado hasta hoy(no recomiendo seguir utilizándola):
 
 <center>![Todos los navegadores](./imagenes/unidad_4/document_write.jpg)</center>
 
-### **Acceso desde propiedades del document**
+###**<span style="color:#2980B9">Acceso desde propiedades del document</span>**
 Supongamos que tenemos una página HTML con la siguiente estructura:
 
 <center>![Todos los navegadores](./imagenes/unidad_4/html_estructura.jpg)</center>
@@ -78,7 +78,7 @@ Se consideran como '**<u>atajos</u>**' para obtener algunos elementos comunes:
 * *document*.**images**→ Devuelve una colección con todas las imágenes del documento 
 * *document*.**scripts**→ Devuelve una colección con todos los scripts del documento
 
-### **Acceso a nodo desde métodos del document**
+###**<span style="color:#2980B9">Acceso a nodo desde métodos del document</span>**
 Las funciones aquí estudiadas normalmente se usan sobre el elemento "document", ya que así se aplican a
 todo el documento. Aun así, pueden usarse en cualquier nodo XHTML, entonces la búsqueda se realizaría no
 en todo en el documento, sino en al sub-árbol formado por el elemento en si y sus hijos.
@@ -154,7 +154,7 @@ A modo de resumen, Las funciones a utilizar son:
 ~~~
 
 
-### **Acceso a nodo utilizando selectores CSS**
+###**<span style="color:#2980B9">Acceso a nodo utilizando selectores CSS</span>**
 **.querySelector(*selector*) :**
 Devuelve el **primer nodo** seleccionado por el selector CSS indicado.
 
@@ -178,7 +178,7 @@ NOTA: al aplicar estos métodos sobre document se seleccionará sobre la página
 ***
 ***
 
-## <u>**3.- ACCESO A NODOS A PARTIR DE OTROS</span> </u>**
+##<u>**<span style="color:#2980B9">3.- ACCESO A NODOS A PARTIR DE OTROS</u>**
 En muchas ocasiones queremos acceder a cierto nodo a partir de uno dado. Para ello tenemos los siguientes métodos que se aplican sobre un elemento del árbol DOM:
 <center>![Todos los navegadores](./imagenes/unidad_4/acceso_nodos.jpg)</center>
 
@@ -208,9 +208,9 @@ En muchas ocasiones queremos acceder a cierto nodo a partir de uno dado. Para el
 ***
 ***
 
-## <u>**4.- GESTIÓN DE NODOS</span> </u>**
+##**<u style="color:#2980B9">4.- GESTIÓN DE NODOS</u>**
 
-### **Crear Nodo**
+###**<span style="color:#2980B9">Crear Nodo</span>**
 Vamos a ver qué métodos nos permiten cambiar el árbol DOM, y por tanto crear un nodo:
 
 * document.createElement(' etiqueta '): crea un nuevo elemento HTML con la etiqueta indicada, pero aún no se añade a la página.  
@@ -233,7 +233,7 @@ Vamos a ver qué métodos nos permiten cambiar el árbol DOM, y por tanto crear 
   let comentario = document.createComment('Nuevo comentario de código');
   ~~~
 
-### **Añadir nodo a la página**
+###**<span style="color:#2980B9">Añadir nodo a la página</span>**
   Los siguientes métodos permiten añadir un nodo(creado con las funciones del apartado anterior) a la página:
 
 * elemento.appendChild( nuevoNodo ): añade nuevoNodo como último hijo de elemento. Ahora ya se ha añadido a la página.
@@ -262,7 +262,7 @@ Vamos a ver qué métodos nos permiten cambiar el árbol DOM, y por tanto crear 
   
   
   
-### **Eliminar nodo**
+###**<span style="color:#2980B9">Eliminar nodo</span>**
 
   Si el objetivo es eliminar un nodo de la página, debemos utilizar las siguientes funciones:
 * elemento.removeChild( nodo ): borra nodo de elemento y por tanto se elimina de la página.
@@ -275,7 +275,7 @@ Vamos a ver qué métodos nos permiten cambiar el árbol DOM, y por tanto crear 
   // También podríamos haberlo borrado sin tener el padre con:
   primerElementoDeLista.parentElement.removeChild(primerElementoDeLista);
 
-### ** Modificar el DOM con childNode**
+###**<span style="color:#2980B9"> Modificar el DOM con childNode</span>**
   Childnode es una interfaz que permite manipular del DOM de forma más sencilla pero no está soportada en
   los navegadores Safari de IOS. Incluye los métodos:
 * elemento.**before**(nuevoNodo) → Añade el nuevoNodo pasado antes del nodo elemento
@@ -286,7 +286,7 @@ Vamos a ver qué métodos nos permiten cambiar el árbol DOM, y por tanto crear 
 ***
 ***
 
-### <u>**5.- GESTIÓN DE ATRIBUTOS</span> </u>**
+###**<u style="color:#2980B9">5.- GESTIÓN DE ATRIBUTOS</u>**
 Podemos ver y modificar los valores de los atributos de cada elemento HTML y también añadir o eliminar atributos:
 * elemento.**attributes**:
 Devuelve un array con todos los atributos de elemento
@@ -334,7 +334,7 @@ miPrimeraLista.setAttribute('id', 'primera-lista');
 ***
 ***
 
-## <u>**6.- ATRIBUTOS DE CLASE</span> </u>**
+##**<u style="color:#2980B9">6.- ATRIBUTOS DE CLASE</u>**
 
 Ya sabemos que el aspecto de la página debe configurarse en el CSS por lo que no debemos aplicar atributos style al HTML. En lugar de ello les ponemos clases a los elementos que harán que se les aplique el estilo definido para dicha clase. 
 

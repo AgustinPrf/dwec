@@ -1,6 +1,6 @@
-##**<u><span style="color:blue">1.- MECANISMOS DE COMUNICACIÓN ASÍNCRONA</span> </u>**
+##**<u style="color:#2980B9">1.- MECANISMOS DE COMUNICACIÓN ASÍNCRONA</u>**
 
-###**¿Qué es AJAX?**
+###**<span style="color:#2980B9">¿Qué es AJAX?</span>**
 En primer lugar, aclarar en nuestro contexto informático que no es AJAX:
 
 * Un laureado (aunque ahora en horas bajas) equipo de fútbol holandés.
@@ -25,7 +25,7 @@ La forma de trabajar es la siguiente: Javascript se encarga de unir todas las te
 
 
 
-###** Funcionamiento de aplicación Web clásica VS aplicación Web AJAX**
+###**<span style="color:#2980B9"> Funcionamiento de aplicación Web clásica VS aplicación Web AJAX</span>**
 
 En una aplicación Web clásica:
 
@@ -60,11 +60,11 @@ En una aplicación Web AJAX:
 <center>![Tecnologias Ajax](./imagenes/unidad_8/modelo_comunicacion_ajax.jpg)</center>
 
 
-##**<u><span style="color:blue">2.CONFIGURACIÓN DEL SERVIDOR</span> </u>**
+##**<u style="color:#2980B9">2.CONFIGURACIÓN DEL SERVIDOR</u>**
 
 Para probar los ejemplos, necesitaréis un servidor al que hacer peticiones asíncronas.
 
-###** Configurar Apache**
+###**<span style="color:#2980B9"> Configurar Apache</span>**
 
 
 
@@ -77,7 +77,7 @@ Para montar un servidor en local para pruebas, estos video tutoriales pueden ser
 
 
 
-###**Configurar virtualhost**
+###**<span style="color:#2980B9">Configurar virtualhost</span>**
 
 Para el sistema operativo ubuntu(Debian), a modo resumen, necesitarás los siguientes comandos:
 
@@ -157,7 +157,7 @@ Si has realizado correctamente todos los paso anteriores, debe conseguir el sigu
 
 <center>![Configuración Final](./imagenes/unidad_8/final_conf_VH.jpg)</center>
 
-##**<u><span style="color:blue">3.OBJETO XMLHTTPREQUEST</span> </u>**
+##**<u style="color:#2980B9">3.OBJETO XMLHTTPREQUEST</u>**
 
 En esta unidad didáctica hablaremos de como funciona el objeto XMLHttpRequest, imprescindible para utilizar AJAX. Este objeto nos permitirá hacer peticiones asíncronas y se encargará de avisarnos cuando se reciba su respuesta.
 
@@ -165,7 +165,7 @@ En https://es.wikipedia.org/wiki/XMLHttpRequest se puede observar una definició
 
 
 
-###**Atributos**
+###**<span style="color:#2980B9">Atributos</span>**
 
 | Atributo     | Descripción                                                  |
 | ------------ | ------------------------------------------------------------ |
@@ -176,7 +176,7 @@ En https://es.wikipedia.org/wiki/XMLHttpRequest se puede observar una definició
 | status       | Devuelve el estado como un número (p. ej. 404 para "Not Found" y 200 para "OK"). |
 | statusText   | Devuelve el estado como una cadena (p. ej. "Not Found" o "OK"). |
 
-###**Métodos**
+###**<span style="color:#2980B9">Métodos</span>**
 
 |                            Método                            | Descripción                                                  |
 | :----------------------------------------------------------: | ------------------------------------------------------------ |
@@ -189,7 +189,7 @@ En https://es.wikipedia.org/wiki/XMLHttpRequest se puede observar una definició
 
 
 
-###**Eventos**
+###**<span style="color:#2980B9">Eventos</span>**
 
 |     Propiedad      |                         Descripción                          |
 | :----------------: | :----------------------------------------------------------: |
@@ -201,9 +201,9 @@ En https://es.wikipedia.org/wiki/XMLHttpRequest se puede observar una definició
 
  
 
-##**<u><span style="color:blue">4.FORMA MÁS COMÚN DE UTILIZAR XMLHTTPREQUEST</span> </u>**
+##**<u style="color:#2980B9">4.FORMA MÁS COMÚN DE UTILIZAR XMLHTTPREQUEST</u>**
 
-###**Instanciando el objeto**
+###**<span style="color:#2980B9">Instanciando el objeto</span>**
 
 En primer lugar, indicar que debemos inicializar el objeto.
 
@@ -239,7 +239,7 @@ function obtainXMLHttpRequest()
 }
 ```
 
-###**Comportamiento evento**
+###**<span style="color:#2980B9">Comportamiento evento</span>**
 
 Tras ello, decidiremos el comportamiento del evento “onreadystatechange”, evento que se producirá cada vez que haya producido un cambio en el atributo “ready”.
 
@@ -283,7 +283,7 @@ y por último los eventos asociados al objeto xmlhttpRequest
 | timeout   | Se puede especificar un timeout, y cuando se llega a este se dispara este evento. |
 | loadend   | Disparado cuando la solicitud ha sido completada con o sin éxito |
 
-###**Implementando el evento load**
+###**<span style="color:#2980B9">Implementando el evento load</span>**
 
 ```javascript
 let peticionhttp=new XMLHttpRequest();
@@ -314,7 +314,7 @@ En este ejemplo, abrimos con open, definimos el comportamiento del evento “loa
 Después de realizar la consulta el resultado será el siguiente:
 <center>![Primer Ejemplo](./imagenes/unidad_8/1_ejemplo_resultado_ajax.jpg)</center>
 
-##**<u><span style="color:blue">5.WEB STORAGE</span> </u>**
+##**<u style="color:#2980B9">5.WEB STORAGE</u>**
 
 El texto localStorage es una tecnología de almacenamiento existente en los navegadores más modernos, siendo incompatible con navegadores antiguos. La información se almacena en el cliente y generalmente posee al menos 5MB para guardar información:
 
@@ -361,7 +361,7 @@ var videoDetails = JSON.parse(sessionStorage.getItem('videoDetails');
 
 
 
-##**<u><span style="color:blue">6.COOKIES</span> </u>**
+##**<u style="color:#2980B9">6.COOKIES</u>**
 
 Las cookies son datos, almacenados en pequeños archivos de texto, en su computadora. Cuando un servidor web ha enviado una página web a un navegador, la conexión se cierra y el servidor se olvida de todo sobre el usuario.
 

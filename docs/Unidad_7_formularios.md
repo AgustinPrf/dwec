@@ -1,11 +1,11 @@
-##**<u><span style="color:blue">1.- FORMULARIOS </span> </u>**
+##**<u style="color:#2980B9">1.- FORMULARIOS </u>**
 En esta unidad trataremos algunas de las operaciones más habituales en los formularios. En primer lugar veremos la estructura genérica de un formulario, para a continuación afrontar las operaciones de modificar apariencia, comportamiento, validación,etc.
 
 Un formulario web sirve para enviar, tratar y recuperar datos que son enviados y recibidos entre un cliente y un servidor web. Cada elemento del formulario almacena un tipo de dato o acciona una de sus funcionalidades. Los formularios disponen de una arquitectura, en este contexto están enmarcados en el lenguaje HTML.
 
 **Aclaración** Al hacer una aplicación Web, el cliente debe validar la información introducida, pero ello no quita el servidor también deba validarla.
 
-### **Estructura de un formulario**
+###**<span style="color:#2980B9">Estructura de un formulario</span>**
 
 Desde un punto de vista general, los formularios presentan la estructura:
 
@@ -28,7 +28,7 @@ Desde un punto de vista general, los formularios presentan la estructura:
 	</body>
 ~~~
 
-### **Elementos de un formulario**
+###**<span style="color:#2980B9">Elementos de un formulario</span>**
 
 El elemento principal del formulario se denomina con la etiqueta "input". Según su funcionalidad, los tipos de input se llaman:
 
@@ -66,7 +66,7 @@ En una etiqueta input podemos encontrar los atributos:
 
 * **Alt** → El atributo alt, incluye una pequeña descripción del elemento. Habitualmente y si no lo hemos desactivado cuando posicionamos el ratón (sin pulsar ningún botón) encima del elemento, podemos visualizar la descripción del mismo.
 
-### **Tipos de input**
+###**<span style="color:#2980B9">Tipos de input</span>**
 
 * **Cuadro de texto:**
 Este input muestra un cuadro de texto vacío en el que el usuario puede introducir un texto. Este es uno de los elementos más usados. La forma de indicar que es un campo de texto es:
@@ -168,9 +168,9 @@ Existe un elemento botón, al que podemos asociar diferentes funcionalidades. De
 	<input type="reset" name="limpiar" value="Borrar los datos introducidos"/>
 </form>
 ~~~
-##**<u><span style="color:blue">2.- ACCEDER A ELEMENTOS DE FORMULARIOS </span> </u>**
+##**<u style="color:#2980B9">2.- ACCEDER A ELEMENTOS DE FORMULARIOS </u>**
 
-### **text**
+###**<span style="color:#2980B9">text</span>**
 Para acceder al valor de un input de tipo texto, simplemente debemos referenciar el atributo "value".
 ~~~javascript
 	<input type="text" id="miTexto">
@@ -178,7 +178,7 @@ Para acceder al valor de un input de tipo texto, simplemente debemos referenciar
 	alert(elemento.value);
 ~~~
 
-### **Radio button**
+###**<span style="color:#2980B9">Radio button</span>**
 Radio button son elementos del formulario, que ante varias entradas, te dejan seleccionar una de ellas. Se agrupan teniendo un "name" común.
 Para acceder a ellos, se accede como un array, donde se tiene el atributo "value" y el atributo "checked" que es true si está seleccionado, false en caso contrario.
 
@@ -192,7 +192,8 @@ Para acceder a ellos, se accede como un array, donde se tiene el atributo "value
 			alert("Valor del elemento marcado "+elementos[i].value);
 }
 ~~~
-### **checkbox**
+
+###**<span style="color:#2980B9">checkbox</span>**
 Similar a los radio button, salvo que puede haber más de uno marcado.
 
 ~~~javascript
@@ -209,7 +210,7 @@ Similar a los radio button, salvo que puede haber más de uno marcado.
 
 ~~~
 
-### **select**
+###**<span style="color:#2980B9">select</span>**
 
 Elemento que muestra un desplegable y nos permite elegir una opción del mismo. Aquí destaca el atributo "options", que es un atributo que contiene un array con las opciones disponibles y el atributo "selectedIndex"
 que contiene (y se puede modificar) la posición del array "options" seleccionada actualmente (o la primera si se permite multiselección) o -1 si no está seleccionada ninguna opción (o queremos des-seleccionarlas).
@@ -235,11 +236,11 @@ Dentro de cada "options", "value" almacena el valor y "text" el texto mostrado.
 ~~~
 
 
-##**<u><span style="color:blue">3.- VALIDACIÓN Y ENVÍO DE FORMULARIOS </span> </u>**
+##**<u style="color:#2980B9">3.- VALIDACIÓN Y ENVÍO DE FORMULARIOS </u>**
 
 El usuario puede cometer errores al rellenar un formulario. Si por ejemplo se espera un código postal y se introduce el nombre de una ciudad, se producirá un error. Para controlar estas situaciones se pueden usar las validaciones. Este tipo de validaciones se suelen realizar llamando a una función que analice si el dato cumple con las restricciones establecidas.
 
-### **Validar un formulario**
+###**<span style="color:#2980B9">Validar un formulario</span>**
 
  Si un manejador de un evento devuelve true ( o no devuelve nada ) , se realiza el evento asociado. Si el manejador devuelve false, se cancela el evento. Existe un evento asociado a un formulario completo llamado "onsubmit".
 Aprovechando esto, podemos a nuestro antojo permitir el envió de información al servidor mediante el formulario devolviendo true o cancelarlo devolviendo false.
@@ -286,7 +287,7 @@ script type="text/javascript">
 </script>
 ~~~
 
-### **Deshabilitar enviar un formulario dos veces**
+###**<span style="color:#2980B9">Deshabilitar enviar un formulario dos veces</span>**
 
 A veces un usuario pulsa enviar un formulario mas de una vez por error. Si queremos evitar esto, podemos usar la propiedad "disabled";
 
@@ -294,7 +295,7 @@ A veces un usuario pulsa enviar un formulario mas de una vez por error. Si quere
 	document.getElementById("idSubmit").disabled = true;
 ~~~
 
-### **Enviar un formulario desde código**
+###**<span style="color:#2980B9">Enviar un formulario desde código</span>**
 En algunas aplicaciones por motivos estéticos o de funcionalidad es deseable que el "enviar un formulario" no se haga desde un botón "submit", sino desde cualquier otro evento que permita la ejecución de código. Esto se
 puede hacer recogiendo el elemento del formulario y aplicándole el método submit();
 
@@ -303,7 +304,7 @@ puede hacer recogiendo el elemento del formulario y aplicándole el método subm
 	elemento.submit();
 ~~~
 
-##**<u><span style="color:blue">4.- ACCESO A RESTRICCIONES DE HTML </span> </u>**
+##**<u style="color:#2980B9">4.- ACCESO A RESTRICCIONES DE HTML </u>**
 Mediante Javscript tenemos acceso a todos los campos del formulario por lo que podemos hacer la validación como queramos, pero es una tarea pesada, repetitiva y que provoca código spaguetti difícil de leer y mantener más adelante.
 Para hacerla más simple podemos usar la API de validación de formularios de HTML5:
 
@@ -327,9 +328,9 @@ Esta API nos proporciona estas propiedades y métodos:
 Para quitar este error se hace setCustomValidity('')
 
 
-##**<u><span style="color:blue">5.- EXPRESIONES REGULARES </span> </u>**
+##**<u style="color:#2980B9">5.- EXPRESIONES REGULARES </u>**
 
-### **Constructores**
+###**<span style="color:#2980B9">Constructores</span>**
 
 | new RegExp(expr, flags) | ***Crea una nueva expresión regular a partir de r con los flags indicados.*** |
 | ----------------------- | ------------------------------------------------------------ |
@@ -357,7 +358,7 @@ Para quitar este error se hace setCustomValidity('')
 	}
 ~~~
 
-### **Flags**
+###**<span style="color:#2980B9">Flags</span>**
 | flag |    flag     |                 Descripción                                 |
 | :--: | :---------: | ----------------------------------------------------------: |
 |  i   | .ignoreCase |   Ignorar mayúsculas y minúsculas                           |
@@ -367,7 +368,7 @@ Para quitar este error se hace setCustomValidity('')
 |  y   |   .sticky   |   Busca solo desde la posición indicada                     |
 
 
-### **Reglas**
+###**<span style="color:#2980B9">Reglas</span>**
 | Regla |                                                  Descripción |
 | :---: | -----------------------------------------------------------: |
 |   ^   |                  Principio            /^ag/→ comienza por ag |
