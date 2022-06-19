@@ -1,8 +1,11 @@
-# Desarrollo Web en Entorno Cliente
+#<center> **Desarrollo Web en Entorno Cliente**</center>
 
-Apuntes del módulo de “Desarrollo Web en Entorno Cliente” del 2º curso del CFGS “Desarrollo de Aplicaciones Web”.
+<center>**Apuntes del módulo de "Desarrollo Web en Entorno Cliente"** </center>
+<center> **2º curso del CFGS "Desarrollo de Aplicaciones Web"**</center>
 
-## Unidades 
+<center>![Portada](./imagenes/index/icono.png)</center>
+
+#<center><u>**Unidades** </u></center>
 
 * **UD 1** : *Selección de arquitecturas y herramientas de programación.*
 * **UD 2** : *Manejo de la sintaxis de JavaScript*

@@ -2,8 +2,17 @@ site_name: DWEC
 site_url: https://agustin.com/
 nav:
   - Inicio: index.md
-  - UD 1 : Unidad_1.md
-  - UD 2 : Unidad_2.md
-  - UD 3 : Unidad_3.md
+  - UD 1 - "Herramientas"  : Unidad_1_herramientas.md
+  - UD 2 - "Sintaxis": Unidad_2_sintaxis.md
+  - UD 3 - "Objetos" : Unidad_3_objetos.md
+  - UD 4 - "DOM" : Unidad_4_dom.md
+  - UD 5 - "Clases": Unidad_5_clases.md
+  - UD 6 - "Eventos": Unidad_6_eventos.md
+  - UD 7 - "Formularios": Unidad_7_formularios.md
+  - UD 8 - "Ajax": Unidad_8_ajax.md
 
-#theme: readthedocs
+
+
+
+theme:
+  name: material
