@@ -1,0 +1,995 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://agustin.com/Unidad_6_eventos/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.4">
+    
+    
+      
+        <title>UD 6 - "Eventos" - DWEC</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4a0965b7.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-introduccion" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="DWEC" class="md-header__button md-logo" aria-label="DWEC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DWEC
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              UD 6 - "Eventos"
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="DWEC" class="md-nav__button md-logo" aria-label="DWEC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    DWEC
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Inicio
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_1_herramientas/" class="md-nav__link">
+        UD 1 - "Herramientas"
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_2_sintaxis/" class="md-nav__link">
+        UD 2 - "Sintaxis"
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_3_objetos/" class="md-nav__link">
+        UD 3 - "Objetos"
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_4_dom/" class="md-nav__link">
+        UD 4 - "DOM"
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_5_clases/" class="md-nav__link">
+        UD 5 - "Clases"
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          UD 6 - "Eventos"
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        UD 6 - "Eventos"
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduccion" class="md-nav__link">
+    1.- INTRODUCCIÓN 
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-eventos" class="md-nav__link">
+    2.- EVENTOS 
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#principales-eventos" class="md-nav__link">
+    Principales eventos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-modelos-de-gestion-de-eventos" class="md-nav__link">
+    3.- MODELOS DE GESTIÓN DE EVENTOS 
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manejo-de-eventos-desde-elementos-xhtml" class="md-nav__link">
+    Manejo de eventos desde elementos XHTML
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asignacion-de-eventos-desde-codigo-a-objetos-xhtml" class="md-nav__link">
+    Asignación de eventos desde código a objetos XHTML
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#declarando-eventos-desde-codigo" class="md-nav__link">
+    Declarando eventos desde código
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-tipos-de-eventos" class="md-nav__link">
+    4. TIPOS DE EVENTOS 
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eventos-del-raton" class="md-nav__link">
+    Eventos del ratón
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eventos-del-teclado" class="md-nav__link">
+    Eventos del teclado
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eventos-html" class="md-nav__link">
+    Eventos HTML
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eventos-dom" class="md-nav__link">
+    Eventos DOM
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-gestion-de-eventos" class="md-nav__link">
+    5. GESTIÓN DE EVENTOS 
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uso-del-objeto-this" class="md-nav__link">
+    Uso del objeto this
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obteniendo-informacion-del-objeto-event" class="md-nav__link">
+    Obteniendo información del objeto event
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-ampliado" class="md-nav__link">
+    Ejemplo Ampliado
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_7_formularios/" class="md-nav__link">
+        UD 7 - "Formularios"
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_8_ajax/" class="md-nav__link">
+        UD 8 - "Ajax"
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduccion" class="md-nav__link">
+    1.- INTRODUCCIÓN 
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-eventos" class="md-nav__link">
+    2.- EVENTOS 
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#principales-eventos" class="md-nav__link">
+    Principales eventos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-modelos-de-gestion-de-eventos" class="md-nav__link">
+    3.- MODELOS DE GESTIÓN DE EVENTOS 
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manejo-de-eventos-desde-elementos-xhtml" class="md-nav__link">
+    Manejo de eventos desde elementos XHTML
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asignacion-de-eventos-desde-codigo-a-objetos-xhtml" class="md-nav__link">
+    Asignación de eventos desde código a objetos XHTML
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#declarando-eventos-desde-codigo" class="md-nav__link">
+    Declarando eventos desde código
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-tipos-de-eventos" class="md-nav__link">
+    4. TIPOS DE EVENTOS 
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eventos-del-raton" class="md-nav__link">
+    Eventos del ratón
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eventos-del-teclado" class="md-nav__link">
+    Eventos del teclado
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eventos-html" class="md-nav__link">
+    Eventos HTML
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eventos-dom" class="md-nav__link">
+    Eventos DOM
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-gestion-de-eventos" class="md-nav__link">
+    5. GESTIÓN DE EVENTOS 
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uso-del-objeto-this" class="md-nav__link">
+    Uso del objeto this
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obteniendo-informacion-del-objeto-event" class="md-nav__link">
+    Obteniendo información del objeto event
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-ampliado" class="md-nav__link">
+    Ejemplo Ampliado
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+  <h1>UD 6 - "Eventos"</h1>
+
+<h2 id="1-introduccion"><strong><u><span style="color:blue">1.- INTRODUCCIÓN</span> </u></strong></h2>
+<p>Los eventos son manejadores que nos proporciona el navegador para que cuando detecte que se produzca una
+acción (evento), se ejecute un código asociado a esa acción. En esta unidad trataremos los eventos existentes
+en Javascript y las distintas formas de manejarlos.</p>
+<h2 id="2-eventos"><strong><u><span style="color:blue">2.- EVENTOS</span> </u></strong></h2>
+<p>Para poder controlar un evento se necesita un manejador. Básicamente, el manejador es la palabra reservada
+que indica la acción que va a manejar.
+En el caso del evento click , el manejador sería onClick.</p>
+<pre><code class="language-javascript">&lt;IMG SRC=&quot;mundo.jpg&quot; onclick=&quot;alert('Click en imagen');&quot;&gt;
+</code></pre>
+<h2 id="principales-eventos"><strong>Principales eventos</strong></h2>
+<p>A continuación mostramos un listado de los principales eventos existentes en Javascript:</p>
+<ul>
+<li>
+<p><strong>onfocus</strong>  → <em>Al obtener un foco.</em></p>
+</li>
+<li>
+<p><strong>onblur</strong> → <em>Al salir del foco de un elemento.</em></p>
+</li>
+<li>
+<p><strong>onchange</strong> → <em>Al hacer un cambio en un elemento.</em></p>
+</li>
+<li>
+<p><strong>onclick</strong> → <em>Al hacer un click en el elemento.</em></p>
+</li>
+<li>
+<p><strong>onkeydown</strong> → <em>Al pulsar una tecla (sin soltarla).</em></p>
+</li>
+<li>
+<p><strong>onkeyup</strong> → <em>Al soltar una tecla pulsada.</em></p>
+</li>
+<li>
+<p><strong>onkeypress</strong> → <em>Al pulsar una tecla.</em></p>
+</li>
+<li>
+<p><strong>onload</strong> → <em>Al cargarse una página.</em></p>
+</li>
+<li>
+<p><strong>onunload</strong> → <em>Al descargarse una página (salir de ella).</em></p>
+</li>
+<li>
+<p><strong>onmousedown</strong> → <em>Al hacer clic de ratón (sin soltarlo).</em></p>
+</li>
+<li>
+<p><strong>onmouseup</strong> → <em>Al soltar el botón del ratón previamente pulsado.</em></p>
+</li>
+<li>
+<p><strong>onmouseover</strong> →   <em>Al entrar encima de un elemento con el ratón.</em></p>
+</li>
+<li>
+<p><strong>onmouseout</strong> → <em>Al salir de encima de un elemento con el ratón.</em></p>
+</li>
+<li>
+<p><strong>onsubmit</strong> → <em>Al enviar los datos de un formulario.</em></p>
+</li>
+<li>
+<p><strong>onreset</strong> →  <em>Al resetear los datos de un formulario.</em></p>
+</li>
+<li>
+<p><strong>onselect</strong> →  <em>Al seleccionar un texto.</em></p>
+</li>
+<li>
+<p><strong>onresize</strong> → <em>Al modificar el tamaño de la página del navegador.</em></p>
+</li>
+</ul>
+<p>El total de eventos disponibles está descrito en
+  http://www.w3schools.com/jsref/dom_obj_event.asp</p>
+<h2 id="3-modelos-de-gestion-de-eventos"><strong><u><span style="color:blue">3.- MODELOS DE GESTIÓN DE EVENTOS</span> </u></strong></h2>
+<h2 id="manejo-de-eventos-desde-elementos-xhtml"><strong>Manejo de eventos desde elementos XHTML</strong></h2>
+<p>La forma más sencilla (aunque menos práctica para tener un código limpio y ordenado) de indicar que hay un evento asociado a un elemento XHTML es indicándolo en el propio código.</p>
+<pre><code class="language-javascript">&lt;input type=&quot;button&quot; 
+    value=&quot;Boton Hola mundo&quot; 
+    onclick =&quot;alert('Hola mundo’);alert(‘Adios’);&quot; /&gt;
+</code></pre>
+<p>También en lugar de ejecutar una serie de instrucciones, es posible llamar a una función predefinida.</p>
+<pre><code class="language-javascript">&lt;input type=&quot;button&quot; 
+    value=&quot;Boton miFuncion&quot;
+    onclick =&quot;miFuncion(‘cadenaParam1’);&quot;
+/&gt;
+</code></pre>
+<h2 id="asignacion-de-eventos-desde-codigo-a-objetos-xhtml"><strong>Asignación de eventos desde código a objetos XHTML</strong></h2>
+<p>Podemos asignar/modificar mediante código el manejador de un evento predefinido en un objeto XHTML de una forma similar a esta. Supongamos que tenemos un objeto con id="miObjeto" que posee el evento "onclick" sin asignar y la función "mostrarMensaje".
+Podemos referenciar al elemento XHTML y asignar la función como manejador del evento como vemos en este código</p>
+<pre><code class="language-javascript">function mostrarMensaje(){
+alert(&quot;Hola&quot;);
+}
+document.getElementById(&quot;miObjeto&quot;).onclick=mostrarMensaje;
+</code></pre>
+<p>Atención: fijaros que pone "mostrarMensaje". Así asigna la función como manejadora del evento. Si ponemos "mostrarMensaje()"
+no funcionará, ya que ejecutará la función y asignará su resultado al manejador.</p>
+<h2 id="declarando-eventos-desde-codigo"><strong>Declarando eventos desde código</strong></h2>
+<p>Podemos declarar eventos mediante código usando addEventListener(evento,manejador).</p>
+<pre><code class="language-javascript">function mostrarMensaje(evento){
+if(evento.type==&quot;keyup&quot;){
+    alert(evento.keyCode);
+}
+else if(evento.type==&quot;click&quot;){
+    alert(evento.clientX+&quot; &quot;+evento.clientY);
+}
+}
+document.getElementById(&quot;miObjeto&quot;). addEventListener (&quot;click&quot;,mostrarMensaje);
+document.addEventListener(&quot;keyup&quot;,mostrarMensaje);
+document.getElementById(&quot;miObjeto&quot;).addEventListener(&quot;dblclick&quot;,
+    function (){
+        alert(&quot;Codigo metido directamente&quot;);
+    });
+</code></pre>
+<h2 id="4-tipos-de-eventos"><strong><u><span style="color:blue">4. TIPOS DE EVENTOS</span> </u></strong></h2>
+<p>La especificación DOM define cuatro grupos de eventos dividiéndolos según su origen:</p>
+<ul>
+<li>Eventos del <strong>ratón</strong>. </li>
+<li>Eventos del <strong>teclado</strong>.</li>
+<li>Eventos <strong>HTML</strong>.</li>
+<li>Eventos <strong>DOM</strong>.</li>
+<li>Eventos <strong>FORM</strong></li>
+</ul>
+<h2 id="eventos-del-raton"><strong>Eventos del ratón</strong></h2>
+<p>Los eventos que se incluyen en esta clasificación son los siguientes:</p>
+<ul>
+<li>
+<p><strong>Click</strong> → <em>Este evento se produce cuando pulsamos sobre el botón izquierdo del ratón. El manejador de este evento es onclick.</em></p>
+</li>
+<li>
+<p><strong>Dblclick</strong> → <em>Este evento se acciona cuando hacemos un doble click sobre el botón izquierdo del ratón. El manejador de este evento es ondblclick.</em></p>
+</li>
+<li>
+<p><strong>Mousedown</strong> → <em>Este evento se produce cuando pulsamos un botón del ratón. El manejador de este evento es onmousedown.</em></p>
+</li>
+<li>
+<p><strong>Mouseup</strong> → <em>Este evento se produce cuando soltamos un botón del ratón que previamente teníamos pulsado. El manejador de este evento es onmouseup.</em></p>
+</li>
+<li>
+<p><strong>Mouseover</strong> → <em>Este evento se produce cuando el puntero del ratón se encuentra fuera de un elemento, y este se desplaza hacia el interior del elemento o alguno de sus hijos. El manejador de este evento es onmouseover.</em></p>
+</li>
+<li>
+<p><strong>Mouseout</strong> → <em>Este evento se produce cuando el puntero del ratón está dentro de un elemento y este puntero es desplazado fuera del elemento o alguno de sus hijos. El manejador de este evento es onmouseout.</em></p>
+</li>
+<li>
+<p><strong>Mousemove</strong> → <em>Se produce cuando el puntero del ratón se encuentra dentro de un elemento. Es importante señalar que este evento se producirá continuamente una vez tras otra mientras el puntero del ratón permanezca dentro del elemento. El manejador de este evento es onmousemove.</em></p>
+</li>
+<li>
+<p><strong>Mouseenter</strong> → <em>Este evento se produce cuando el puntero del ratón entra dentro de un elemento. El manejador de este evento es onmouseenter.</em></p>
+</li>
+<li>
+<p><strong>Mouseleave</strong> → <em>Este evento al revés que el anterior se produce cuando el puntero del ratón sale fuera de un elemento. El manejador de este evento es onmouseleave.</em></p>
+</li>
+<li>
+<p><strong>Contextmenu</strong> → <em>Ocurre al pulsar con el botón derecho del ratón. El manejador de este evento es oncontextmenu</em></p>
+</li>
+<li>
+<p><strong>wheel</strong> → <em>Ocurre al mover la rueda del ratón. El manejador de este evento es onwheel.</em></p>
+</li>
+</ul>
+<p>Orden de ejecución de los eventos del ratón:</p>
+<ul>
+<li>Cuando se pulsa un botón del ratón, la secuencia de eventos que se produce es la siguiente:</li>
+<li>
+<p>​   <strong>mousedown</strong> → <strong>mouseup</strong> → <strong>click</strong></p>
+</li>
+<li>
+<p>La secuencia de eventos necesaria para llegar al doble click llega a ser tan compleja como la siguiente: </p>
+</li>
+<li>​   <strong>mousedown</strong> → <strong>mouseup</strong> → <strong>click</strong> → <strong>mousedown</strong> → <strong>mouseup</strong> → <strong>click</strong> → <strong>dblclick</strong>.</li>
+</ul>
+<pre><code>&lt;body&gt;
+&lt;img
+    onmouseover=&quot;zoom(this)&quot;
+    nmouseout=&quot;normal(this)&quot;
+    border=&quot;0&quot; 
+    src=&quot;imgs/js.png&quot; 
+    alt=&quot;JSLogo&quot; 
+    width=&quot;32&quot; 
+    height=&quot;32&quot;&gt;
+&lt;/body&gt;
+</code></pre>
+<h2 id="eventos-del-teclado"><strong>Eventos del teclado</strong></h2>
+<p>Los eventos que se incluyen en esta clasificación son los siguientes:</p>
+<ul>
+<li>
+<p><strong>Keydown</strong> → <em>Este evento se produce cuando pulsamos una tecla del teclado. Si mantenemos pulsada una tecla de forma continua, el evento se</em> produce una y otra vez hasta que soltemos la misma. El  manejador de este evento es onkeydown.</p>
+</li>
+<li>
+<p><strong>Keyup</strong> → <em>Este evento se produce cuando soltamos una tecla. El manejador de este evento es onkeyup.</em></p>
+</li>
+<li>
+<p><strong>Keypress</strong> → <em>Este evento se produce si pulsamos una tecla de un carácter alfanumérico (El evento no se produce si pulsamos shift, shift , control, alt alt, , alt gr). En el caso de mantener una tecla pulsada, el evento se produce de forma continuada. El manejador de este evento es onkeypress.</em></p>
+</li>
+</ul>
+<p>El objeto event contiene las siguientes propiedades para los eventos de teclado:</p>
+<ul>
+<li><strong>altKey</strong> → <em>Devuelve true si la tecla alt se ha pulsado</em></li>
+<li><strong>code</strong> → <em>Devuelve el código asociado a la tecla pulsada</em></li>
+<li><strong>ctrlKey</strong> → <em>Devuelve true si la tecla control se ha pulsado</em></li>
+<li><strong>key</strong> → <em>Devuelve la tecla pulsada</em></li>
+<li><strong>shiftKey</strong> → <em>Devuelve true si la tecla shift se ha pulsado</em></li>
+</ul>
+<p><center><img alt="Eventos Teclado" src="../imagenes/unidad_6/eventos_teclado.jpg" /></center></p>
+<h2 id="eventos-html"><strong> Eventos HTML</strong></h2>
+<p>Los eventos que se incluyen en esta clasificación son los siguientes:</p>
+<ul>
+<li>
+<p><strong>Load</strong> → <em>El evento load hace referencia a la carga de distintas partes de la página. Este se produce en el objeto Window cuando la página se ha</em> cargado por completo. En el elemento "img" actúa cuando
+la imagen se ha cargado. En el elemento "object" se acciona al cargar el objeto completo. El manejador es onload.</p>
+</li>
+<li>
+<p><strong>Unload</strong> → <em>El evento unload actúa sobre el objeto Window cuando la pagina ha desaparecido por completo (por ejemplo, si pulsamos el aspa</em> cerrando la ventana del navegador). También se acciona en el elemento "object" cuando desaparece el objeto. El manejador es onunload.</p>
+</li>
+<li>
+<p><strong>Abort</strong> → <em>Este evento se produce cuando el usuario detiene la descarga de un elemento antes de que haya terminado, actúa sobre un elemento "object". El manejador es onabort.</em> </p>
+</li>
+<li>
+<p><strong>Error</strong> → <em>El evento error se produce en el objeto Window cuando se ha producido un error en JavaScript. En el elemento "img" cuando la imagen no se ha podido cargar por completo y en el elemento "object" en el caso de que un elemento no se haya cargado correctamente. El manejador es onerror.</em></p>
+</li>
+<li>
+<p><strong>Beforeunload</strong> → <em>Este evento se produce cuando se pulsa un enlace, refrescamos, cerramos,...El manejador es onbeforeunload.</em></p>
+</li>
+<li>
+<p><strong>Resize</strong> → <em>Este evento se produce cuando redimensionamos el navegador, actúa sobre el objeto Window. El manejador es onresize.</em></p>
+</li>
+<li>
+<p><strong>Scroll</strong> → <em>Se produce cuando varía la posición de la barra de scroll en cualquier elemento que la tenga.El manejador es onscroll.</em></p>
+</li>
+</ul>
+<pre><code class="language-javascript">    window.addEventListener(&quot;load&quot;, function (event) {
+        console.log(se ha cargado la página al completo);
+    },false);
+</code></pre>
+<h2 id="eventos-dom"><strong>Eventos DOM</strong></h2>
+<p>Los eventos que se incluyen en esta clasificación son los siguientes:</p>
+<ul>
+<li>
+<p><strong>DOMSubtreeModified</strong> → <em>Este evento se produce cuando añadimos o eliminamos nodos en el subárbol de un elemento o documento.</em></p>
+</li>
+<li>
+<p><strong>DOMNodeInserted</strong> → <em>Este evento se produce cuando añadimos un nodo hijo a un nodo padre.</em></p>
+</li>
+<li>
+<p><strong>DOMNodeRemoved</strong> → <em>Este evento se produce cuando eliminamos un nodo que tiene nodo padre.</em></p>
+</li>
+<li>
+<p><strong>DOMNodeRemovedFromDocument</strong> → <em>Este evento se produce cuando eliminamos un nodo del documento.</em></p>
+</li>
+<li>
+<p><strong>DOMNodeInsertedIntoDocument</strong> → <em>Este evento se produce cuando añadimos un nodo al documento.</em></p>
+</li>
+</ul>
+<pre><code class="language-javascript">    var textNode = document.createTextNode(&quot;Mi texto&quot;);
+    textNode.addEventListener('DOMNodeInserted',OnNodeInserted, false );
+
+    función OnNodeInserted ( evento ) {
+        var textNode = evento . objetivo ;
+        alert(`El nodo de texto ${textNode.data} ha sido agregado a un elemento.`);
+    }
+</code></pre>
+<h2 id="5-gestion-de-eventos"><strong><u><span style="color:blue">5. GESTIÓN DE EVENTOS</span> </u></strong></h2>
+<h2 id="uso-del-objeto-this"><strong>Uso del objeto this</strong></h2>
+<p>Cuando ejecutas código dentro de un evento, existe un objeto llamado "this". Este objeto es una referencia al elemento que se ha producido el evento. Ejemplo, si el evento se ha producido un evento al hacer clic a una imagen con id="miImagen", el objeto "this" será lo mismo que poner "document.getElementById("miImagen");</p>
+<pre><code class="language-javascript">&lt;div id=&quot;cont&quot; 
+    style=&quot;width:150px; height:60px; border:thin solid silver&quot;
+    onmouseover= this .style.borderColor='black';&quot;
+    onmouseout=&quot; this .style.borderColor='red';&quot;&gt;
+
+    Contenidos
+&lt;/div&gt;
+</code></pre>
+<h2 id="obteniendo-informacion-del-objeto-event"><strong>Obteniendo información del objeto event</strong></h2>
+<p>Cuando se crea una función como manejador, al producirse el evento el navegador automáticamente manda como parámetro un objeto de tipo event.</p>
+<pre><code class="language-javascript">
+    function mostrarMensaje(evento){
+        alert(evento.type);
+    }
+
+    document.getElementById(&quot;miObjeto&quot;).onclick=mostrarMensaje;
+</code></pre>
+<p>Este objeto posee cierta información útil del evento que se ha producido.</p>
+<ul>
+<li><strong>type</strong> → <em>Dice el tipo de evento que es ("click", "mouseover", etc...). Devuelve el nombre del evento tal cual, sin el "on". Es útil para hacer una función que maneje varios eventos.</em></li>
+<li><strong>keyCode</strong> → <em>En eventos de teclado, almacena el código de tecla de la tecla afectada por el evento.</em></li>
+<li><strong>clientX</strong> / <strong>clientY</strong> → <em>en eventos del ratón, devuelve las coordenadas X e Y donde se encontraba el ratón, tomando como referencia al navegador.</em></li>
+<li><strong>screenX</strong> / <strong>screenY</strong> → <em>En eventos del ratón, devuelve las coordenadas X e Y donde se encontraba el ratón, tomando como referencia la pantalla del ordenador.</em></li>
+</ul>
+<pre><code class="language-javascript">    function mostrarMensaje(evento){
+        if(evento.type==&quot;keyup&quot;){
+            alert(evento.keyCode);
+        }
+        else if(evento.type==&quot;click&quot;){
+            alert(evento.clientX+&quot; &quot;+evento.clientY);
+        }
+    }
+
+    document.getElementById(&quot;miObjeto&quot;).onclick=mostrarMensaje;
+    document.onkeyup=mostrarMensaje;
+</code></pre>
+<h2 id="ejemplo-ampliado"><strong>Ejemplo Ampliado</strong></h2>
+<pre><code class="language-javascript">                                        // uso THIS
+    &lt;input id=&quot;idBoton&quot; type=&quot;button&quot; onclick =&quot;decirHola( this )&quot;/&gt;
+
+    function decirHola(elemento) {
+        alert(`Has pulsado : ${elemento.id}` );
+    } 
+
+                                        // uso EVENT
+    &lt;input id=&quot;idBoton&quot; type=&quot;button&quot; onclick =&quot;decirHola( event )&quot; /&gt;
+    function decirHola(e) {
+        alert(`elemento pulsado : ${e.target.textContent}`);
+    } 
+
+                                        // uso THIS y EVENT
+    document.getElementById(&quot;idhref&quot;). addEventListener (&quot;click&quot;, decirHola);
+
+    function decirHola(e){  
+        alert(`elemento pulsado : ${this .textContent}`);
+        alert(`elemento pulsado ${target.textContent});
+        e.preventDefault( );
+    }
+</code></pre>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../Unidad_5_clases/" class="md-footer__link md-footer__link--prev" aria-label="Previous: UD 5 - &#34;Clases&#34;" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              UD 5 - "Clases"
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../Unidad_7_formularios/" class="md-footer__link md-footer__link--next" aria-label="Next: UD 7 - &#34;Formularios&#34;" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              UD 7 - "Formularios"
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f758a944.min.js"></script>
+      
+    
+  </body>
+</html>

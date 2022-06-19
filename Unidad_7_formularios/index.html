@@ -1,0 +1,1208 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://agustin.com/Unidad_7_formularios/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.4">
+    
+    
+      
+        <title>UD 7 - "Formularios" - DWEC</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4a0965b7.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-formularios" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="DWEC" class="md-header__button md-logo" aria-label="DWEC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DWEC
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              UD 7 - "Formularios"
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="DWEC" class="md-nav__button md-logo" aria-label="DWEC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    DWEC
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Inicio
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_1_herramientas/" class="md-nav__link">
+        UD 1 - "Herramientas"
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_2_sintaxis/" class="md-nav__link">
+        UD 2 - "Sintaxis"
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_3_objetos/" class="md-nav__link">
+        UD 3 - "Objetos"
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_4_dom/" class="md-nav__link">
+        UD 4 - "DOM"
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_5_clases/" class="md-nav__link">
+        UD 5 - "Clases"
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_6_eventos/" class="md-nav__link">
+        UD 6 - "Eventos"
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          UD 7 - "Formularios"
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        UD 7 - "Formularios"
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-formularios" class="md-nav__link">
+     1.- FORMULARIOS 
+  </a>
+  
+    <nav class="md-nav" aria-label=" 1.- FORMULARIOS ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estructura-de-un-formulario" class="md-nav__link">
+    Estructura de un formulario
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elementos-de-un-formulario" class="md-nav__link">
+    Elementos de un formulario
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipos-de-input" class="md-nav__link">
+    Tipos de input
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-acceder-a-elementos-de-formularios" class="md-nav__link">
+     2.- ACCEDER A ELEMENTOS DE FORMULARIOS 
+  </a>
+  
+    <nav class="md-nav" aria-label=" 2.- ACCEDER A ELEMENTOS DE FORMULARIOS ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#text" class="md-nav__link">
+    text
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radio-button" class="md-nav__link">
+    Radio button
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkbox" class="md-nav__link">
+    checkbox
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select" class="md-nav__link">
+    select
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-validacion-y-envio-de-formularios" class="md-nav__link">
+     3.- VALIDACIÓN Y ENVÍO DE FORMULARIOS 
+  </a>
+  
+    <nav class="md-nav" aria-label=" 3.- VALIDACIÓN Y ENVÍO DE FORMULARIOS ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validar-un-formulario" class="md-nav__link">
+    Validar un formulario
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deshabilitar-enviar-un-formulario-dos-veces" class="md-nav__link">
+    Deshabilitar enviar un formulario dos veces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enviar-un-formulario-desde-codigo" class="md-nav__link">
+    Enviar un formulario desde código
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-acceso-a-restricciones-de-html" class="md-nav__link">
+     4.- ACCESO A RESTRICCIONES DE HTML 
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-expresiones-regulares" class="md-nav__link">
+     5.- EXPRESIONES REGULARES 
+  </a>
+  
+    <nav class="md-nav" aria-label=" 5.- EXPRESIONES REGULARES ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constructores" class="md-nav__link">
+    Constructores
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flags" class="md-nav__link">
+    Flags
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reglas" class="md-nav__link">
+    Reglas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_8_ajax/" class="md-nav__link">
+        UD 8 - "Ajax"
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-formularios" class="md-nav__link">
+     1.- FORMULARIOS 
+  </a>
+  
+    <nav class="md-nav" aria-label=" 1.- FORMULARIOS ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estructura-de-un-formulario" class="md-nav__link">
+    Estructura de un formulario
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elementos-de-un-formulario" class="md-nav__link">
+    Elementos de un formulario
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipos-de-input" class="md-nav__link">
+    Tipos de input
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-acceder-a-elementos-de-formularios" class="md-nav__link">
+     2.- ACCEDER A ELEMENTOS DE FORMULARIOS 
+  </a>
+  
+    <nav class="md-nav" aria-label=" 2.- ACCEDER A ELEMENTOS DE FORMULARIOS ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#text" class="md-nav__link">
+    text
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radio-button" class="md-nav__link">
+    Radio button
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkbox" class="md-nav__link">
+    checkbox
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select" class="md-nav__link">
+    select
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-validacion-y-envio-de-formularios" class="md-nav__link">
+     3.- VALIDACIÓN Y ENVÍO DE FORMULARIOS 
+  </a>
+  
+    <nav class="md-nav" aria-label=" 3.- VALIDACIÓN Y ENVÍO DE FORMULARIOS ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validar-un-formulario" class="md-nav__link">
+    Validar un formulario
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deshabilitar-enviar-un-formulario-dos-veces" class="md-nav__link">
+    Deshabilitar enviar un formulario dos veces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enviar-un-formulario-desde-codigo" class="md-nav__link">
+    Enviar un formulario desde código
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-acceso-a-restricciones-de-html" class="md-nav__link">
+     4.- ACCESO A RESTRICCIONES DE HTML 
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-expresiones-regulares" class="md-nav__link">
+     5.- EXPRESIONES REGULARES 
+  </a>
+  
+    <nav class="md-nav" aria-label=" 5.- EXPRESIONES REGULARES ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constructores" class="md-nav__link">
+    Constructores
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flags" class="md-nav__link">
+    Flags
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reglas" class="md-nav__link">
+    Reglas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+  <h1>UD 7 - "Formularios"</h1>
+
+<h2 id="1-formularios"><strong><u> 1.- FORMULARIOS </u></strong></h2>
+<p>En esta unidad trataremos algunas de las operaciones más habituales en los formularios. En primer lugar veremos la estructura genérica de un formulario, para a continuación afrontar las operaciones de modificar apariencia, comportamiento, validación,etc.</p>
+<p>Un formulario web sirve para enviar, tratar y recuperar datos que son enviados y recibidos entre un cliente y un servidor web. Cada elemento del formulario almacena un tipo de dato o acciona una de sus funcionalidades. Los formularios disponen de una arquitectura, en este contexto están enmarcados en el lenguaje HTML.</p>
+<p><strong>Aclaración</strong> Al hacer una aplicación Web, el cliente debe validar la información introducida, pero ello no quita el servidor también deba validarla.</p>
+<h3 id="estructura-de-un-formulario"><strong>Estructura de un formulario</strong></h3>
+<p>Desde un punto de vista general, los formularios presentan la estructura:</p>
+<ul>
+<li>Los formularios se definen con etiquetas. Dentro de cada etiqueta también podemos acceder a los atributos de la misma.</li>
+<li>
+<p>La etiqueta principal es "form". Para que sea funcional, la etiqueta "form" necesita inicializar dos atributos:</p>
+<ul>
+<li><strong>action</strong> → Contiene la URL donde se redirigen los datos del formulario.</li>
+<li><strong>method</strong> → Indica el método por el cual el formulario envía los datos. Puede ser POST o GET.</li>
+</ul>
+</li>
+<li>
+<p><strong>Además</strong> de los atributos principales anteriores, podemos encontrar otros atributos como:</p>
+<ul>
+<li><strong>enctype</strong> → define el tipo de codificación para enviar el formulario al servidor. Se usa cuando permite enviar archivos adjuntos.</li>
+<li><strong>accept</strong> → indica el tipo de fichero adjunto que acepta el servidor.</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-javascript">
+    &lt;body&gt;
+        &lt;h3&gt;Formulario&lt;/h3&gt;
+        &lt;form action=&quot;www.Web.es/formulario.php&quot; method=&quot;post&quot;&gt;
+            ...
+        &lt;/form&gt;
+    &lt;/body&gt;
+</code></pre>
+<h3 id="elementos-de-un-formulario"><strong>Elementos de un formulario</strong></h3>
+<p>El elemento principal del formulario se denomina con la etiqueta "input". Según su funcionalidad, los tipos de input se llaman:</p>
+<ul>
+<li><strong>Controles de formulario</strong> → Botones, etc…</li>
+<li><strong>Campos de formulario</strong> → Contienen los datos que se envían a través del formulario.</li>
+</ul>
+<p>En una etiqueta input podemos encontrar los atributos:</p>
+<ul>
+<li>
+<p><strong>Type</strong> → Indica el tipo de elemento que vamos a definir. De él dependen el resto de parámetros. Los valores posibles que acepta el atributo type son:</p>
+<ul>
+<li><strong>text</strong> → Cuadro de texto.</li>
+<li><strong>password</strong> → Contraseña.</li>
+<li><strong>checkbox</strong> → Casilla de verificación.</li>
+<li><strong>radio</strong> → Opción de entre dos o más.</li>
+<li><strong>submit</strong> → Botón de envío del formulario.</li>
+<li><strong>reset</strong> → Botón de vaciado de campos.</li>
+<li><strong>file</strong> → Botón para buscar ficheros.</li>
+<li><strong>Hidden</strong> → Campo oculto para, el usuario no lo visualiza en el formulario.</li>
+<li><strong>Image</strong> → Botón de imagen.</li>
+</ul>
+</li>
+<li>
+<p><strong>Name</strong> → El atributo name asigna un nombre al elemento. Si no le asignamos nombre a un elemento, el servidor no podrá identificarlo y por tanto no podrá tener acceso al elemento.</p>
+</li>
+<li>
+<p><strong>Value</strong> → El atributo value inicializa el valor del elemento. Los valores dependerán del tipo de dato, en ocasiones los posibles valores a tomar serán verdadero o falso.</p>
+</li>
+<li>
+<p><strong>Size</strong> → Este atributo asigna el tamaño inicial del elemento. El tamaño se indica en pixeles. En los campos text y password hace referencia al número de caracteres.</p>
+</li>
+<li>
+<p><strong>Maxlength</strong> → Este atributo indica el número máximo de caracteres que pueden contener los elementos text y password. Es conveniente saber que el tamaño de los campos text y password es independiente del número de caracteres que acepta el campo.</p>
+</li>
+<li>
+<p><strong>Checked</strong> → Este atributo es exclusivo de los elementos checkbox y radio. En el definimos que opción por defecto queremos seleccionar.</p>
+</li>
+<li>
+<p><strong>Disable</strong> → Este atributo hace que el elemento aparezca deshabilitado. En este caso el dato no se envía al servidor.</p>
+</li>
+<li>
+<p><strong>Readonly</strong> → Este atributo sirve para bloquear el contenido del control, por tanto el valor del elemento no se podrá modificar.</p>
+</li>
+<li>
+<p><strong>src</strong> → Este atributo es exclusivo para asignar una URL a una imagen que ha sido establecida como botón del formulario.</p>
+</li>
+<li>
+<p><strong>Alt</strong> → El atributo alt, incluye una pequeña descripción del elemento. Habitualmente y si no lo hemos desactivado cuando posicionamos el ratón (sin pulsar ningún botón) encima del elemento, podemos visualizar la descripción del mismo.</p>
+</li>
+</ul>
+<h3 id="tipos-de-input"><strong>Tipos de input</strong></h3>
+<ul>
+<li><strong>Cuadro de texto:</strong>
+Este input muestra un cuadro de texto vacío en el que el usuario puede introducir un texto. Este es uno de los elementos más usados. La forma de indicar que es un campo de texto es:</li>
+</ul>
+<pre><code class="language-javascript">&lt;input type=&quot;text
+</code></pre>
+<ul>
+<li><strong>Cuadro de contraseña:</strong>
+El cuadro de contraseña es como el cuadro de texto, con la diferencia que los caracteres que escribe el usuario no se ven en pantalla. En su lugar los navegadores muestran asteriscos o puntos:</li>
+</ul>
+<pre><code class="language-javascript">&lt;input type=&quot;password&quot; name=&quot;contrasenia&quot; /&gt;
+</code></pre>
+<ul>
+<li><strong>Casilla de verificación</strong></li>
+</ul>
+<p>Estos elementos permiten al usuario actilet o desactilet la selección de cada una de las casillas de forma individual.</p>
+<pre><code class="language-javascript">    &lt;p&gt;Colores favoritos&lt;/p&gt;
+    &lt;/br&gt;&lt;input name=&quot;rojo&quot; type=&quot;checkbox&quot; value=&quot;ro&quot;/&gt; Rojo
+    &lt;/br&gt;&lt;input name=&quot;azul&quot; type=&quot;checkbox&quot; value=&quot;az&quot;/&gt; Azul
+    &lt;/br&gt;&lt;input name=&quot;verde&quot; type=&quot;checkbox&quot; value=&quot;ve&quot;/&gt; Verde
+</code></pre>
+<ul>
+<li><strong>Opción de radio</strong>
+Este tipo de elemento agrupa una serie de opciones excluyentes entre sí. De esta forma el usuario sólo puede coger una opción de entre todas las que tiene establecidas un grupo de botones radio.</li>
+</ul>
+<pre><code class="language-javascript">    Género
+    &lt;/br&gt;&lt;input type=&quot;radio&quot; name=&quot;género&quot; value=&quot;M&quot;&gt; Hombre
+    &lt;/br&gt;&lt;input type=&quot;radio&quot; name=&quot;género&quot; value=&quot;F&quot;&gt; Mujer
+</code></pre>
+<ul>
+<li><strong>Botón de envío</strong>
+ Este elemento es el encargado de enviar los datos del formulario al servidor. En este caso el type toma el valor submit. El valor del atributo value se mostrará en este caso en el botón generado.</li>
+</ul>
+<pre><code class="language-javascript">&lt;input type=&quot;submit&quot; name=&quot;enviar&quot; value=&quot;Enviar&quot;&gt;
+</code></pre>
+<ul>
+<li>
+<p><strong>Botón de reset:</strong>
+Este elemento es un botón que establece el formulario a su estado original.</p>
+</li>
+<li>
+<p><strong>Ficheros adjuntos:</strong>
+Este tipo de input permite adjuntar ficheros adjuntos. El elemento añade de forma automática un cuadro de texto que se dispondrá para almacenar la dirección del fichero adjunto seleccionado.</p>
+</li>
+</ul>
+<pre><code class="language-javascript">Fichero adjunto
+&lt;input type=&quot;file&quot; name=&quot;fichero&quot;/&gt;c
+&lt;form action=&quot;&quot; method=&quot;post&quot; enctype=&quot;multipart/formdata&quot;&gt; ... &lt;/form&gt;
+</code></pre>
+<ul>
+<li><strong>Campos ocultos</strong>
+Los campos ocultos no son visibles en el formulario por el usuario. Estos elementos son útiles para enviar información de forma oculta que no tenga que ser tratada por el usuario.</li>
+</ul>
+<pre><code class="language-javascript">    &lt;input type=&quot;hidden&quot; name=&quot;campoOculto&quot; value=&quot;cambiar&quot;/&gt;
+</code></pre>
+<ul>
+<li><strong>Botón de imagen:</strong>
+Este elemento es una personalización de un botón, cambiando el aspecto por defecto que tienen los botones de un formulario por una imagen.</li>
+</ul>
+<pre><code class="language-javascript">&lt;input type=&quot;image&quot; name=&quot;enviar&quot; src=&quot;imagen_mundo.jpg&quot;/&gt;
+</code></pre>
+<p><strong>Botón</strong>:
+Existe un elemento botón, al que podemos asociar diferentes funcionalidades. De esta forma no nos tenemos que ceñir los botones de submit o reset que nos ofrecen los formularios.</p>
+<pre><code class="language-javascript">&lt;input type=&quot;button&quot; name=&quot;opcion&quot; value=&quot;Opcion validar&quot;/&gt;
+</code></pre>
+<ul>
+<li>Ejemplo completo</li>
+</ul>
+<pre><code class="language-javascript">&lt;form action=&quot;pagina.php&quot; method=&quot;post&quot;
+    enctype=&quot;multipart/form-data&quot; /&gt; &lt;br/&gt;
+
+    Nombre:
+    &lt;input type=&quot;text&quot; name= &quot;nombre&quot; value=&quot;&quot; size=&quot;42 maxlength=&quot;30&quot;/&gt;
+
+    Apellidos:
+    &lt;input type=&quot;text&quot; name=&quot;ape&quot; value=&quot;&quot; size=&quot;40&quot; maxlength=&quot;80&quot;/&gt;
+
+    DNI:
+    &lt;input type=&quot;text&quot; name=&quot;dni&quot; value=&quot;&quot; size=&quot;10&quot; maxlength=&quot;9&quot; /&gt;
+
+    Sexo:
+    &lt;input type=&quot;radio&quot; name=&quot;sexo&quot; value=&quot;hombre&quot; checked=&quot;checked&quot;/&gt;Hombre
+    &lt;input type=&quot;radio&quot; name=&quot;sexo&quot; value=&quot;mujer&quot; /&gt;Mujer
+
+    Incluir mi foto:
+    &lt;input type=&quot;file&quot; name=&quot;foto&quot; /&gt; &lt;br/&gt;
+    &lt;input name=&quot;publ&quot; type=&quot;checkbox&quot; value=&quot;publicidad&quot; checked=&quot;checked&quot;/&gt;
+
+    Enviar publicidad
+    &lt;input type=&quot;submit&quot; name=&quot;enviar&quot; value=&quot;Guardar cambios&quot; /&gt;
+    &lt;input type=&quot;reset&quot; name=&quot;limpiar&quot; value=&quot;Borrar los datos introducidos&quot;/&gt;
+&lt;/form&gt;
+</code></pre>
+<h2 id="2-acceder-a-elementos-de-formularios"><strong><u> 2.- ACCEDER A ELEMENTOS DE FORMULARIOS </u></strong></h2>
+<h3 id="text"><strong>text</strong></h3>
+<p>Para acceder al valor de un input de tipo texto, simplemente debemos referenciar el atributo "value".</p>
+<pre><code class="language-javascript">    &lt;input type=&quot;text&quot; id=&quot;miTexto&quot;&gt;
+    let elemento=document.getElementById(&quot;miTexto&quot;);
+    alert(elemento.value);
+</code></pre>
+<h3 id="radio-button"><strong>Radio button</strong></h3>
+<p>Radio button son elementos del formulario, que ante varias entradas, te dejan seleccionar una de ellas. Se agrupan teniendo un "name" común.
+Para acceder a ellos, se accede como un array, donde se tiene el atributo "value" y el atributo "checked" que es true si está seleccionado, false en caso contrario.</p>
+<pre><code class="language-javascript">    &lt;input type=&quot;radio&quot; id=&quot;preguntaSI&quot; name=&quot;pregunta&quot; value=&quot;si&quot; /&gt;SI
+    &lt;input type=&quot;radio&quot; id=&quot;preguntaNO&quot; name=&quot;pregunta&quot; value=&quot;no&quot; /&gt;NO
+
+    let elementos=document.getElementsByName(&quot;pregunta&quot;);
+    for(i=0;i&lt;elementos.length;i++){
+        if(elementos[i].checked==true)
+            alert(&quot;Valor del elemento marcado &quot;+elementos[i].value);
+}
+</code></pre>
+<h3 id="checkbox"><strong>checkbox</strong></h3>
+<p>Similar a los radio button, salvo que puede haber más de uno marcado.</p>
+<pre><code class="language-javascript">    &lt;input type=&quot;checkbox&quot; id=&quot;preguntaAS&quot; name=&quot;pregunta&quot; value=&quot;asc&quot; /&gt;Piso con ascensor
+    &lt;input type=&quot;radio&quot; id=&quot;preguntaAM&quot; name=&quot;pregunta&quot; value=&quot;amb&quot; /&gt;Piso amueblado
+
+    let elementos=document.getElementsByName(&quot;pregunta&quot;);
+
+    for(i=0;i&lt;elementos.length;i++){
+        if(elementos[i].checked==true){
+            alert(&quot;Valor del elemento marcado &quot;+elementos[i].value);
+        }
+    }
+
+</code></pre>
+<h3 id="select"><strong>select</strong></h3>
+<p>Elemento que muestra un desplegable y nos permite elegir una opción del mismo. Aquí destaca el atributo "options", que es un atributo que contiene un array con las opciones disponibles y el atributo "selectedIndex"
+que contiene (y se puede modificar) la posición del array "options" seleccionada actualmente (o la primera si se permite multiselección) o -1 si no está seleccionada ninguna opción (o queremos des-seleccionarlas).
+Dentro de cada "options", "value" almacena el valor y "text" el texto mostrado.</p>
+<pre><code class="language-javascript">    &lt;select id=&quot;aprobar&quot; &gt;
+        &lt;option value=&quot;10&quot;&gt;Saco 10 en DWEC&lt;/option&gt;
+        &lt;option value=&quot;9&quot;&gt;Saco 9 en DWEC&lt;/option&gt;
+        &lt;option value=&quot;8&quot;&gt;Saco 8 en DWEC&lt;/option&gt;
+    &lt;/select&gt;
+
+    let elemento=document.getElementById(&quot;aprobar&quot;);
+
+    for(i=0;i&lt;elemento.options.length;i++){
+        alert(&quot;Valor de la opcion &quot;+elemento.options[i].value);
+    }
+
+    let sel=elemento.selectedIndex;
+    alert(&quot;El valor de la opcion seleccionada es &quot;+elemento.options[sel].value+&quot; y el texto asociado es &quot;+elemento.options[sel].text);
+
+    // Cambiamos el indice seleccionado
+    elemento.selectedIndex=0
+</code></pre>
+<h2 id="3-validacion-y-envio-de-formularios"><strong><u> 3.- VALIDACIÓN Y ENVÍO DE FORMULARIOS </u></strong></h2>
+<p>El usuario puede cometer errores al rellenar un formulario. Si por ejemplo se espera un código postal y se introduce el nombre de una ciudad, se producirá un error. Para controlar estas situaciones se pueden usar las validaciones. Este tipo de validaciones se suelen realizar llamando a una función que analice si el dato cumple con las restricciones establecidas.</p>
+<h3 id="validar-un-formulario"><strong>Validar un formulario</strong></h3>
+<p>Si un manejador de un evento devuelve true ( o no devuelve nada ) , se realiza el evento asociado. Si el manejador devuelve false, se cancela el evento. Existe un evento asociado a un formulario completo llamado "onsubmit".
+Aprovechando esto, podemos a nuestro antojo permitir el envió de información al servidor mediante el formulario devolviendo true o cancelarlo devolviendo false.
+La estructura típica es la siguiente:</p>
+<pre><code class="language-javascript">    &lt;form onsubmit=&quot;return validarFecha();&quot;&gt;
+~~~javascript
+Si la función validar devuelve true, se realiza el envío. Si devuelve false, se cancela.
+En la función validar podemos hacer las validaciones que estimemos convenientes. Es decir, para crear funciones de validación, se debe devolver un booleano:
+* true → Sí se lanza el evento &quot;submit&quot;
+* false → No se lanza el evento &quot;submit&quot;
+
+~~~javascript
+script type=&quot;text/javascript&quot;&gt;
+    function validaFecha() {
+        let dia = document.getElementById(&quot;dia&quot;).value;
+        let mes = document.getElementById(&quot;mes&quot;).value;
+        let ano = document.getElementById(&quot;ano&quot;).value;
+
+        fecha = new Date(ano, mes, dia);
+
+        if( !isNaN(fecha) ) {
+
+            return false;
+        }
+
+        return true;
+    }
+
+    &lt;form action=&quot;&quot; onsubmit=&quot;return validacion()&quot; method=&quot;&quot; id=&quot;&quot; name=&quot;&quot; &gt;
+     ...
+     &lt;/form&gt;
+ &lt;script&gt;
+
+ function validacion(){
+    valor=document.getElementById(&quot;label1&quot;).value;
+    if (!isNaN(valor)){
+        console.log(valor);
+        return true;
+    }
+
+    return false;
+}
+&lt;/script&gt;
+</code></pre>
+<h3 id="deshabilitar-enviar-un-formulario-dos-veces"><strong>Deshabilitar enviar un formulario dos veces</strong></h3>
+<p>A veces un usuario pulsa enviar un formulario mas de una vez por error. Si queremos evitar esto, podemos usar la propiedad "disabled";</p>
+<pre><code class="language-javascript">    document.getElementById(&quot;idSubmit&quot;).disabled = true;
+</code></pre>
+<h3 id="enviar-un-formulario-desde-codigo"><strong>Enviar un formulario desde código</strong></h3>
+<p>En algunas aplicaciones por motivos estéticos o de funcionalidad es deseable que el "enviar un formulario" no se haga desde un botón "submit", sino desde cualquier otro evento que permita la ejecución de código. Esto se
+puede hacer recogiendo el elemento del formulario y aplicándole el método submit();</p>
+<pre><code class="language-javascript">    let elemento=document.getElementById(&quot;formulario&quot;);
+    elemento.submit();
+</code></pre>
+<h2 id="4-acceso-a-restricciones-de-html"><strong><u> 4.- ACCESO A RESTRICCIONES DE HTML </u></strong></h2>
+<p>Mediante Javscript tenemos acceso a todos los campos del formulario por lo que podemos hacer la validación como queramos, pero es una tarea pesada, repetitiva y que provoca código spaguetti difícil de leer y mantener más adelante.
+Para hacerla más simple podemos usar la API de validación de formularios de HTML5:</p>
+<p>Esta API nos proporciona estas propiedades y métodos:</p>
+<ul>
+<li>
+<p><strong>checkValidity</strong>() → método que nos dice si el campo al que se aplica es o no válido. También se puede aplicar al formulario para saber si es válido o no</p>
+</li>
+<li>
+<p><strong>validationMessage</strong> → en caso de que un campo no sea válido esta propiedad contiene el texto del error de validación proporcionado por el navegador</p>
+</li>
+<li>
+<p><strong>validity</strong> → es un objeto que tiene propiedades booleanas para saber qué requisito del campo es el que falla:</p>
+<ul>
+<li><strong>valueMissing</strong>: indica si no se cumple la restricción required (es decir, valdrá true si el campo tiene el atributo required pero no se ha introducido nada en él)</li>
+<li><strong>typeMismatch</strong>: indica si el contenido del campo no cumple con su atributo type (ej. type="email")</li>
+<li><strong>patternMismatch</strong>: indica si no se cumple con el pattern indicado</li>
+<li><strong>tooShort</strong> / <strong>tooLong</strong>: indica si no se cumple el atributo minlength/maxlength</li>
+<li><strong>rangeUnderflow</strong> / <strong>rangeOverflow</strong>: indica si no se cumple el atributo min / max</li>
+<li><strong>stepMismatch</strong>: indica si no se cumple el atributo step del campo</li>
+<li><strong>customError</strong>: indica al campo se le ha puesto un error personalizado con setCustomValidity</li>
+<li><strong>valid</strong>: indica si es campo es válido</li>
+<li>.....</li>
+</ul>
+</li>
+<li><strong>setCustomValidity</strong>(<em>mensaje</em>) → añade un error personalizado al campo (que ahora ya NO será válido) con el mensaje pasado como parámetro. Nos permite personalizar el mensaje del navegador.
+Para quitar este error se hace setCustomValidity('')</li>
+</ul>
+<h2 id="5-expresiones-regulares"><strong><u> 5.- EXPRESIONES REGULARES </u></strong></h2>
+<h3 id="constructores"><strong>Constructores</strong></h3>
+<table>
+<thead>
+<tr>
+<th>new RegExp(expr, flags)</th>
+<th><strong><em>Crea una nueva expresión regular a partir de r con los flags indicados.</em></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>/ expr / flags</strong></td>
+<td><strong><em>Simplemente, la expresión regular r entre barras /. Notación preferida.</em></strong></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-javascript">    // DEFINICIÓN COMO LITERAL
+    let r = /expr/flag
+    let r = /^a/g;
+
+    // DEFINICIÓN COMO OBJETO
+    let r = new RegExp(expr , flag)
+    let r = new RegExp(‘/^a’, ‘g’)
+
+    -------------------------------------------------
+        r.test(‘cadena_a_comprobar’)
+    -------------------------------------------------
+
+    let reg_exp = /^\d{8}[a-zA-Z]$/; // 8 cifras numéricas + carácter alfabético.
+    if(reg_exp .test(formulario.dni.value)==false) {
+        // indicar el error
+    }
+</code></pre>
+<h3 id="flags"><strong>Flags</strong></h3>
+<table>
+<thead>
+<tr>
+<th align="center">flag</th>
+<th align="center">flag</th>
+<th align="right">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">i</td>
+<td align="center">.ignoreCase</td>
+<td align="right">Ignorar mayúsculas y minúsculas</td>
+</tr>
+<tr>
+<td align="center">g</td>
+<td align="center">.global</td>
+<td align="right">Búsqueda global, no se para al encontrar 1º ocurrencia</td>
+</tr>
+<tr>
+<td align="center">m</td>
+<td align="center">.multiline</td>
+<td align="right">permite a ^ $ tratar los finales de linea \n</td>
+</tr>
+<tr>
+<td align="center">u</td>
+<td align="center">.unicode</td>
+<td align="right">La codificación es unicode</td>
+</tr>
+<tr>
+<td align="center">y</td>
+<td align="center">.sticky</td>
+<td align="right">Busca solo desde la posición indicada</td>
+</tr>
+</tbody>
+</table>
+<h3 id="reglas"><strong>Reglas</strong></h3>
+<table>
+<thead>
+<tr>
+<th align="center">Regla</th>
+<th align="right">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">^</td>
+<td align="right">Principio            /^ag/→ comienza por ag</td>
+</tr>
+<tr>
+<td align="center">$</td>
+<td align="right">Final                                                                                                                  /$in/→ termina en in</td>
+</tr>
+<tr>
+<td align="center">[]</td>
+<td align="right">Conjunto                                                                                                                       /[a-z]/ /[aeiou]/</td>
+</tr>
+<tr>
+<td align="center">[^]</td>
+<td align="right">Conjunto negado                                        No exista cualquiera de los caracteres entre corchetes</td>
+</tr>
+<tr>
+<td align="center">{x}</td>
+<td align="right">Cuantificadores                 /d{4,7}/→ de 4 a 7 dígitos /d{4}/ → 4 dígitos /d{4,}/ → mas de 4 dígitos</td>
+</tr>
+<tr>
+<td align="center">|</td>
+<td align="right">Alternancia                                                                                                                                     /a|b/→ El valor a ó b</td>
+</tr>
+<tr>
+<td align="center">.</td>
+<td align="right">Cualquier carácter menos el salto de línea</td>
+</tr>
+<tr>
+<td align="center">?</td>
+<td align="right">Cero o ninguna ocurrencia                                                                                                                        {0,1}</td>
+</tr>
+<tr>
+<td align="center">*</td>
+<td align="right">Cero o más ocurrencias                                                                                                                           {0,}</td>
+</tr>
+<tr>
+<td align="center">+</td>
+<td align="right">Una o mas ocurrencias                                                                                                                            {1,}</td>
+</tr>
+<tr>
+<td align="center">\d</td>
+<td align="right">Dígito                                                                                                                                       [0-9]</td>
+</tr>
+<tr>
+<td align="center">\w</td>
+<td align="right">Caracter                                                                                                                         [a-zA-Z0-9]</td>
+</tr>
+<tr>
+<td align="center">\s</td>
+<td align="right">Espacio en blanco</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-javascript">    const r = /.a.o/i;
+    r.test(&quot;gato&quot;);         // true
+    r.test(&quot;pato&quot;);         // true
+    r.test(&quot;perro&quot;);        // false
+    r.test(&quot;DATO&quot;);         // true (el flag i permite mayús/minús)
+</code></pre>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../Unidad_6_eventos/" class="md-footer__link md-footer__link--prev" aria-label="Previous: UD 6 - &#34;Eventos&#34;" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              UD 6 - "Eventos"
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../Unidad_8_ajax/" class="md-footer__link md-footer__link--next" aria-label="Next: UD 8 - &#34;Ajax&#34;" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              UD 8 - "Ajax"
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f758a944.min.js"></script>
+      
+    
+  </body>
+</html>

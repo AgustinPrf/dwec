@@ -1,0 +1,837 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://agustin.com/Unidad_5_clases/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.4">
+    
+    
+      
+        <title>UD 5 - "Clases" - DWEC</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4a0965b7.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-introduccion" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="DWEC" class="md-header__button md-logo" aria-label="DWEC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DWEC
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              UD 5 - "Clases"
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="DWEC" class="md-nav__button md-logo" aria-label="DWEC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    DWEC
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Inicio
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_1_herramientas/" class="md-nav__link">
+        UD 1 - "Herramientas"
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_2_sintaxis/" class="md-nav__link">
+        UD 2 - "Sintaxis"
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_3_objetos/" class="md-nav__link">
+        UD 3 - "Objetos"
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_4_dom/" class="md-nav__link">
+        UD 4 - "DOM"
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          UD 5 - "Clases"
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        UD 5 - "Clases"
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduccion" class="md-nav__link">
+    1. INTRODUCCIÓN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-funciones" class="md-nav__link">
+    2. FUNCIONES
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-definir-clases-y-objetos" class="md-nav__link">
+    3.- DEFINIR CLASES Y OBJETOS
+  </a>
+  
+    <nav class="md-nav" aria-label="3.- DEFINIR CLASES Y OBJETOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#funciones-constructoras" class="md-nav__link">
+    Funciones constructoras
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objeto-json" class="md-nav__link">
+    Objeto Json
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-clases-en-esmac-6" class="md-nav__link">
+    4.- CLASES EN ESMAC 6
+  </a>
+  
+    <nav class="md-nav" aria-label="4.- CLASES EN ESMAC 6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getter-y-setter" class="md-nav__link">
+    Getter y Setter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#herencia" class="md-nav__link">
+    Herencia
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-trabajando-con-clases" class="md-nav__link">
+    5.- TRABAJANDO CON CLASES
+  </a>
+  
+    <nav class="md-nav" aria-label="5.- TRABAJANDO CON CLASES">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tostring" class="md-nav__link">
+    ToString()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valueof" class="md-nav__link">
+    valueOf()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prototipos" class="md-nav__link">
+    Prototipos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_6_eventos/" class="md-nav__link">
+        UD 6 - "Eventos"
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_7_formularios/" class="md-nav__link">
+        UD 7 - "Formularios"
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_8_ajax/" class="md-nav__link">
+        UD 8 - "Ajax"
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduccion" class="md-nav__link">
+    1. INTRODUCCIÓN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-funciones" class="md-nav__link">
+    2. FUNCIONES
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-definir-clases-y-objetos" class="md-nav__link">
+    3.- DEFINIR CLASES Y OBJETOS
+  </a>
+  
+    <nav class="md-nav" aria-label="3.- DEFINIR CLASES Y OBJETOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#funciones-constructoras" class="md-nav__link">
+    Funciones constructoras
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objeto-json" class="md-nav__link">
+    Objeto Json
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-clases-en-esmac-6" class="md-nav__link">
+    4.- CLASES EN ESMAC 6
+  </a>
+  
+    <nav class="md-nav" aria-label="4.- CLASES EN ESMAC 6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getter-y-setter" class="md-nav__link">
+    Getter y Setter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#herencia" class="md-nav__link">
+    Herencia
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-trabajando-con-clases" class="md-nav__link">
+    5.- TRABAJANDO CON CLASES
+  </a>
+  
+    <nav class="md-nav" aria-label="5.- TRABAJANDO CON CLASES">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tostring" class="md-nav__link">
+    ToString()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valueof" class="md-nav__link">
+    valueOf()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prototipos" class="md-nav__link">
+    Prototipos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+  <h1>UD 5 - "Clases"</h1>
+
+<h2 id="1-introduccion"><u><strong>1. INTRODUCCIÓN</strong></u></h2>
+<p>Javascript es un lenguaje que permite el uso de objetos. Muchas veces el término clase y objeto se confunden. Una definición podría ser que una clase define "como es un objeto" y que un objeto es la plasmación efectiva de ese objeto. A partir de una clase se pueden crear si se desea muchos objetos.
+Para entenderlo un <u><strong><em>ejemplo</em></strong></u>:</p>
+<p><em>Supongamos tenemos la clase "casa". Esa clase define que atributos tiene una casa. Un ejemplo de esos atributos podría ser: dirección, numero habitaciones, metros cuadrados. Ahora bien, cada objeto es una casa existente. Podemos tener por ejemplo dos objetos que surgen a partir de la clase "casa". Uno seria una casa con dirección "Avenida del puerto 1, Valencia", 3 habitaciones y 100m2 y otro una casa con dirección "Calle Colón 1, Valencia", 5 habitaciones y 200m2.</em></p>
+<p>La clase definía como podían ser los objetos y los objetos en si son clases contextualizadas en algo concreto."</p>
+<h2 id="2-funciones"><u><strong>2. FUNCIONES</strong></u></h2>
+<p>Hay varias formas de crear funciones en Javascript:
+• Por <strong>declaración</strong> o por <strong>expresión</strong>( anónima, lambda ) o <strong>flecha</strong>( Ecmas6 ):</p>
+<table>
+<thead>
+<tr>
+<th align="center">Definición</th>
+<th align="center">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">function nombre ( p_1,p_2.... ) { }</td>
+<td align="center">Crea una función mediante <strong>declaración</strong></td>
+</tr>
+<tr>
+<td align="center">nombre = function ( p_1,p_2.... ) { }</td>
+<td align="center">Crea una función mediante <strong>expresión</strong></td>
+</tr>
+<tr>
+<td align="center">Nombre = () =&gt; { };</td>
+<td align="center">Crea una función mediante <strong>flecha</strong></td>
+</tr>
+</tbody>
+</table>
+<p><u><strong>Aclaración</strong></u> <em>: Funciones flecha es igual a funciones por expresión pero sin usar la palabra reservada function.</em></p>
+<h2 id="3-definir-clases-y-objetos"><u><strong>3.- DEFINIR CLASES Y OBJETOS</strong></u></h2>
+<h3 id="funciones-constructoras"><strong>Funciones constructoras</strong></h3>
+<p>La forma de definir clases en Javascript es ligeramente distinta a la utilizada en otros lenguajes de
+programación. Aquí la forma de definir una clase y su constructor asociado es simplemente definir una
+función.</p>
+<pre><code class="language-javascript">/ ***** Definir la Clase **********/
+function PersonaF(nombre, edad){
+                            // Propiedades  
+    this.nombre = nombre;   
+    this.edad = edad;
+
+                            // Métodos
+    this.cumplirAnos = function (incremento){
+        this.edad=this.edad + incremento;
+    };
+
+}
+/ ***** Instanciar la Clase ******/
+let agustin = new PersonaF(&quot;Agustin&quot;,36);
+agustin.cumplirAnos(1);
+console.log(`Nombre: ${agustin.nombre} y edad : ${agustin.edad}`);
+
+</code></pre>
+<h2 id="objeto-json"><strong> Objeto Json</strong></h2>
+<p>Un objeto JSON está rodeado de llaves {}. Siendo su estructura especificada como pares clave / valor.</p>
+<pre><code class="language-javascript">ana = {
+                                                    // Propiedades
+        nombre: &quot;Ana Maria&quot;,   
+        edad: 40,
+                                                    // Métodos  
+        cumplirAnos: function(incremento){
+            this.edad = this.edad + incremento;
+        }
+};
+
+ana.cumplirAnos(1);
+console.log(`Nombre: ${agustin.nombre} y edad : ${agustin.edad}`);
+</code></pre>
+<h2 id="4-clases-en-esmac-6"><u><strong>4.- CLASES EN ESMAC 6</strong></u></h2>
+<p>ES6 (entre otras novedades) incorpora una nueva forma de definir clases. Esto hará que los programadores que vienen de otros lenguajes se sientan mas cómodos y que podamos aplicar conceptos de la POO como la herencia.
+La sintaxis de clases es muy similar a lenguajes como JAVA o C#:</p>
+<pre><code class="language-javascript">class personaClass {
+    constructor(nombre, edad) {
+        this._nombre = nombre;
+        this._edad = edad;
+    }
+
+    get edad() {
+        return this._edad;
+    }
+
+    set edad(valor) {
+        this._edad = valor;
+    }
+
+    cumplirAnos(incremento){
+        this.edad = this.edad + incremento;
+    }
+
+    imprimirInfo() {
+        console.log(`Nombre ${this.nombre}`);
+        document.write(`Edad ${this.edad}`;
+}
+
+    static confirmacion() {
+        console.log(&quot;Enhorabuena esta funcionando la clase Persona&quot;);
+    }
+}
+
+    var mama = new personaClass(&quot;Ana&quot;, 67);
+    mama.cumplirAnos(1);
+    mama.imprimirInfo();
+    mama.edad;
+    personaClass.confirmacion();
+</code></pre>
+<p><strong>Constructor</strong></p>
+<p>El constructor es un método especial que inicializa una instancia de la clase. En JavaScript solo puede haber un constructor, no se admite la sobrecarga. Hemos visto en los ejemplos anteriores que usaremos this para asignar los valores contextuales y que podemos usar valores por defecto.</p>
+<pre><code class="language-javascript">constructor(nombre, edad) {
+    this._nombre = nombre;
+    this._edad = edad;
+}
+</code></pre>
+<h3 id="getter-y-setter"><strong>Getter y Setter</strong></h3>
+<p>Estos métodos de acceso nos permiten obtener y asignar valores a los atributos de los objetos. En JavaScript estos métodos se corresponden con atajos sintácticos sin funcionalidad adicional. Deberemos tener en cuenta que podemos caer en una referencia circular lo que daría lugar a un desbordamiento. El uso del guion bajo evitará estos errores.</p>
+<pre><code class="language-javascript">get edad() {
+    return this._edad;
+}
+set edad(valor) {
+    this._edad = valor;
+}
+</code></pre>
+<h3 id="herencia"><strong>Herencia</strong></h3>
+<p>Una vez que JS tiene clases, podemos esperar crear clases hijas a partir de otras, o como también se suele expresar: crear clases que extiendan a otras.</p>
+<pre><code class="language-javascript">class nieto extends personaClass {
+
+    constructor(nombre, edad, cuidador) {
+        super(nombre, edad);
+        this.cuidador = cuidador;
+    }
+
+        imprimirInfo() {
+            super.imprimirInfo();
+            console.log(` Cuidador ${this.cuidador}`);
+        }
+    var miguel = new nieto(&quot;Miguelito&quot;,6 , &quot;Saly&quot;);
+    miguel.imprimirInfo();
+    miguel.cumplirAnos(1);
+    console.log(` Edad ${ miguel.edad}`);
+</code></pre>
+<h2 id="5-trabajando-con-clases"><u><strong>5.- TRABAJANDO CON CLASES</strong></u></h2>
+<h3 id="tostring"><strong>ToString()</strong></h3>
+<p>Al convertir un objeto a string (por ejemplo al concatenarlo con un String) se llama al método .toString() del
+mismo, que devuelve [object object]. Podemos sobrecargar este método para que devuelva lo que queramos:</p>
+<pre><code class="language-javascript">class personaClass {
+
+    toString() {
+        return this.nombre
+    }
+}
+
+let cpo = new personaClass('Paco', 19);
+console.log(`Persona: ${cpo}`)          // imprime 'Persona: Paco'
+
+</code></pre>
+<h3 id="valueof"><strong>valueOf()</strong></h3>
+<p>Al comparar objetos (con &gt;, &lt;, ...) se usa el valor devuelto por el método .toString() pero si sobrecargamos el método .valueOf() será este el que se usará en comparaciones:</p>
+<pre><code class="language-javascript">class personaClass {
+...
+    valueOf() {
+        return this.edad
+    }
+}
+
+let cpo = new personaClass('Carlos', 19)
+let aat = new personaClass('Ana', 23)
+console.log(cpo &lt; aat) // imprime true ya que 19&lt;23
+
+</code></pre>
+<h3 id="prototipos"><strong>Prototipos</strong></h3>
+<p>Cada objeto tiene un prototipo del que hereda sus propiedades y métodos (es el equivalente a su clase, pero en realidad es un objeto que está instanciado). Si añadimos una propiedad o método al prototipo se añade a todos los objetos creados a partir de él lo que ahorra mucha memoria.</p>
+<pre><code class="language-javascript">personaClass.prototype.getInfo2 = function() {
+    return 'Estoy añadiendo una nueva función'
+}
+
+let cpo = new personaClass('Carlos', 19)
+console.log(cpo.getInfo2())             // imprime: 'Estoy añadiendo una nueva función'
+</code></pre>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../Unidad_4_dom/" class="md-footer__link md-footer__link--prev" aria-label="Previous: UD 4 - &#34;DOM&#34;" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              UD 4 - "DOM"
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../Unidad_6_eventos/" class="md-footer__link md-footer__link--next" aria-label="Next: UD 6 - &#34;Eventos&#34;" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              UD 6 - "Eventos"
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f758a944.min.js"></script>
+      
+    
+  </body>
+</html>

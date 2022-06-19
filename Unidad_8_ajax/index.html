@@ -1,0 +1,1169 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://agustin.com/Unidad_8_ajax/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.4">
+    
+    
+      
+        <title>UD 8 - "Ajax" - DWEC</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4a0965b7.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-mecanismos-de-comunicacion-asincrona" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="DWEC" class="md-header__button md-logo" aria-label="DWEC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DWEC
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              UD 8 - "Ajax"
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="DWEC" class="md-nav__button md-logo" aria-label="DWEC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    DWEC
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Inicio
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_1_herramientas/" class="md-nav__link">
+        UD 1 - "Herramientas"
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_2_sintaxis/" class="md-nav__link">
+        UD 2 - "Sintaxis"
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_3_objetos/" class="md-nav__link">
+        UD 3 - "Objetos"
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_4_dom/" class="md-nav__link">
+        UD 4 - "DOM"
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_5_clases/" class="md-nav__link">
+        UD 5 - "Clases"
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_6_eventos/" class="md-nav__link">
+        UD 6 - "Eventos"
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unidad_7_formularios/" class="md-nav__link">
+        UD 7 - "Formularios"
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          UD 8 - "Ajax"
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        UD 8 - "Ajax"
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-mecanismos-de-comunicacion-asincrona" class="md-nav__link">
+    1.- MECANISMOS DE COMUNICACIÓN ASÍNCRONA
+  </a>
+  
+    <nav class="md-nav" aria-label="1.- MECANISMOS DE COMUNICACIÓN ASÍNCRONA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-es-ajax" class="md-nav__link">
+    ¿Qué es AJAX?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionamiento-de-aplicacion-web-clasica-vs-aplicacion-web-ajax" class="md-nav__link">
+    Funcionamiento de aplicación Web clásica VS aplicación Web AJAX
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2configuracion-del-servidor" class="md-nav__link">
+    2.CONFIGURACIÓN DEL SERVIDOR
+  </a>
+  
+    <nav class="md-nav" aria-label="2.CONFIGURACIÓN DEL SERVIDOR">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configurar-apache" class="md-nav__link">
+    Configurar Apache
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurar-virtualhost" class="md-nav__link">
+    Configurar virtualhost
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3objeto-xmlhttprequest" class="md-nav__link">
+    3.OBJETO XMLHTTPREQUEST
+  </a>
+  
+    <nav class="md-nav" aria-label="3.OBJETO XMLHTTPREQUEST">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#atributos" class="md-nav__link">
+    Atributos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metodos" class="md-nav__link">
+    Métodos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eventos" class="md-nav__link">
+    Eventos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4forma-mas-comun-de-utilizar-xmlhttprequest" class="md-nav__link">
+    4.FORMA MÁS COMÚN DE UTILIZAR XMLHTTPREQUEST
+  </a>
+  
+    <nav class="md-nav" aria-label="4.FORMA MÁS COMÚN DE UTILIZAR XMLHTTPREQUEST">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instanciando-el-objeto" class="md-nav__link">
+    Instanciando el objeto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comportamiento-evento" class="md-nav__link">
+    Comportamiento evento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementando-el-evento-load" class="md-nav__link">
+    Implementando el evento load
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5web-storage" class="md-nav__link">
+    5.WEB STORAGE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6cookies" class="md-nav__link">
+    6.COOKIES
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-mecanismos-de-comunicacion-asincrona" class="md-nav__link">
+    1.- MECANISMOS DE COMUNICACIÓN ASÍNCRONA
+  </a>
+  
+    <nav class="md-nav" aria-label="1.- MECANISMOS DE COMUNICACIÓN ASÍNCRONA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-es-ajax" class="md-nav__link">
+    ¿Qué es AJAX?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionamiento-de-aplicacion-web-clasica-vs-aplicacion-web-ajax" class="md-nav__link">
+    Funcionamiento de aplicación Web clásica VS aplicación Web AJAX
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2configuracion-del-servidor" class="md-nav__link">
+    2.CONFIGURACIÓN DEL SERVIDOR
+  </a>
+  
+    <nav class="md-nav" aria-label="2.CONFIGURACIÓN DEL SERVIDOR">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configurar-apache" class="md-nav__link">
+    Configurar Apache
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurar-virtualhost" class="md-nav__link">
+    Configurar virtualhost
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3objeto-xmlhttprequest" class="md-nav__link">
+    3.OBJETO XMLHTTPREQUEST
+  </a>
+  
+    <nav class="md-nav" aria-label="3.OBJETO XMLHTTPREQUEST">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#atributos" class="md-nav__link">
+    Atributos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metodos" class="md-nav__link">
+    Métodos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eventos" class="md-nav__link">
+    Eventos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4forma-mas-comun-de-utilizar-xmlhttprequest" class="md-nav__link">
+    4.FORMA MÁS COMÚN DE UTILIZAR XMLHTTPREQUEST
+  </a>
+  
+    <nav class="md-nav" aria-label="4.FORMA MÁS COMÚN DE UTILIZAR XMLHTTPREQUEST">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instanciando-el-objeto" class="md-nav__link">
+    Instanciando el objeto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comportamiento-evento" class="md-nav__link">
+    Comportamiento evento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementando-el-evento-load" class="md-nav__link">
+    Implementando el evento load
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5web-storage" class="md-nav__link">
+    5.WEB STORAGE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6cookies" class="md-nav__link">
+    6.COOKIES
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+  <h1>UD 8 - "Ajax"</h1>
+
+<h2 id="1-mecanismos-de-comunicacion-asincrona"><strong><u>1.- MECANISMOS DE COMUNICACIÓN ASÍNCRONA</u></strong></h2>
+<h3 id="que-es-ajax"><strong>¿Qué es AJAX?</strong></h3>
+<p>En primer lugar, aclarar en nuestro contexto informático que no es AJAX:</p>
+<ul>
+<li>Un laureado (aunque ahora en horas bajas) equipo de fútbol holandés.</li>
+<li>Productos de limpieza. </li>
+</ul>
+<p>En nuestro caso, AJAX es el acrónimo de “Asynchronous Javascript And XML” (Javascript asíncrono y XML). AJAX en si no es una tecnología, sino un  conjunto de tecnologías.Tenéis más información en :</p>
+<p>https://es.wikipedia.org/wiki/AJAX
+https://developer.mozilla.org/es/docs/Web/Guide/AJAX</p>
+<p>Las tecnologías presentes en AJAX son:</p>
+<ul>
+<li>XHTML y CSS para la presentación de la página.</li>
+<li>DOM para la manipulación dinámica de elementos de la página.</li>
+<li>Formatos de intercambio de información como JSON o XML.</li>
+<li>El objeto XMLHttpRequest, para el intercambio asíncrono de información (es decir, sin recargar la página).</li>
+<li>Javascript, para aplicar las anteriores tecnologías.</li>
+</ul>
+<p><center><img alt="Tecnologias Ajax" src="../imagenes/unidad_8/tecnologias_ajax.jpg" /></center></p>
+<p>La forma de trabajar es la siguiente: Javascript se encarga de unir todas las tecnologías. Para manipular la parte de representación de la página utiliza DOM (así manipula el XHTML y el CSS). Para realizar peticiones asíncronas usa el objeto XMLHttpRequest. Este objeto intercambia información que son simplemente cadenas de texto. Cuando se quieren formatear objetos más complejos, se suele utilizar JSON o XML.</p>
+<h3 id="funcionamiento-de-aplicacion-web-clasica-vs-aplicacion-web-ajax"><strong> Funcionamiento de aplicación Web clásica VS aplicación Web AJAX</strong></h3>
+<p>En una aplicación Web clásica:</p>
+<ol>
+<li>
+<p>El cliente hace una petición al servidor.</p>
+</li>
+<li>
+<p>El servidor recibe la petición.</p>
+</li>
+<li>
+<p>El servidor procesa la petición y genera una nueva página con la petición procesada.</p>
+</li>
+<li>
+<p>El cliente recibe la nueva página completa y la muestra.
+    Aplicación Web AJAX</p>
+</li>
+</ol>
+<p>En una aplicación Web AJAX:</p>
+<ol>
+<li>
+<p>El cliente hace una petición asíncrona al servidor.</p>
+</li>
+<li>
+<p>El servidor recibe la petición.</p>
+</li>
+<li>
+<p>El servidor procesa la petición y responde asíncronamente al cliente.</p>
+</li>
+<li>
+<p>El cliente recibe la respuesta y con ella modifica dinámicamente los elementos afectados de la   página sin recargarla completamente.</p>
+</li>
+</ol>
+<p>Ventaja Las aplicaciones Web AJAX son mejores ya que reducen la cantidad de información a intercambiar (no se envía la página entera, sino que se modifica solo lo que interesa) y a su vez al usuario final le da una imagen de mayor dinamismo, viendo una página web como una aplicación de escritorio.</p>
+<p>Desventajas Como único contra, el diseño de aplicaciones Web AJAX es ligeramente más complicado que el desarrollo de aplicaciones Web clásicas.</p>
+<p>Desventajas Visitando el agregador de noticias https://www.meneame.net/ y “meneando” cualquier noticia, podéis ver como funciona AJAX (el contador de “meneos” aumenta, pero la página no se ha  recargado).</p>
+<p><center><img alt="Tecnologias Ajax" src="../imagenes/unidad_8/modelo_comunicacion_ajax.jpg" /></center></p>
+<h2 id="2configuracion-del-servidor"><strong><u>2.CONFIGURACIÓN DEL SERVIDOR</u></strong></h2>
+<p>Para probar los ejemplos, necesitaréis un servidor al que hacer peticiones asíncronas.</p>
+<h3 id="configurar-apache"><strong> Configurar Apache</strong></h3>
+<p>Para montar un servidor en local para pruebas, estos video tutoriales pueden seros útiles:</p>
+<ul>
+<li>Instalar LAMP en Ubuntu :
+  https://www.youtube.com/watch?v=f-l07vKQLW0</li>
+<li>Instalar WAMP en Windows :
+  https://www.youtube.com/watch?v=aUa2-0l2ZXc</li>
+</ul>
+<h3 id="configurar-virtualhost"><strong>Configurar virtualhost</strong></h3>
+<p>Para el sistema operativo ubuntu(Debian), a modo resumen, necesitarás los siguientes comandos:</p>
+<pre><code class="language-javascript">sudo apt-get update
+sudo apt-get install apache2
+sudo apt-get install mysql-server mysql-client
+sudo apt-get install php libapache2-mod-php php-mysql
+sudo mkdir -p /var/www/html/dwec/public_html
+sudo chown -R $USER:$USER /var/www/html/dwec/public_html
+sudo chmod -R 777 /var/www/html/dwec
+gedit /var/www/html/dwec/public_html/index.html
+</code></pre>
+<p>El archivo index.html, debe tener el siguiente contenido:</p>
+<pre><code class="language-javascript">
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt; Bienvenido a DWEC&lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;h1&gt; Enhorabuena!!! Has conseguido configurar el virtualhost &lt;/h1&gt;
+        &lt;h3&gt; Para el módulo DWEC, con el profesor Agustín&lt;/h3&gt;
+
+    &lt;/body&gt;
+
+&lt;/html&gt;
+
+</code></pre>
+<pre><code class="language-javascript">cat /etc/apache2/sites-available/000-default.conf
+sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/dwec.conf
+sudo gedit /etc/apache2/sites-available/dwec.conf
+</code></pre>
+<p>El archivo de virtualhost debe tener el siguiente contenido:</p>
+<p>```javascript
+     <VirtualHost *:80>
+        ServerAdmin admin@example.com
+        ServerName www.dwec.agustin.com
+        ServerAlias www.dwec.agustin.com
+        DocumentRoot /var/www/html/dwec/public_html
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined</p>
+<pre><code>    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "POSTS, GET, OPTIONS, DELETE, PUT"
+    Header set Access-Control-Allow-Headers "Origin, X-Requested-With, Content-Type, Accept"
+ &lt;/VirtualHost&gt;
+</code></pre>
+<p>```</p>
+<pre><code class="language-javascript">    sudo a2ensite dwec.conf
+    systemctl reload apache2
+    systemctl status apache2
+    sudo gedit /etc/hosts
+</code></pre>
+<p>El contenido del archivo host, debe contener el dns asociado al módulo:</p>
+<pre><code class="language-javascript">    127.0.0.1   localhost
+    127.0.1.1   agustin-pc
+    127.0.0.1   www.dwec.agustin.com
+</code></pre>
+<p>Si has realizado correctamente todos los paso anteriores, debe conseguir el siguiente resultado en el navegador:</p>
+<p><center><img alt="Configuración Final" src="../imagenes/unidad_8/final_conf_VH.jpg" /></center></p>
+<h2 id="3objeto-xmlhttprequest"><strong><u>3.OBJETO XMLHTTPREQUEST</u></strong></h2>
+<p>En esta unidad didáctica hablaremos de como funciona el objeto XMLHttpRequest, imprescindible para utilizar AJAX. Este objeto nos permitirá hacer peticiones asíncronas y se encargará de avisarnos cuando se reciba su respuesta.</p>
+<p>En https://es.wikipedia.org/wiki/XMLHttpRequest se puede observar una definición del objeto y sus principales atributos y métodos.</p>
+<h3 id="atributos"><strong>Atributos</strong></h3>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>readyState</td>
+<td>Devuelve el estado del objeto como sigue: <br /> 0 = sin inicializar, 1 = abierto, 2 = cabeceras recibidas, 3 = cargando y 4 = completado.</td>
+</tr>
+<tr>
+<td>responseBody</td>
+<td>(Level 2) Devuelve la respuesta como un array de bytes</td>
+</tr>
+<tr>
+<td>responseText</td>
+<td>Devuelve la respuesta como una cadena</td>
+</tr>
+<tr>
+<td>responseXML</td>
+<td>Devuelve la respuesta como XML. Esta propiedad devuelve un objeto documento XML, que puede ser examinado usando las propiedades y métodos del árbol del DOM</td>
+</tr>
+<tr>
+<td>status</td>
+<td>Devuelve el estado como un número (p. ej. 404 para "Not Found" y 200 para "OK").</td>
+</tr>
+<tr>
+<td>statusText</td>
+<td>Devuelve el estado como una cadena (p. ej. "Not Found" o "OK").</td>
+</tr>
+</tbody>
+</table>
+<h3 id="metodos"><strong>Métodos</strong></h3>
+<table>
+<thead>
+<tr>
+<th align="center">Método</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">abort()</td>
+<td>Cancela la petición en curso</td>
+</tr>
+<tr>
+<td align="center">getAllResponseHeaders()</td>
+<td>Devuelve el conjunto de cabeceras HTTP como una cadena.</td>
+</tr>
+<tr>
+<td align="center">GetResponseHeader<br/>( nombreCabecera )</td>
+<td>Devuelve el valor de la cabecera HTTP especificada.</td>
+</tr>
+<tr>
+<td align="center">open<br/>( método,<br /> URL, <br />[asíncrono<br/>[nombreUsuario [clave]]] )</td>
+<td>Especifica el método, URL y otros atributos opcionales de unapetición.<br/>El parámetro de método puede tomar los valores: "GET", "POST", o "PUT".<br/>El parámetro URL puede ser una URL relativa o completa.<br/><br />El parámetro asíncrono especifica si la petición será gestionada síncronamente o no. Un valor true indica que el proceso del script continúa después del método send(), sin esperar a la respuesta, y false indica que el script se detiene hasta que se complete laoperación, tras lo cual se reanuda la ejecución.<br/><br />En el caso asíncrono se especifican manejadores de eventos, que se ejecutan ante cada cambio de estado y permiten tratar los resultados de la consulta una vez que se reciben, o bien gestionar eventuales errores.</td>
+</tr>
+<tr>
+<td align="center">send( [datos] )</td>
+<td>Envía la petición</td>
+</tr>
+<tr>
+<td align="center">SetRequestHeader<br/>( etiqueta, valor )</td>
+<td>Añade un par etiqueta/valor a la cabecera HTTP a enviar.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="eventos"><strong>Eventos</strong></h3>
+<table>
+<thead>
+<tr>
+<th align="center">Propiedad</th>
+<th align="center">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">onreadystatechange</td>
+<td align="center">Evento que se dispara con cada cambio de estado.</td>
+</tr>
+<tr>
+<td align="center">onabort</td>
+<td align="center">(Level 2) Evento que se dispara al abortar la operación.</td>
+</tr>
+<tr>
+<td align="center">onload</td>
+<td align="center">(Level 2)Evento que se dispara al completar la carga.</td>
+</tr>
+<tr>
+<td align="center">onloadstart</td>
+<td align="center">(Level 2) Evento que se dispara al iniciar la carga.</td>
+</tr>
+<tr>
+<td align="center">onprogress</td>
+<td align="center">(Level 2) Evento que se dispara periódicamente con información de estado.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4forma-mas-comun-de-utilizar-xmlhttprequest"><strong><u>4.FORMA MÁS COMÚN DE UTILIZAR XMLHTTPREQUEST</u></strong></h2>
+<h3 id="instanciando-el-objeto"><strong>Instanciando el objeto</strong></h3>
+<p>En primer lugar, indicar que debemos inicializar el objeto.</p>
+<pre><code class="language-javascript">httpRequest = new XMLHttpRequest();
+</code></pre>
+<p>Esto es válido para la mayoría de navegadores actuales. Si queremos compatibilidad con navegadores antiguos que soporte ActiveX (Tipo Internet Explorer 6) se puede hacer una función más compleja para obtener el objeto.</p>
+<pre><code class="language-javascript">function obtainXMLHttpRequest()
+{
+    var httpRequest;
+    if (window.XMLHttpRequest){
+         /// código para IE7+, Firefox, Chrome, Opera, Safari
+        httpRequest = new XMLHttpRequest();
+    }
+    else if (window.ActiveXObject){
+        try {
+            httpRequest = new ActiveXObject(&quot;MSXML2.XMLHTTP&quot;);
+        } catch (e) {
+            try {
+                // código para IE6, IE5
+                httpRequest = new ActiveXObject(&quot;Microsoft.XMLHTTP&quot;);
+            } catch (e) {}
+        }
+    }
+
+    // Si no se puede crear, devolvemos false.
+    // En caso contrario, devolvemos el objeto
+    return (!httpRequest)? false : httpRequest;
+
+}
+</code></pre>
+<h3 id="comportamiento-evento"><strong>Comportamiento evento</strong></h3>
+<p>Tras ello, decidiremos el comportamiento del evento “onreadystatechange”, evento que se producirá cada vez que haya producido un cambio en el atributo “ready”.</p>
+<p>Antes de hacer nada, deberemos explicar 3 métodos del objeto:</p>
+<ul>
+<li>open(Metodo,URL,true). Este método recibe que método de comunicación utiliza en la petición (GET o POST) y que ULR se aplica. </li>
+<li>send([datos]). Ha de hacerse posteriormente a un open, nunca antes. Envía la información a la URL especificada en open. </li>
+<li>SetRequestHeader Indicara el formato de las cabeceras enviadas.</li>
+</ul>
+<p>También debemos explicar el atributo readyState. Contiene un valor numérico entero que representa la situación del intercambio de datos a través del objeto.</p>
+<table>
+<thead>
+<tr>
+<th>Código</th>
+<th align="center">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td align="center">Al inicializarse el objeto.</td>
+</tr>
+<tr>
+<td>1</td>
+<td align="center">Al abrirse una conexión (al usar el método open).</td>
+</tr>
+<tr>
+<td>2</td>
+<td align="center">Al hacer una petición (uso de send).</td>
+</tr>
+<tr>
+<td>3</td>
+<td align="center">Al hacer una petición (uso de send).</td>
+</tr>
+<tr>
+<td>4</td>
+<td align="center">cuando la petición se ha completado.</td>
+</tr>
+</tbody>
+</table>
+<p>Esta imagen resume el proceso:</p>
+<p>center&gt;<img alt="Tecnologias Ajax" src="../imagenes/unidad_8/ready_state.jpg" /></center></p>
+<p>También debemos explicar el atributo status. Código numérico entero enviado por el servidor que indica el tipo de respuesta dada a la petición. Puede tomar valores como:</p>
+<table>
+<thead>
+<tr>
+<th>Código</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>Respuesta correcta</td>
+</tr>
+<tr>
+<td>404</td>
+<td>No encontrado</td>
+</tr>
+<tr>
+<td>500</td>
+<td>Error interno del servidor</td>
+</tr>
+</tbody>
+</table>
+<p>y por último los eventos asociados al objeto xmlhttpRequest</p>
+<table>
+<thead>
+<tr>
+<th>Evento</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>loadstart</td>
+<td>Cuando la solicitud comienza.</td>
+</tr>
+<tr>
+<td>progress</td>
+<td>Lanzado cada 50ms mientras se envían datos.</td>
+</tr>
+<tr>
+<td>abort</td>
+<td>La petición ha sido abortada</td>
+</tr>
+<tr>
+<td>error</td>
+<td>Lanzado si se produce un error procesando la solicitud.</td>
+</tr>
+<tr>
+<td>load</td>
+<td>Disparado cuando la solicitud ha sido completada con éxito.</td>
+</tr>
+<tr>
+<td>timeout</td>
+<td>Se puede especificar un timeout, y cuando se llega a este se dispara este evento.</td>
+</tr>
+<tr>
+<td>loadend</td>
+<td>Disparado cuando la solicitud ha sido completada con o sin éxito</td>
+</tr>
+</tbody>
+</table>
+<h3 id="implementando-el-evento-load"><strong>Implementando el evento load</strong></h3>
+<pre><code class="language-javascript">let peticionhttp=new XMLHttpRequest();
+let boton = document.getElementById(&quot;idBoton&quot;);
+boton.addEventListener('click',cargarAJAX,false);
+
+function cargarAJAX() {
+    peticionhttp.addEventListener('load',cargar,false);
+    peticionhttp.open(&quot;GET&quot;, &quot;http://www.dwec.agustin.com/index.html&quot;, true);
+    peticionhttp.send(null);
+};
+
+function cargar() {
+    var r = document.getElementById(&quot;idResultado&quot;);
+    if (peticionhttp.readyState == 4 &amp;&amp; peticionhttp.status == 200) {
+        r.innerHTML = peticionhttp.responseText
+    } else {
+        r.innerHTML = &quot;En proceso&quot;;
+    }
+ }
+
+</code></pre>
+<p>En este ejemplo, abrimos con open, definimos el comportamiento del evento “load” y cuando esta todo listo, enviamos la petición con send.Teniendo el archivo html original:</p>
+<p><center><img alt="Primer Ejemplo" src="../imagenes/unidad_8/1_ejemplo_ajax.jpg" /></center></p>
+<p>Después de realizar la consulta el resultado será el siguiente:
+<center><img alt="Primer Ejemplo" src="../imagenes/unidad_8/1_ejemplo_resultado_ajax.jpg" /></center></p>
+<h2 id="5web-storage"><strong><u>5.WEB STORAGE</u></strong></h2>
+<p>El texto localStorage es una tecnología de almacenamiento existente en los navegadores más modernos, siendo incompatible con navegadores antiguos. La información se almacena en el cliente y generalmente posee al menos 5MB para guardar información:</p>
+<p>http://www.w3schools.com/html/html5_webstorage.asp</p>
+<p>A efectos prácticos debéis conocer que hay dos objetos: localStorage y sessionStorage. La diferencia entre uno y otro es que localStorage almacena la información indefinidamente y sessionStorage lo hace solo mientras la ventana de la página este abierta. Por el resto de detalles ambos objetos funcionan igual y en los ejemplos nos referiremos únicamente a localStorage.</p>
+<p>La funciones a utilizar son 3:</p>
+<ul>
+<li><strong>setItem</strong> → Asigna un item</li>
+<li><strong>getItem</strong> → Obtiene el valor de un item</li>
+<li><strong>removeItem</strong> → Borra un item determinado</li>
+</ul>
+<pre><code class="language-javascript">if (typeof(Storage) !== &quot;undefined&quot;) {
+    // Código relacionado con localStorage/sessionStorage.
+    localStorage.setItem(&quot;apellido&quot;, &quot;Garcia&quot;);
+    alert(localStorage.getItem(&quot;apellido&quot;));
+
+    localStorage.removeItem(&quot;apellido&quot;);
+    alert(localStorage.getItem(&quot;apellido&quot;));
+} else {
+ // Sorry! No Web Storage support..
+}
+</code></pre>
+<p>Una manera de almacenar objetos es utilizando JSON. Como la representación de los objetos en JSON puede realizarse a través de texto, podemos almacenar estas cadenas de texto </p>
+<pre><code class="language-javascript">var videoDetails = {
+    title : 'Matrix',
+    author : ['Andy Wachowski', 'Larry Wachowski'],
+    description : 'Wake up Neo, the Matrix has you...',
+    rating: '-2'
+};
+</code></pre>
+<p>y recuperarlas posteriormente para convertirlas en objetos.</p>
+<pre><code class="language-javascript">sessionStorage.setItem('videoDetails', JSON.stringify(videoDetails) );
+var videoDetails = JSON.parse(sessionStorage.getItem('videoDetails');
+</code></pre>
+<h2 id="6cookies"><strong><u>6.COOKIES</u></strong></h2>
+<p>Las cookies son datos, almacenados en pequeños archivos de texto, en su computadora. Cuando un servidor web ha enviado una página web a un navegador, la conexión se cierra y el servidor se olvida de todo sobre el usuario.</p>
+<p>Las cookies se inventaron para resolver el problema "cómo recordar información sobre el usuario":</p>
+<ul>
+<li>Cuando un usuario visita una página web, su nombre puede almacenarse en una cookie.</li>
+<li>La próxima vez que el usuario visite la página, la cookie "recordará" su nombre.</li>
+</ul>
+<p>Para crear una cookie, usamos document.cookie. Esto es una string especial que tiene el siguiente formato:</p>
+<pre><code>“variable=valor;expires=fecha expiración;path=/”
+</code></pre>
+<p>Donde variable es la variable a establecer, valor su valor, expires es la fecha de expiración (la forma de borrar cookies es cambiarles la fecha de expiración a una ya pasada) y path el lugar del dominio donde son válidas </p>
+<pre><code class="language-javascript">document.cookie = &quot;username=John Smith; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/&quot;;
+</code></pre>
+<p>A efectos prácticos, recomiendo el uso de estas funciones ya establecidas para crear, consultar y eliminar cookies:</p>
+<table>
+<thead>
+<tr>
+<th>Función</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>setCookie</td>
+<td>Almacenar un valor en la cookie</td>
+</tr>
+<tr>
+<td>getCookie</td>
+<td>Obtener un valor en la cookie</td>
+</tr>
+<tr>
+<td>deleteCookie</td>
+<td>Eliminar un valor en la cookie</td>
+</tr>
+</tbody>
+</table>
+<p>Para conocer el código interno de estas funciones, debes visistar la siguiente página:</p>
+<p>https://www.w3schools.com/js/js_cookies.asp</p>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../Unidad_7_formularios/" class="md-footer__link md-footer__link--prev" aria-label="Previous: UD 7 - &#34;Formularios&#34;" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              UD 7 - "Formularios"
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f758a944.min.js"></script>
+      
+    
+  </body>
+</html>
