@@ -763,13 +763,13 @@
 <h2 id="1-introduccion"><strong><u style="color:#2980B9">1.- INTRODUCCIÓN</u></strong></h2>
 <p>Javascript es un lenguaje de programación que permite ejecutar código en el cliente (<em>nuestro navegador</em>) ampliando la funcionalidad nuestros sitios web. Para añadir JavaScript se usa la etiqueta <strong>script</strong>.
 Este puede estar en cualquier lugar de la página. El código se ejecuta de forma secuencial a como el navegador lo va encontrando.</p>
-<pre><code class="language-javascript">    &lt;SCRIPT LANGUAGE=&quot;JavaScript&quot;&gt;
-    &lt;!--
-        Aquí va el código
-        // Esto es un comentario en Javascript de una linea
-    --&gt;
-    &lt;/SCRIPT&gt;
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">SCRIPT</span><span class="w"> </span><span class="nx">LANGUAGE</span><span class="o">=</span><span class="s2">&quot;JavaScript&quot;</span><span class="o">&gt;</span><span class="w"></span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="c">&lt;!--</span><span class="w"></span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">        </span><span class="nx">Aquí</span><span class="w"> </span><span class="nx">va</span><span class="w"> </span><span class="nx">el</span><span class="w"> </span><span class="nx">código</span><span class="w"></span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">        </span><span class="c1">// Esto es un comentario en Javascript de una linea</span><span class="w"></span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="o">--&gt;</span><span class="w"></span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/SCRIPT&gt;</span><span class="w"></span>
+</code></pre></div>
 <h2 id="2-comentarios"><strong><u style="color:#2980B9">2.- Comentarios </u></strong></h2>
 <p>En Javascript los comentarios se pueden hacer con:</p>
 <ul>
@@ -778,37 +778,37 @@ Este puede estar en cualquier lugar de la página. El código se ejecuta de form
 </ul>
 <p>Desde Javascript es posible reescribir el código HTML de la página mediante la orden </p>
 <p><center><strong>document.write(<em>texto</em>)</strong></center></p>
-<p>Este ejemplo podría ser un pequeño <em>"hola mundo"</em> que al ejecutarse modificará el HTML de la página.</p>
-<pre><code class="language-javascript">    &lt;SCRIPT LANGUAGE=&quot;JavaScript&quot;&gt;
-
-        document.write (&quot;Hola mundo&quot;);
-        /* 
-            Esto es un comentario 
-            en Javascript multilinea 
-        */  
-    &lt;/SCRIPT&gt;
-</code></pre>
-<p>Otra vía para mostrar información al usuario desde una ventana emergente, es el comando <strong>alert(<em>texto</em>).</strong></p>
-<pre><code class="language-javascript">    &lt;SCRIPT LANGUAGE=&quot;JavaScript&quot;&gt;
-
-        alert(&quot;Hola mundo&quot;);
-
-    &lt;/SCRIPT&gt;
-</code></pre>
-<p>Hay una forma mucho más práctica y ordenada de usar código Javascript. Se pueden incluir uno o varios ficheros con código Javascript. Se pueden incluir tantos como se desee. Un ejemplo de inclusión de ficheros.</p>
-<pre><code class="language-javascript">    &lt;script type=&quot;text/javascript&quot; src=&quot;rutaDelArchivo1.js&quot;/&gt;
-    &lt;script type=&quot;text/javascript&quot; src=&quot;rutaDelArchivo2.js&quot;/&gt;
-    &lt;script type=&quot;text/javascript&quot; src=&quot;rutaDelArchivo3.js&quot;/&gt;
-</code></pre>
+<p>Este ejemplo podría ser un pequeño <em>"hola mundo"</em> que al ejecutarse modificará el HTML de la página.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">SCRIPT</span><span class="w"> </span><span class="nx">LANGUAGE</span><span class="o">=</span><span class="s2">&quot;JavaScript&quot;</span><span class="o">&gt;</span><span class="w"></span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">        </span><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="w"> </span><span class="p">(</span><span class="s2">&quot;Hola mundo&quot;</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">        </span><span class="cm">/* </span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="cm">            Esto es un comentario </span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="cm">            en Javascript multilinea </span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="cm">        */</span><span class="w">  </span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/SCRIPT&gt;</span><span class="w"></span>
+</code></pre></div>
+Otra vía para mostrar información al usuario desde una ventana emergente, es el comando <strong>alert(<em>texto</em>).</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">SCRIPT</span><span class="w"> </span><span class="nx">LANGUAGE</span><span class="o">=</span><span class="s2">&quot;JavaScript&quot;</span><span class="o">&gt;</span><span class="w"></span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">        </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Hola mundo&quot;</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/SCRIPT&gt;</span><span class="w"></span>
+</code></pre></div>
+Hay una forma mucho más práctica y ordenada de usar código Javascript. Se pueden incluir uno o varios ficheros con código Javascript. Se pueden incluir tantos como se desee. Un ejemplo de inclusión de ficheros.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">script</span><span class="w"> </span><span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span><span class="w"> </span><span class="nx">src</span><span class="o">=</span><span class="s2">&quot;rutaDelArchivo1.js&quot;</span><span class="o">/&gt;</span><span class="w"></span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">script</span><span class="w"> </span><span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span><span class="w"> </span><span class="nx">src</span><span class="o">=</span><span class="s2">&quot;rutaDelArchivo2.js&quot;</span><span class="o">/&gt;</span><span class="w"></span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">script</span><span class="w"> </span><span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span><span class="w"> </span><span class="nx">src</span><span class="o">=</span><span class="s2">&quot;rutaDelArchivo3.js&quot;</span><span class="o">/&gt;</span><span class="w"></span>
+</code></pre></div></p>
 <h2 id="3-variables"><strong><u style="color:#2980B9">3. Variables </u></strong></h2>
 <p>Las variables son elementos del lenguaje que permiten almacenar distintos valores en cada momento. Se puede almacenar un valor en una variable y consultar este valor posteriormente. También podemos modificar su contenido siempre que queramos.
-Para declarar las variables en JavaScript se utiliza la palabra reservada <strong>var</strong>.</p>
-<pre><code class="language-javascript">    var ejemplo;
-    var resultado;
-    ejemplo= &quot;Hola&quot;;
-    resultado=3+7;
-</code></pre>
-<p>En JavaScript todas las variables y nombres de función son <em>sensibles a mayúsculas y minúsculas</em>. Esto significa que la capitalización importa. Escribe los nombres de las variables en JavaScript en <strong>camelCase</strong>. En camelCase, los nombres de variables de múltiples palabras tienen la primera palabra en minúsculas y la primera letra de cada palabra posterior en mayúsculas.</p>
+Para declarar las variables en JavaScript se utiliza la palabra reservada <strong>var</strong>.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">ejemplo</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">resultado</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="nx">ejemplo</span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hola&quot;</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="nx">resultado</span><span class="o">=</span><span class="mf">3</span><span class="o">+</span><span class="mf">7</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
+En JavaScript todas las variables y nombres de función son <em>sensibles a mayúsculas y minúsculas</em>. Esto significa que la capitalización importa. Escribe los nombres de las variables en JavaScript en <strong>camelCase</strong>. En camelCase, los nombres de variables de múltiples palabras tienen la primera palabra en minúsculas y la primera letra de cada palabra posterior en mayúsculas.</p>
 <h3 id="tipos-de-variables"><strong><span style="color:#2980B9">Tipos de variables</span></strong></h3>
 <p>JavaScript proporciona ocho tipos de datos diferentes:</p>
 <ul>
@@ -818,67 +818,67 @@ Para declarar las variables en JavaScript se utiliza la palabra reservada <stron
 <li><strong>Cadenas de caracteres o String</strong>, cualquier combinación de caracteres (letras, números, signos especiales y espacios). Las cadenas se delimitan mediante comillas dobles o simples (“Lolo”,”lalO”). Para concatenar cadenas puede usarse el operador +  (“Soy” + “ el “ + “ AMO” formaría la cadena “Soy el AMO”).</li>
 <li><strong>Undefined</strong>: Valor no definido, es decir, la variable no tiene asignado un valor.</li>
 </ul>
-<pre><code class="language-javascript">    var edad=23, nueva_edad, incremento;
-    var nombre=&quot;Rosa García&quot;;
-    incremento=4;
-    nueva_edad=edad+incremento;
-    alert(nombre+ &quot; dentro de &quot;+incremento +&quot; años tendrá &quot;+ nueva_edad+&quot;años&quot;);
-</code></pre>
-<p>Puedes utilizar la función <strong>typeof</strong> para consultar el tipo de la variable o dato:</p>
-<pre><code class="language-javascript">    console.log(typeof(5))
-</code></pre>
-<p>###  <strong>Arrays</strong>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">edad</span><span class="o">=</span><span class="mf">23</span><span class="p">,</span><span class="w"> </span><span class="nx">nueva_edad</span><span class="p">,</span><span class="w"> </span><span class="nx">incremento</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">nombre</span><span class="o">=</span><span class="s2">&quot;Rosa García&quot;</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="nx">incremento</span><span class="o">=</span><span class="mf">4</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="nx">nueva_edad</span><span class="o">=</span><span class="nx">edad</span><span class="o">+</span><span class="nx">incremento</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="nx">nombre</span><span class="o">+</span><span class="w"> </span><span class="s2">&quot; dentro de &quot;</span><span class="o">+</span><span class="nx">incremento</span><span class="w"> </span><span class="o">+</span><span class="s2">&quot; años tendrá &quot;</span><span class="o">+</span><span class="w"> </span><span class="nx">nueva_edad</span><span class="o">+</span><span class="s2">&quot;años&quot;</span><span class="p">);</span><span class="w"></span>
+</code></pre></div>
+Puedes utilizar la función <strong>typeof</strong> para consultar el tipo de la variable o dato:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="p">(</span><span class="mf">5</span><span class="p">))</span><span class="w"></span>
+</code></pre></div>
+ ###  <strong>Arrays</strong>
 Un array (también llamado vector o arreglo) es una variable que contiene diversos valores. Lo creamos con “new Array()” o inicializando los elementos. Podemos referenciar esos valores indicando su posición en el array. Los arrays poseen una propiedad llamada “length” que podemos utilizar para conocer el número de elementos del array.</p>
-<pre><code class="language-javascript">                    // Array definido 1 a 1
-    var miVector=new Array();
-    miVector[0]=22;
-    miVector[1]=12;
-    miVector[2]=33;
-                    //Array definido en una linea
-    var otroArray=[1,2,&quot;Cancamusa&quot;];
-                    // Valores dentro del array
-    alert(miVector[1]);
-    alert(otroArray[2]);
-                    // Valor completo del array
-    alert(miVector);
-                    // Tamaño del array
-    alert(miVector.length);
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="w">                    </span><span class="c1">// Array definido 1 a 1</span><span class="w"></span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">miVector</span><span class="o">=</span><span class="ow">new</span><span class="w"> </span><span class="nb">Array</span><span class="p">();</span><span class="w"></span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="nx">miVector</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span><span class="o">=</span><span class="mf">22</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="nx">miVector</span><span class="p">[</span><span class="mf">1</span><span class="p">]</span><span class="o">=</span><span class="mf">12</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="nx">miVector</span><span class="p">[</span><span class="mf">2</span><span class="p">]</span><span class="o">=</span><span class="mf">33</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">                    </span><span class="c1">//Array definido en una linea</span><span class="w"></span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">otroArray</span><span class="o">=</span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="mf">2</span><span class="p">,</span><span class="s2">&quot;Cancamusa&quot;</span><span class="p">];</span><span class="w"></span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">                    </span><span class="c1">// Valores dentro del array</span><span class="w"></span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="nx">miVector</span><span class="p">[</span><span class="mf">1</span><span class="p">]);</span><span class="w"></span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="nx">otroArray</span><span class="p">[</span><span class="mf">2</span><span class="p">]);</span><span class="w"></span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">                    </span><span class="c1">// Valor completo del array</span><span class="w"></span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="nx">miVector</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="w">                    </span><span class="c1">// Tamaño del array</span><span class="w"></span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="nx">miVector</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span><span class="w"></span>
+</code></pre></div>
 <p>###  <strong>Conversiones entre tipos</strong>
 Javascript no define explícitamente el tipo de datos de sus variables. Según se almacenen, pueden ser cadenas (Entrecomillados), enteros (sin parte decimal) o decimales (con parte decimal).
-Elementos como la función “prompt” para leer de teclado, leen los elementos siempre como cadena. Para estos casos y otros, merece la pena usar funciones de conversión de datos.</p>
-<pre><code class="language-javascript">    var num=”100”;      // Es una cadena
-    var num2=”100.13”;      // Es una cadena
-    var num3=11;            // Es un entero
-    var n=parseInt(num);        // Almacena un entero. 
-    var n2=parseFloat(num);     // Almacena un decimal
-    var n3=num3.toString();     // Almacena una cadena
-</code></pre>
+Elementos como la función “prompt” para leer de teclado, leen los elementos siempre como cadena. Para estos casos y otros, merece la pena usar funciones de conversión de datos.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">num</span><span class="o">=</span><span class="err">”</span><span class="mf">100</span><span class="err">”</span><span class="p">;</span><span class="w">      </span><span class="c1">// Es una cadena</span><span class="w"></span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">num2</span><span class="o">=</span><span class="err">”</span><span class="mf">100.13</span><span class="err">”</span><span class="p">;</span><span class="w">      </span><span class="c1">// Es una cadena</span><span class="w"></span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">num3</span><span class="o">=</span><span class="mf">11</span><span class="p">;</span><span class="w">            </span><span class="c1">// Es un entero</span><span class="w"></span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">n</span><span class="o">=</span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">num</span><span class="p">);</span><span class="w">        </span><span class="c1">// Almacena un entero. </span><span class="w"></span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">n2</span><span class="o">=</span><span class="nb">parseFloat</span><span class="p">(</span><span class="nx">num</span><span class="p">);</span><span class="w">     </span><span class="c1">// Almacena un decimal</span><span class="w"></span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">n3</span><span class="o">=</span><span class="nx">num3</span><span class="p">.</span><span class="nx">toString</span><span class="p">();</span><span class="w">     </span><span class="c1">// Almacena una cadena</span><span class="w"></span>
+</code></pre></div></p>
 <h2 id="4-mostrar-por-pantalla-y-leer-del-teclado"><strong><u style="color:#2980B9">4. Mostrar por pantalla y leer del teclado </u></strong></h2>
 <h3 id="alert-confirm-prompt"><strong><span style="color:#2980B9">alert() , confirm(), prompt()</span></strong></h3>
 <p>El método <strong>alert()</strong> permite mostrar al usuario información literal o el contenido de variables en una ventana independiente. La ventana contendrá la información a mostrar y el botón aceptar.</p>
-<p><center></p>
-<pre><code>alert(&quot;Bienvenido Agustín&quot;);
-</code></pre>
-<p></center></p>
+<p><center>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>alert(&quot;Bienvenido Agustín&quot;);
+</code></pre></div>
+</center></p>
 <p>A través del método <strong>confirm()</strong> se activa un cuadro de diálogo que contiene los botones Aceptar y Cancelar.
 * <strong>True</strong>  → Se ha pulsado la opción aceptar (botón).
 * <strong>False</strong> → Se ha pulsado la opción cancelar (botón). </p>
 <p>Con ayuda de este método el usuario puede decidir sobre preguntas concretas e influir de ese modo directamente en la página.</p>
-<pre><code class="language-javascript">    var respuesta;
-    respuesta=confirm (&quot;¿Desea cancelar la subscripción?&quot;);
-    alert(&quot;Usted ha contestado que &quot;+respuesta);
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">respuesta</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">    </span><span class="nx">respuesta</span><span class="o">=</span><span class="nx">confirm</span><span class="w"> </span><span class="p">(</span><span class="s2">&quot;¿Desea cancelar la subscripción?&quot;</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Usted ha contestado que &quot;</span><span class="o">+</span><span class="nx">respuesta</span><span class="p">);</span><span class="w"></span>
+</code></pre></div>
 <p>El método <em>prompt()</em> abre un cuadro de diálogo en pantalla en el que se pide al usuario que introduzca algún dato. Si se pulsa el botón Cancelar, el valor de devolución es false/null. Pulsando en Aceptar se obtiene el valor true y la cadena de caracteres introducida se guarda para su posterior procesamiento.</p>
-<pre><code>    var provincia;
-    provincia=prompt(&quot;Introduzca la provincia &quot;,&quot;Granada&quot;);
-    alert(&quot;Usted ha introducido la siguiente información &quot;+provincia)
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>    var provincia;
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>    provincia=prompt(&quot;Introduzca la provincia &quot;,&quot;Granada&quot;);
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>    alert(&quot;Usted ha introducido la siguiente información &quot;+provincia)
+</code></pre></div>
 <h3 id="template-literals"><strong><span style="color:#2980B9">Template Literals</span></strong></h3>
 <p>Desde ES2015 también podemos poner una cadena entre ` (acento grave) y en ese caso podemos poner dentro variables y expresiones que serán evaluadas al ponerlas dentro de <strong>${}</strong>. También se respetan los saltos de línea, tabuladores, etc que haya dentro.   </p>
-<pre><code class="language-javascript">    let edad=40
-    console.log(`El usuario tiene: ${edad} años`)
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">edad</span><span class="o">=</span><span class="mf">40</span><span class="w"></span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`El usuario tiene: </span><span class="si">${</span><span class="nx">edad</span><span class="si">}</span><span class="sb"> años`</span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
 <h2 id="5-operadores"><strong><u style="color:#2980B9">5. Operadores</u></strong></h2>
 <p>Combinando variables y valores, se pueden formular expresiones más complejas. Las expresiones son una parte esencial de los programas. Para formular expresiones se utilizan los operadores.</p>
 <h3 id="operadores-de-asignacion"><strong><span style="color:#2980B9"> Operadores de asignación</span></strong></h3>
@@ -917,14 +917,14 @@ Elementos como la función “prompt” para leer de teclado, leen los elementos
 </tr>
 </tbody>
 </table>
-<pre><code class="language-javascript">    var num1=3;
-    var num2=5;
-    num2+=num1;
-    num2-=num1;
-    num2*=num1;
-    num2/=num1;
-    num2%=num1;
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">num1</span><span class="o">=</span><span class="mf">3</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">num2</span><span class="o">=</span><span class="mf">5</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">    </span><span class="nx">num2</span><span class="o">+=</span><span class="nx">num1</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">    </span><span class="nx">num2</span><span class="o">-=</span><span class="nx">num1</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">    </span><span class="nx">num2</span><span class="o">*=</span><span class="nx">num1</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">    </span><span class="nx">num2</span><span class="o">/=</span><span class="nx">num1</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="w">    </span><span class="nx">num2</span><span class="o">%=</span><span class="nx">num1</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
 <h3 id="operadores-aritmeticos"><strong><span style="color:#2980B9">Operadores aritméticos</span></strong></h3>
 <p>Los operadores aritméticos se utilizan para hacer cálculos aritméticos.</p>
 <table>
@@ -989,14 +989,14 @@ Elementos como la función “prompt” para leer de teclado, leen los elementos
 </tr>
 </tbody>
 </table>
-<pre><code class="language-javascript">    var num1=5, num2=8,resultado1, resultado2; 
-    resultado1=((num1+num2)*200)/100;
-    resultado2=resultado1%3;
-    resultado1=++num1;
-    resultado2=num2++;
-    resultado1=--num1;
-    resultado2=num2--;
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">num1</span><span class="o">=</span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="nx">num2</span><span class="o">=</span><span class="mf">8</span><span class="p">,</span><span class="nx">resultado1</span><span class="p">,</span><span class="w"> </span><span class="nx">resultado2</span><span class="p">;</span><span class="w"> </span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">    </span><span class="nx">resultado1</span><span class="o">=</span><span class="p">((</span><span class="nx">num1</span><span class="o">+</span><span class="nx">num2</span><span class="p">)</span><span class="o">*</span><span class="mf">200</span><span class="p">)</span><span class="o">/</span><span class="mf">100</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">    </span><span class="nx">resultado2</span><span class="o">=</span><span class="nx">resultado1</span><span class="o">%</span><span class="mf">3</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w">    </span><span class="nx">resultado1</span><span class="o">=++</span><span class="nx">num1</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="w">    </span><span class="nx">resultado2</span><span class="o">=</span><span class="nx">num2</span><span class="o">++</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="w">    </span><span class="nx">resultado1</span><span class="o">=--</span><span class="nx">num1</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="w">    </span><span class="nx">resultado2</span><span class="o">=</span><span class="nx">num2</span><span class="o">--</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
 <h3 id="operadores-de-comparacion"><strong><span style="color:#2980B9">Operadores de comparación</span></strong></h3>
 <p>Para comparar dos valores entre sí, se utiliza el operador de comparación. Como valor de retorno se obtiene un valor lógico o booleano: true o false. </p>
 <table>
@@ -1033,14 +1033,14 @@ Elementos como la función “prompt” para leer de teclado, leen los elementos
 </tr>
 </tbody>
 </table>
-<pre><code class="language-javascript">    var a=4;b=5;
-    alert(&quot;El resultado de la expresión 'a==b' es igual a &quot;+(a==b));
-    alert(&quot;El resultado de la expresión 'a!=b' es igual a &quot;+(a!=b));
-    alert(&quot;El resultado de la expresión 'a&gt;b' es igual a &quot;+(a&gt;b));
-    alert(&quot;El resultado de la expresión 'a&lt;b' es igual a &quot;+(a&lt;b));
-    alert(&quot;El resultado de la expresión 'a&gt;=b' es igual a &quot;+(a&gt;=b));
-    alert(&quot;El resultado de la expresión 'a&lt;=b' es igual a &quot;+(a&lt;=b));
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">a</span><span class="o">=</span><span class="mf">4</span><span class="p">;</span><span class="nx">b</span><span class="o">=</span><span class="mf">5</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;El resultado de la expresión &#39;a==b&#39; es igual a &quot;</span><span class="o">+</span><span class="p">(</span><span class="nx">a</span><span class="o">==</span><span class="nx">b</span><span class="p">));</span><span class="w"></span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;El resultado de la expresión &#39;a!=b&#39; es igual a &quot;</span><span class="o">+</span><span class="p">(</span><span class="nx">a</span><span class="o">!=</span><span class="nx">b</span><span class="p">));</span><span class="w"></span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;El resultado de la expresión &#39;a&gt;b&#39; es igual a &quot;</span><span class="o">+</span><span class="p">(</span><span class="nx">a</span><span class="o">&gt;</span><span class="nx">b</span><span class="p">));</span><span class="w"></span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;El resultado de la expresión &#39;a&lt;b&#39; es igual a &quot;</span><span class="o">+</span><span class="p">(</span><span class="nx">a</span><span class="o">&lt;</span><span class="nx">b</span><span class="p">));</span><span class="w"></span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;El resultado de la expresión &#39;a&gt;=b&#39; es igual a &quot;</span><span class="o">+</span><span class="p">(</span><span class="nx">a</span><span class="o">&gt;=</span><span class="nx">b</span><span class="p">));</span><span class="w"></span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;El resultado de la expresión &#39;a&lt;=b&#39; es igual a &quot;</span><span class="o">+</span><span class="p">(</span><span class="nx">a</span><span class="o">&lt;=</span><span class="nx">b</span><span class="p">));</span><span class="w"></span>
+</code></pre></div>
 <h3 id="operadores-logicos"><strong><span style="color:#2980B9">Operadores lógicos</span></strong></h3>
 <p>Los operadores lógicos se utilizan para el procesamiento de los valores booleanos. A su vez el valor que devuelven también es booleano: true o false.</p>
 <table>
@@ -1066,166 +1066,165 @@ Elementos como la función “prompt” para leer de teclado, leen los elementos
 </tbody>
 </table>
 <p>Ejemplo de resultado de distintas operaciones realizadas con operadores lógicos.</p>
-<pre><code class="language-javascript">    alert(”resultado 'false&amp;&amp;false' es igual a &quot;+(false&amp;&amp;false));
-    alert(&quot;resultado 'false&amp;&amp;true' es igual a &quot;+(false&amp;&amp;true));
-    alert(&quot;resultado 'true&amp;&amp;false' es igual a &quot;+(true&amp;&amp;false));
-    alert(&quot;resultado 'true&amp;&amp;true' es igual a &quot;+(true&amp;&amp;true));
-    alert(&quot;resultado 'false||false' es igual a &quot;+(false||false));
-    alert(“resultado 'false||true' es igual a &quot;+(false||true));
-    alert(&quot;resultado 'true||false' es igual a &quot;+(true||false));
-    alert(&quot;resultado 'true||true' es igual a &quot;+(true||true));
-    alert(&quot;resultado '!false' es igual a &quot;+(!false));
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="err">”</span><span class="nx">resultado</span><span class="w"> </span><span class="s1">&#39;false&amp;&amp;false&#39;</span><span class="w"> </span><span class="nx">es</span><span class="w"> </span><span class="nx">igual</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="s2">&quot;+(false&amp;&amp;false));</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="s2">    alert(&quot;</span><span class="nx">resultado</span><span class="w"> </span><span class="s1">&#39;false&amp;&amp;true&#39;</span><span class="w"> </span><span class="nx">es</span><span class="w"> </span><span class="nx">igual</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="s2">&quot;+(false&amp;&amp;true));</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="s2">    alert(&quot;</span><span class="nx">resultado</span><span class="w"> </span><span class="s1">&#39;true&amp;&amp;false&#39;</span><span class="w"> </span><span class="nx">es</span><span class="w"> </span><span class="nx">igual</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="s2">&quot;+(true&amp;&amp;false));</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="s2">    alert(&quot;</span><span class="nx">resultado</span><span class="w"> </span><span class="s1">&#39;true&amp;&amp;true&#39;</span><span class="w"> </span><span class="nx">es</span><span class="w"> </span><span class="nx">igual</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="s2">&quot;+(true&amp;&amp;true));</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="s2">    alert(&quot;</span><span class="nx">resultado</span><span class="w"> </span><span class="s1">&#39;false||false&#39;</span><span class="w"> </span><span class="nx">es</span><span class="w"> </span><span class="nx">igual</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="s2">&quot;+(false||false));</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="s2">    alert(“resultado &#39;false||true&#39; es igual a &quot;</span><span class="o">+</span><span class="p">(</span><span class="kc">false</span><span class="o">||</span><span class="kc">true</span><span class="p">));</span><span class="w"></span>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;resultado &#39;true||false&#39; es igual a &quot;</span><span class="o">+</span><span class="p">(</span><span class="kc">true</span><span class="o">||</span><span class="kc">false</span><span class="p">));</span><span class="w"></span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;resultado &#39;true||true&#39; es igual a &quot;</span><span class="o">+</span><span class="p">(</span><span class="kc">true</span><span class="o">||</span><span class="kc">true</span><span class="p">));</span><span class="w"></span>
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;resultado &#39;!false&#39; es igual a &quot;</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="kc">false</span><span class="p">));</span><span class="w"></span>
+</code></pre></div>
 <h2 id="6-estructuras-de-control-y-bucles"><strong> <u style="color:#2980B9">6. Estructuras de control y bucles </u></strong></h2>
 <h3 id="if-y-else"><strong><span style="color:#2980B9">IF y ELSE</span></strong></h3>
 <p>Para controlar el flujo de información en los programas JavaScript existen una serie de estructuras condicionales y bucles que permiten alterar el orden secuencial de ejecución. La instrucción <strong>if</strong>  permite la ejecución de un bloque u otro de instrucciones en función de una condición.</p>
-<pre><code class="language-javascript">    if (condición) {
-        // bloque instrucciones,se ejecutan si la condición se cumple
-    }
-    else{
-        // bloque instrucciones, se ejecutan si la condición no se cumple
-    }
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">condición</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="w">        </span><span class="c1">// bloque instrucciones,se ejecutan si la condición se cumple</span><span class="w"></span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="w">    </span><span class="k">else</span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="w">        </span><span class="c1">// bloque instrucciones, se ejecutan si la condición no se cumple</span><span class="w"></span>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
+</code></pre></div>
 <p>Las llaves solo son obligatorias cuando haya varias instrucciones seguidas pertenecientes a la ramificación. 
 Si no pones llaves, el if se aplicará únicamente a la siguiente instrucción(primera instrucción).</p>
-<pre><code class="language-javascript">    let edadAna,edadLuis;
-    edadAna=parseInt(prompt(&quot;Introduce la edad de Ana&quot;,&quot;&quot;));
-    edadLuis=parseInt(prompt(&quot;Introduce la edad de Luis&quot;,&quot;&quot;));
-    if (edadAna &gt; edadLuis){
-        alert(&quot;Ana es mayor que Luis.&quot;);
-        alert(` Ana tiene ${edadAna} años y Luis ${edadAna}`);
-    }
-    else{
-        alert(&quot;Ana es menor o de igual edad que Luis.&quot;);
-        alert(&quot; Ana tiene &quot; + edadAna + &quot; años y Luis &quot; + edadLuis);
-    } 
-</code></pre>
-<p>Para las condiciones ramificadas más complicadas, a menudo se utilizan las ramificaciones anidadas. En ellas se definen consultas if dentro de otras consultas if.</p>
-<pre><code class="language-javascript">    var edadAna,edadLuis;
-    edadAna=parseInt(prompt(&quot;Introduce la edad de Ana&quot;,&quot;&quot;));
-    edadLuis=parseInt(prompt(&quot;Introduce la edad de Luis&quot;,&quot;&quot;));
-    if (edadAna &gt; edadLuis){
-        alert(&quot;Ana es mayor que Luis.&quot;);
-    }
-    else{
-        if (edadAna&lt;edadLuis){
-            alert(&quot;Ana es menor que Luis.&quot;);
-        }else{
-            alert(&quot;Ana tiene la misma edad que Luis.&quot;); 
-        }
-    } 
-    alert(` Ana tiene ${edadAna} años y Luis ${edadAna}`);
-</code></pre>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">edadAna</span><span class="p">,</span><span class="nx">edadLuis</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="w">    </span><span class="nx">edadAna</span><span class="o">=</span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">prompt</span><span class="p">(</span><span class="s2">&quot;Introduce la edad de Ana&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">));</span><span class="w"></span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="w">    </span><span class="nx">edadLuis</span><span class="o">=</span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">prompt</span><span class="p">(</span><span class="s2">&quot;Introduce la edad de Luis&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">));</span><span class="w"></span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">edadAna</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nx">edadLuis</span><span class="p">){</span><span class="w"></span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="w">        </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Ana es mayor que Luis.&quot;</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="w">        </span><span class="nx">alert</span><span class="p">(</span><span class="sb">` Ana tiene </span><span class="si">${</span><span class="nx">edadAna</span><span class="si">}</span><span class="sb"> años y Luis </span><span class="si">${</span><span class="nx">edadAna</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="w">    </span><span class="k">else</span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="w">        </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Ana es menor o de igual edad que Luis.&quot;</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="w">        </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot; Ana tiene &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">edadAna</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot; años y Luis &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">edadLuis</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span>
+</code></pre></div>
+Para las condiciones ramificadas más complicadas, a menudo se utilizan las ramificaciones anidadas. En ellas se definen consultas if dentro de otras consultas if.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">edadAna</span><span class="p">,</span><span class="nx">edadLuis</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="w">    </span><span class="nx">edadAna</span><span class="o">=</span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">prompt</span><span class="p">(</span><span class="s2">&quot;Introduce la edad de Ana&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">));</span><span class="w"></span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="w">    </span><span class="nx">edadLuis</span><span class="o">=</span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">prompt</span><span class="p">(</span><span class="s2">&quot;Introduce la edad de Luis&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">));</span><span class="w"></span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">edadAna</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nx">edadLuis</span><span class="p">){</span><span class="w"></span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="w">        </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Ana es mayor que Luis.&quot;</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="w">    </span><span class="k">else</span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">edadAna</span><span class="o">&lt;</span><span class="nx">edadLuis</span><span class="p">){</span><span class="w"></span>
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a><span class="w">            </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Ana es menor que Luis.&quot;</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a><span class="w">        </span><span class="p">}</span><span class="k">else</span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a><span class="w">            </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Ana tiene la misma edad que Luis.&quot;</span><span class="p">);</span><span class="w"> </span>
+<a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a><span class="w">        </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span>
+<a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a><span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="sb">` Ana tiene </span><span class="si">${</span><span class="nx">edadAna</span><span class="si">}</span><span class="sb"> años y Luis </span><span class="si">${</span><span class="nx">edadAna</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span><span class="w"></span>
+</code></pre></div></p>
 <h3 id="bucle-for"><strong><span style="color:#2980B9">Bucle FOR</span></strong></h3>
-<p>Cuando la ejecución de un programa llega a un bucle for, lo primero que hace es ejecutar la <strong>“inicialización del índice”</strong>, que solo se ejecuta un vez, a continuación analiza la <strong>“condición de prueba”</strong> y si esta se cumple ejecuta las instrucciones del bucle. Cuando finaliza la ejecución de las instrucciones del bucle se realiza la <strong>“modificación del índice”</strong> .</p>
-<pre><code class="language-javascript">for (inicialización_índice; condición_prueba; Modificación_índice){
-    // Bloque de instrucciones...
-}
-</code></pre>
-<p>Ejemplo: números pares del 2 al 30</p>
-<pre><code class="language-javascript">    for (i=2;i&lt;=30;i+=2) {
-        alert(i);
-    }
-    alert(&quot; Ya se han escrito los números pares del 0 al 30&quot;);
-</code></pre>
+<p>Cuando la ejecución de un programa llega a un bucle for, lo primero que hace es ejecutar la <strong>“inicialización del índice”</strong>, que solo se ejecuta un vez, a continuación analiza la <strong>“condición de prueba”</strong> y si esta se cumple ejecuta las instrucciones del bucle. Cuando finaliza la ejecución de las instrucciones del bucle se realiza la <strong>“modificación del índice”</strong> .
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="nx">inicialización_índice</span><span class="p">;</span><span class="w"> </span><span class="nx">condición_prueba</span><span class="p">;</span><span class="w"> </span><span class="nx">Modificación_índice</span><span class="p">){</span><span class="w"></span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="w">    </span><span class="c1">// Bloque de instrucciones...</span><span class="w"></span>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+Ejemplo: números pares del 2 al 30
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="nx">i</span><span class="o">=</span><span class="mf">2</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;=</span><span class="mf">30</span><span class="p">;</span><span class="nx">i</span><span class="o">+=</span><span class="mf">2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="w">        </span><span class="nx">alert</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot; Ya se han escrito los números pares del 0 al 30&quot;</span><span class="p">);</span><span class="w"></span>
+</code></pre></div></p>
 <h3 id="bucle-while"><strong><span style="color:#2980B9">Bucle WHILE</span></strong></h3>
 <p>Con el bucle while se pueden ejecutar un grupo de instrucciones mientras se cumpla una condición. Si la condición nunca se cumple, entonces tampoco se ejecuta ninguna instrucción.</p>
-<pre><code class="language-javascript">    while (condición){
-        // Bloque de instrucciones...
-    }
-</code></pre>
-<p>Ejemplo : Escribe los números pares de 0 a 30</p>
-<pre><code>    i=2;
-    while (i&lt;=30) {
-        alert (i);
-        i+=2;
-    } 
-    alert(&quot;Ya se han mostrado los números pares del 0 al 30&quot;);
-</code></pre>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nx">condición</span><span class="p">){</span><span class="w"></span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="w">        </span><span class="c1">// Bloque de instrucciones...</span><span class="w"></span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+Ejemplo : Escribe los números pares de 0 a 30
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>    i=2;
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>    while (i&lt;=30) {
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>        alert (i);
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>        i+=2;
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>    } 
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>    alert(&quot;Ya se han mostrado los números pares del 0 al 30&quot;);
+</code></pre></div></p>
 <h3 id="bucle-do-while"><strong><span style="color:#2980B9">Bucle DO-WHILE</span></strong></h3>
 <p>La diferencia del bucle do-while frente al bucle while reside en el momento en que se comprueba la condición: </p>
 <ul>
 <li>El bucle <strong>do-while</strong> no la comprueba hasta el final. Lo que significa que el bucle do-while se recorrerá, una vez, como mínimo, aunque no se cumpla la condición.</li>
 </ul>
-<pre><code class="language-javascript">    do {
-        // Bloque de instrucciones...
-    } while(condición)
-    Ejemplo: Preguntar por una clave hasta que se introduzca la correcta
-    do {
-        auxclave=prompt(&quot;introduce la clave &quot;,&quot;vivaYo&quot;)
-    } while (auxclave!=&quot;EstaeslaclaveJEJEJE&quot;)
-
-    alert (&quot;Has acertado la clave&quot;);
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="w">    </span><span class="k">do</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="w">        </span><span class="c1">// Bloque de instrucciones...</span><span class="w"></span>
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="p">(</span><span class="nx">condición</span><span class="p">)</span><span class="w"></span>
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="w">    </span><span class="nx">Ejemplo</span><span class="o">:</span><span class="w"> </span><span class="nx">Preguntar</span><span class="w"> </span><span class="nx">por</span><span class="w"> </span><span class="nx">una</span><span class="w"> </span><span class="nx">clave</span><span class="w"> </span><span class="nx">hasta</span><span class="w"> </span><span class="nx">que</span><span class="w"> </span><span class="nx">se</span><span class="w"> </span><span class="nx">introduzca</span><span class="w"> </span><span class="nx">la</span><span class="w"> </span><span class="nx">correcta</span><span class="w"></span>
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a><span class="w">    </span><span class="k">do</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a><span class="w">        </span><span class="nx">auxclave</span><span class="o">=</span><span class="nx">prompt</span><span class="p">(</span><span class="s2">&quot;introduce la clave &quot;</span><span class="p">,</span><span class="s2">&quot;vivaYo&quot;</span><span class="p">)</span><span class="w"></span>
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nx">auxclave</span><span class="o">!=</span><span class="s2">&quot;EstaeslaclaveJEJEJE&quot;</span><span class="p">)</span><span class="w"></span>
+<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>
+<a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a><span class="w">    </span><span class="nx">alert</span><span class="w"> </span><span class="p">(</span><span class="s2">&quot;Has acertado la clave&quot;</span><span class="p">);</span><span class="w"></span>
+</code></pre></div>
 <h3 id="instrucciones-break-y-continue"><strong><span style="color:#2980B9">Instrucciones BREAK y CONTINUE</span></strong></h3>
 <p>En los bucles for, while y do-while se pueden utilizar las instrucciones <strong>break</strong> y <strong>continue</strong> para modificar el comportamiento del bucle. </p>
 <ul>
 <li><strong>Break</strong>  → Hace que el bucle se interrumpa inmediatamente, aun cuando no se haya ejecutado todavía el bucle completo.      </li>
 </ul>
 <p>Ejemplo: Pregunta por la clave y permitir tres respuestas incorrectas</p>
-<pre><code class="language-javascript">var auxclave=true , var numveces=0;
-while (auxclave != &quot;anonimo&quot; &amp;&amp; auxclave){ 
-    auxclave=prompt(&quot;Introduce la clave &quot;,&quot;&quot;);
-    numveces++;
-    if (numveces == 3)
-        break;
-}
-if (auxclave==&quot;SuperClave&quot;) alert(&quot;La clave es correcta&quot;);
-else alert(&quot;La clave no es correcta correcta&quot;);
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">auxclave</span><span class="o">=</span><span class="kc">true</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="nx">numveces</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nx">auxclave</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s2">&quot;anonimo&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">auxclave</span><span class="p">){</span><span class="w"> </span>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="w">    </span><span class="nx">auxclave</span><span class="o">=</span><span class="nx">prompt</span><span class="p">(</span><span class="s2">&quot;Introduce la clave &quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="w">    </span><span class="nx">numveces</span><span class="o">++</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">numveces</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mf">3</span><span class="p">)</span><span class="w"></span>
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="w">        </span><span class="k">break</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">auxclave</span><span class="o">==</span><span class="s2">&quot;SuperClave&quot;</span><span class="p">)</span><span class="w"> </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;La clave es correcta&quot;</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a><span class="k">else</span><span class="w"> </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;La clave no es correcta correcta&quot;</span><span class="p">);</span><span class="w"></span>
+</code></pre></div>
 <ul>
 <li><strong>Continue</strong>  → Hace retornar a la secuencia de ejecución a la cabecera del bucle, volviendo a ejecutar la condición o a incrementar los índices cuando sea un bucle for. </li>
 </ul>
-<p>Ejemplo: Presenta todos los números pares del 0 al 50 excepto los que sean múltiplos de 3</p>
-<pre><code>    var i;
-    for (i=2;i&lt;=50;i+=2){
-        if ((i%3)==0) 
-            continue;
-        alert(i);
-    }
-</code></pre>
+<p>Ejemplo: Presenta todos los números pares del 0 al 50 excepto los que sean múltiplos de 3
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>    var i;
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>    for (i=2;i&lt;=50;i+=2){
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>        if ((i%3)==0) 
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>            continue;
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>        alert(i);
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a>    }
+</code></pre></div></p>
 <h2 id="7-funciones"><strong><u style="color:#2980B9"> 7.- Funciones</u> </strong></h2>
 <p>Se declaran con la palabra reservada <strong>function</strong> y se les pasan los parámetros entre paréntesis. La función puede devolver un valor usando <strong>return</strong> (<em>si no tiene return es como si devolviera undefined</em>).
- ~~~ javascript
-    function nombrefuncion (parámetro1, parámetro2...){
-    ...
-        // Bloque de instrucciones
-    ...
-        //si la función devuelve algún valor añadimos:
-        return valor;
-    }
- ~~~
-Ejemplo:Funciones que devuelve la suma de dos valores que se pasan por parámetros y que escriben el nombre del profesor.</p>
-<pre><code class="language-javascript">// Definiciones de las funciones
-    function suma (a,b){ 
-        return a+b;
-    }
-    function profe (){
-        alert (&quot;El profesor es: Agustin Aguilera&quot;);
-    }
-// Código que se ejecuta
-    let op1=5;op2=25;
-    let resultado;
-// Llamadas a funciones
-    resultado=suma(op1,op2); 
-    console.log (op1+&quot;+&quot;+op2+&quot;=&quot;+resultado);    
-    profe();
-</code></pre>
+ <div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="w">   </span><span class="kd">function</span><span class="w"> </span><span class="nx">nombrefuncion</span><span class="w"> </span><span class="p">(</span><span class="nx">parámetro1</span><span class="p">,</span><span class="w"> </span><span class="nx">parámetro2</span><span class="p">...){</span><span class="w"></span>
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="w">   </span><span class="p">...</span><span class="w"></span>
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="w">       </span><span class="c1">// Bloque de instrucciones</span><span class="w"></span>
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="w">   </span><span class="p">...</span><span class="w"></span>
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a><span class="w">       </span><span class="c1">//si la función devuelve algún valor añadimos:</span><span class="w"></span>
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="w">       </span><span class="k">return</span><span class="w"> </span><span class="nx">valor</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a><span class="w">   </span><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+Ejemplo:Funciones que devuelve la suma de dos valores que se pasan por parámetros y que escriben el nombre del profesor.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="c1">// Definiciones de las funciones</span><span class="w"></span>
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">suma</span><span class="w"> </span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">){</span><span class="w"> </span>
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">a</span><span class="o">+</span><span class="nx">b</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">profe</span><span class="w"> </span><span class="p">(){</span><span class="w"></span>
+<a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a><span class="w">        </span><span class="nx">alert</span><span class="w"> </span><span class="p">(</span><span class="s2">&quot;El profesor es: Agustin Aguilera&quot;</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a><span class="c1">// Código que se ejecuta</span><span class="w"></span>
+<a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">op1</span><span class="o">=</span><span class="mf">5</span><span class="p">;</span><span class="nx">op2</span><span class="o">=</span><span class="mf">25</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">resultado</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a><span class="c1">// Llamadas a funciones</span><span class="w"></span>
+<a id="__codelineno-28-12" name="__codelineno-28-12" href="#__codelineno-28-12"></a><span class="w">    </span><span class="nx">resultado</span><span class="o">=</span><span class="nx">suma</span><span class="p">(</span><span class="nx">op1</span><span class="p">,</span><span class="nx">op2</span><span class="p">);</span><span class="w"> </span>
+<a id="__codelineno-28-13" name="__codelineno-28-13" href="#__codelineno-28-13"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="w"> </span><span class="p">(</span><span class="nx">op1</span><span class="o">+</span><span class="s2">&quot;+&quot;</span><span class="o">+</span><span class="nx">op2</span><span class="o">+</span><span class="s2">&quot;=&quot;</span><span class="o">+</span><span class="nx">resultado</span><span class="p">);</span><span class="w">    </span>
+<a id="__codelineno-28-14" name="__codelineno-28-14" href="#__codelineno-28-14"></a><span class="w">    </span><span class="nx">profe</span><span class="p">();</span><span class="w"></span>
+</code></pre></div></p>
 <h3 id="uso-del-array-arguments"><strong><span style="color:#2980B9">Uso del array arguments</span></strong></h3>
 <p>También es posible acceder a los parámetros desde el <strong>array arguments[]</strong> si no sabemos cuántos recibiremos:</p>
-<pre><code class="language-javascript">    function suma () {
-            var result = 0;
-            for (var i=0; i&lt;arguments.length; i++)
-                result += arguments[i];
-        return result;
-    }
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">suma</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="w">            </span><span class="kd">var</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">var</span><span class="w"> </span><span class="nx">i</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">arguments</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="w">                </span><span class="nx">result</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nx">arguments</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span><span class="w"></span>
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">result</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
+</code></pre></div>
 <h3 id="uso-de-funciones-anonimas"><strong><span style="color:#2980B9">Uso de funciones anónimas</span></strong></h3>
-<p>Podemos definir una función sin darle un nombre. Dicha función puede asignarse a una variable, autoejecutarse o asignarse a un manejador de eventos. </p>
-<pre><code class="language-javascript">    var suma = function (a,b){ 
-        return a+b;
-    }
-</code></pre>
+<p>Podemos definir una función sin darle un nombre. Dicha función puede asignarse a una variable, autoejecutarse o asignarse a un manejador de eventos. 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">suma</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">){</span><span class="w"> </span>
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">a</span><span class="o">+</span><span class="nx">b</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
+</code></pre></div></p>
 <h3 id="funciones-lambda-o-funciones-flecha"><strong><span style="color:#2980B9">funciones lambda o funciones flecha</span></strong></h3>
 <p>Para escribir la sintaxis de una función flecha, debemos tener en <u><strong>consideración</strong></u>:</p>
 <ul>
@@ -1234,34 +1233,34 @@ Ejemplo:Funciones que devuelve la suma de dos valores que se pasan por parámetr
 <li>Si sólo tiene 1 parámetro podemos eliminar los paréntesis de los parámetros </li>
 <li>Si la función sólo tiene 1 línea podemos eliminar las { } y la palabra return         </li>
 </ul>
-<pre><code class="language-javascript"> // Función anónima
- var suma = function (a,b){ 
-    return a+b;
-}
- // Función flecha   
-  var suma = (a,b) =&gt; {return a+ b}
-  var suma = (a,b) =&gt;  a+ b
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="w"> </span><span class="c1">// Función anónima</span><span class="w"></span>
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="nx">suma</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">){</span><span class="w"> </span>
+<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">a</span><span class="o">+</span><span class="nx">b</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a><span class="w"> </span><span class="c1">// Función flecha   </span><span class="w"></span>
+<a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a><span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="nx">suma</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="k">return</span><span class="w"> </span><span class="nx">a</span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a><span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="nx">suma</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w">  </span><span class="nx">a</span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="w"></span>
+</code></pre></div>
 <h2 id="8-variables-locales-y-globales"><strong><span style="color:#2980B9"><u>8. Variables locales y globales</u></span> </strong></h2>
 <p>Ahora que ya conocemos las funciones es muy importante diferenciar entre variables globales y locales:</p>
 <ul>
 <li><strong>Variables globales</strong> →  Pueden utilizarse en cualquier parte del código y son declaradas fuera de toda función.</li>
 <li><strong>Variables locales</strong> →  Se definen con la instrucción <strong>let</strong> dentro de una función y solo pueden ser utilizadas dentro de esta.</li>
 </ul>
-<pre><code class="language-javascript">    var v_global1=20;
-
-    function prueba(){
-        let v_local1=10; //Definición de variable local
-        let v_local2=v_global1+v_local1;
-        //En la función se puede acceder a las variables globales 
-        // y locales definidas dentro de ella
-        alert (&quot;Suma de v. local y la global : &quot;+ v_local2);
-    }
-    prueba();
-
-    alert (&quot;La variable global es &quot;+vbleglobal1);
-    //Desde fuera de la función las variables locales definidas en ella no son accesibles
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">v_global1</span><span class="o">=</span><span class="mf">20</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a><span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">prueba</span><span class="p">(){</span><span class="w"></span>
+<a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="nx">v_local1</span><span class="o">=</span><span class="mf">10</span><span class="p">;</span><span class="w"> </span><span class="c1">//Definición de variable local</span><span class="w"></span>
+<a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="nx">v_local2</span><span class="o">=</span><span class="nx">v_global1</span><span class="o">+</span><span class="nx">v_local1</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a><span class="w">        </span><span class="c1">//En la función se puede acceder a las variables globales </span><span class="w"></span>
+<a id="__codelineno-32-7" name="__codelineno-32-7" href="#__codelineno-32-7"></a><span class="w">        </span><span class="c1">// y locales definidas dentro de ella</span><span class="w"></span>
+<a id="__codelineno-32-8" name="__codelineno-32-8" href="#__codelineno-32-8"></a><span class="w">        </span><span class="nx">alert</span><span class="w"> </span><span class="p">(</span><span class="s2">&quot;Suma de v. local y la global : &quot;</span><span class="o">+</span><span class="w"> </span><span class="nx">v_local2</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-32-9" name="__codelineno-32-9" href="#__codelineno-32-9"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-32-10" name="__codelineno-32-10" href="#__codelineno-32-10"></a><span class="w">    </span><span class="nx">prueba</span><span class="p">();</span><span class="w"></span>
+<a id="__codelineno-32-11" name="__codelineno-32-11" href="#__codelineno-32-11"></a>
+<a id="__codelineno-32-12" name="__codelineno-32-12" href="#__codelineno-32-12"></a><span class="w">    </span><span class="nx">alert</span><span class="w"> </span><span class="p">(</span><span class="s2">&quot;La variable global es &quot;</span><span class="o">+</span><span class="nx">vbleglobal1</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-32-13" name="__codelineno-32-13" href="#__codelineno-32-13"></a><span class="w">    </span><span class="c1">//Desde fuera de la función las variables locales definidas en ella no son accesibles</span><span class="w"></span>
+</code></pre></div>
 
               
             </article>
