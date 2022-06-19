@@ -302,43 +302,55 @@
       
         <li class="md-nav__item">
   <a href="#1-introduccion" class="md-nav__link">
-    1.- INTRODUCCIÓN 
+    1.- INTRODUCCIÓN
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#2-eventos" class="md-nav__link">
-    2.- EVENTOS 
+    2.- EVENTOS
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="2.- EVENTOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#principales-eventos" class="md-nav__link">
     Principales eventos
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#3-modelos-de-gestion-de-eventos" class="md-nav__link">
-    3.- MODELOS DE GESTIÓN DE EVENTOS 
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
+  <a href="#3-modelos-de-gestion-de-eventos" class="md-nav__link">
+    3.- MODELOS DE GESTIÓN DE EVENTOS
+  </a>
+  
+    <nav class="md-nav" aria-label="3.- MODELOS DE GESTIÓN DE EVENTOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#manejo-de-eventos-desde-elementos-xhtml" class="md-nav__link">
     Manejo de eventos desde elementos XHTML
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#asignacion-de-eventos-desde-codigo-a-objetos-xhtml" class="md-nav__link">
     Asignación de eventos desde código a objetos XHTML
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -351,7 +363,7 @@
       
         <li class="md-nav__item">
   <a href="#4-tipos-de-eventos" class="md-nav__link">
-    4. TIPOS DE EVENTOS 
+    4. TIPOS DE EVENTOS
   </a>
   
 </li>
@@ -386,7 +398,7 @@
       
         <li class="md-nav__item">
   <a href="#5-gestion-de-eventos" class="md-nav__link">
-    5. GESTIÓN DE EVENTOS 
+    5. GESTIÓN DE EVENTOS
   </a>
   
 </li>
@@ -476,43 +488,55 @@
       
         <li class="md-nav__item">
   <a href="#1-introduccion" class="md-nav__link">
-    1.- INTRODUCCIÓN 
+    1.- INTRODUCCIÓN
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#2-eventos" class="md-nav__link">
-    2.- EVENTOS 
+    2.- EVENTOS
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="2.- EVENTOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#principales-eventos" class="md-nav__link">
     Principales eventos
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#3-modelos-de-gestion-de-eventos" class="md-nav__link">
-    3.- MODELOS DE GESTIÓN DE EVENTOS 
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
+  <a href="#3-modelos-de-gestion-de-eventos" class="md-nav__link">
+    3.- MODELOS DE GESTIÓN DE EVENTOS
+  </a>
+  
+    <nav class="md-nav" aria-label="3.- MODELOS DE GESTIÓN DE EVENTOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#manejo-de-eventos-desde-elementos-xhtml" class="md-nav__link">
     Manejo de eventos desde elementos XHTML
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#asignacion-de-eventos-desde-codigo-a-objetos-xhtml" class="md-nav__link">
     Asignación de eventos desde código a objetos XHTML
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -525,7 +549,7 @@
       
         <li class="md-nav__item">
   <a href="#4-tipos-de-eventos" class="md-nav__link">
-    4. TIPOS DE EVENTOS 
+    4. TIPOS DE EVENTOS
   </a>
   
 </li>
@@ -560,7 +584,7 @@
       
         <li class="md-nav__item">
   <a href="#5-gestion-de-eventos" class="md-nav__link">
-    5. GESTIÓN DE EVENTOS 
+    5. GESTIÓN DE EVENTOS
   </a>
   
 </li>
@@ -602,17 +626,17 @@
 
   <h1>UD 6 - "Eventos"</h1>
 
-<h2 id="1-introduccion"><strong><u><span style="color:blue">1.- INTRODUCCIÓN</span> </u></strong></h2>
+<h2 id="1-introduccion"><strong><u style="color:#2980B9">1.- INTRODUCCIÓN</u></strong></h2>
 <p>Los eventos son manejadores que nos proporciona el navegador para que cuando detecte que se produzca una
 acción (evento), se ejecute un código asociado a esa acción. En esta unidad trataremos los eventos existentes
 en Javascript y las distintas formas de manejarlos.</p>
-<h2 id="2-eventos"><strong><u><span style="color:blue">2.- EVENTOS</span> </u></strong></h2>
+<h2 id="2-eventos"><strong><u style="color:#2980B9">2.- EVENTOS</u></strong></h2>
 <p>Para poder controlar un evento se necesita un manejador. Básicamente, el manejador es la palabra reservada
 que indica la acción que va a manejar.
 En el caso del evento click , el manejador sería onClick.</p>
 <pre><code class="language-javascript">&lt;IMG SRC=&quot;mundo.jpg&quot; onclick=&quot;alert('Click en imagen');&quot;&gt;
 </code></pre>
-<h2 id="principales-eventos"><strong>Principales eventos</strong></h2>
+<h3 id="principales-eventos"><strong><span style="color:#2980B9">Principales eventos</span></strong></h3>
 <p>A continuación mostramos un listado de los principales eventos existentes en Javascript:</p>
 <ul>
 <li>
@@ -669,8 +693,8 @@ En el caso del evento click , el manejador sería onClick.</p>
 </ul>
 <p>El total de eventos disponibles está descrito en
   http://www.w3schools.com/jsref/dom_obj_event.asp</p>
-<h2 id="3-modelos-de-gestion-de-eventos"><strong><u><span style="color:blue">3.- MODELOS DE GESTIÓN DE EVENTOS</span> </u></strong></h2>
-<h2 id="manejo-de-eventos-desde-elementos-xhtml"><strong>Manejo de eventos desde elementos XHTML</strong></h2>
+<h2 id="3-modelos-de-gestion-de-eventos"><strong><u style="color:#2980B9">3.- MODELOS DE GESTIÓN DE EVENTOS</u></strong></h2>
+<h3 id="manejo-de-eventos-desde-elementos-xhtml"><strong><span style="color:#2980B9">Manejo de eventos desde elementos XHTML</span></strong></h3>
 <p>La forma más sencilla (aunque menos práctica para tener un código limpio y ordenado) de indicar que hay un evento asociado a un elemento XHTML es indicándolo en el propio código.</p>
 <pre><code class="language-javascript">&lt;input type=&quot;button&quot; 
     value=&quot;Boton Hola mundo&quot; 
@@ -682,7 +706,7 @@ En el caso del evento click , el manejador sería onClick.</p>
     onclick =&quot;miFuncion(‘cadenaParam1’);&quot;
 /&gt;
 </code></pre>
-<h2 id="asignacion-de-eventos-desde-codigo-a-objetos-xhtml"><strong>Asignación de eventos desde código a objetos XHTML</strong></h2>
+<h3 id="asignacion-de-eventos-desde-codigo-a-objetos-xhtml"><strong><span style="color:#2980B9">Asignación de eventos desde código a objetos XHTML</span></strong></h3>
 <p>Podemos asignar/modificar mediante código el manejador de un evento predefinido en un objeto XHTML de una forma similar a esta. Supongamos que tenemos un objeto con id="miObjeto" que posee el evento "onclick" sin asignar y la función "mostrarMensaje".
 Podemos referenciar al elemento XHTML y asignar la función como manejador del evento como vemos en este código</p>
 <pre><code class="language-javascript">function mostrarMensaje(){
@@ -692,7 +716,7 @@ document.getElementById(&quot;miObjeto&quot;).onclick=mostrarMensaje;
 </code></pre>
 <p>Atención: fijaros que pone "mostrarMensaje". Así asigna la función como manejadora del evento. Si ponemos "mostrarMensaje()"
 no funcionará, ya que ejecutará la función y asignará su resultado al manejador.</p>
-<h2 id="declarando-eventos-desde-codigo"><strong>Declarando eventos desde código</strong></h2>
+<h2 id="declarando-eventos-desde-codigo"><strong><span style="color:#2980B9">Declarando eventos desde código</span></strong></h2>
 <p>Podemos declarar eventos mediante código usando addEventListener(evento,manejador).</p>
 <pre><code class="language-javascript">function mostrarMensaje(evento){
 if(evento.type==&quot;keyup&quot;){
@@ -709,7 +733,7 @@ document.getElementById(&quot;miObjeto&quot;).addEventListener(&quot;dblclick&qu
         alert(&quot;Codigo metido directamente&quot;);
     });
 </code></pre>
-<h2 id="4-tipos-de-eventos"><strong><u><span style="color:blue">4. TIPOS DE EVENTOS</span> </u></strong></h2>
+<h2 id="4-tipos-de-eventos"><strong><u style="color:#2980B9">4. TIPOS DE EVENTOS</u></strong></h2>
 <p>La especificación DOM define cuatro grupos de eventos dividiéndolos según su origen:</p>
 <ul>
 <li>Eventos del <strong>ratón</strong>. </li>
@@ -718,7 +742,7 @@ document.getElementById(&quot;miObjeto&quot;).addEventListener(&quot;dblclick&qu
 <li>Eventos <strong>DOM</strong>.</li>
 <li>Eventos <strong>FORM</strong></li>
 </ul>
-<h2 id="eventos-del-raton"><strong>Eventos del ratón</strong></h2>
+<h2 id="eventos-del-raton"><strong><span style="color:#2980B9">Eventos del ratón</span></strong></h2>
 <p>Los eventos que se incluyen en esta clasificación son los siguientes:</p>
 <ul>
 <li>
@@ -777,7 +801,7 @@ document.getElementById(&quot;miObjeto&quot;).addEventListener(&quot;dblclick&qu
     height=&quot;32&quot;&gt;
 &lt;/body&gt;
 </code></pre>
-<h2 id="eventos-del-teclado"><strong>Eventos del teclado</strong></h2>
+<h2 id="eventos-del-teclado"><strong><span style="color:#2980B9">Eventos del teclado</span></strong></h2>
 <p>Los eventos que se incluyen en esta clasificación son los siguientes:</p>
 <ul>
 <li>
@@ -799,7 +823,7 @@ document.getElementById(&quot;miObjeto&quot;).addEventListener(&quot;dblclick&qu
 <li><strong>shiftKey</strong> → <em>Devuelve true si la tecla shift se ha pulsado</em></li>
 </ul>
 <p><center><img alt="Eventos Teclado" src="../imagenes/unidad_6/eventos_teclado.jpg" /></center></p>
-<h2 id="eventos-html"><strong> Eventos HTML</strong></h2>
+<h2 id="eventos-html"><strong><span style="color:#2980B9">Eventos HTML</span></strong></h2>
 <p>Los eventos que se incluyen en esta clasificación son los siguientes:</p>
 <ul>
 <li>
@@ -829,7 +853,7 @@ la imagen se ha cargado. En el elemento "object" se acciona al cargar el objeto 
         console.log(se ha cargado la página al completo);
     },false);
 </code></pre>
-<h2 id="eventos-dom"><strong>Eventos DOM</strong></h2>
+<h2 id="eventos-dom"><strong><span style="color:#2980B9">Eventos DOM</span></strong></h2>
 <p>Los eventos que se incluyen en esta clasificación son los siguientes:</p>
 <ul>
 <li>
@@ -856,8 +880,8 @@ la imagen se ha cargado. En el elemento "object" se acciona al cargar el objeto 
         alert(`El nodo de texto ${textNode.data} ha sido agregado a un elemento.`);
     }
 </code></pre>
-<h2 id="5-gestion-de-eventos"><strong><u><span style="color:blue">5. GESTIÓN DE EVENTOS</span> </u></strong></h2>
-<h2 id="uso-del-objeto-this"><strong>Uso del objeto this</strong></h2>
+<h2 id="5-gestion-de-eventos"><strong><u style="color:#2980B9">5. GESTIÓN DE EVENTOS</u></strong></h2>
+<h2 id="uso-del-objeto-this"><strong><span style="color:#2980B9">Uso del objeto this</span></strong></h2>
 <p>Cuando ejecutas código dentro de un evento, existe un objeto llamado "this". Este objeto es una referencia al elemento que se ha producido el evento. Ejemplo, si el evento se ha producido un evento al hacer clic a una imagen con id="miImagen", el objeto "this" será lo mismo que poner "document.getElementById("miImagen");</p>
 <pre><code class="language-javascript">&lt;div id=&quot;cont&quot; 
     style=&quot;width:150px; height:60px; border:thin solid silver&quot;
@@ -867,7 +891,7 @@ la imagen se ha cargado. En el elemento "object" se acciona al cargar el objeto 
     Contenidos
 &lt;/div&gt;
 </code></pre>
-<h2 id="obteniendo-informacion-del-objeto-event"><strong>Obteniendo información del objeto event</strong></h2>
+<h2 id="obteniendo-informacion-del-objeto-event"><strong><span style="color:#2980B9">Obteniendo información del objeto event</span></strong></h2>
 <p>Cuando se crea una función como manejador, al producirse el evento el navegador automáticamente manda como parámetro un objeto de tipo event.</p>
 <pre><code class="language-javascript">
     function mostrarMensaje(evento){
@@ -895,7 +919,7 @@ la imagen se ha cargado. En el elemento "object" se acciona al cargar el objeto 
     document.getElementById(&quot;miObjeto&quot;).onclick=mostrarMensaje;
     document.onkeyup=mostrarMensaje;
 </code></pre>
-<h2 id="ejemplo-ampliado"><strong>Ejemplo Ampliado</strong></h2>
+<h2 id="ejemplo-ampliado"><strong><span style="color:#2980B9">Ejemplo Ampliado</span></strong></h2>
 <pre><code class="language-javascript">                                        // uso THIS
     &lt;input id=&quot;idBoton&quot; type=&quot;button&quot; onclick =&quot;decirHola( this )&quot;/&gt;
 
