@@ -18,7 +18,7 @@ Desde un punto de vista general, los formularios presentan la estructura:
 	* **enctype** → define el tipo de codificación para enviar el formulario al servidor. Se usa cuando permite enviar archivos adjuntos.
 	* **accept** → indica el tipo de fichero adjunto que acepta el servidor.
 
-~~~javascript
+~~~javascript linenums="1" title="Ejemplo" hl_lines="3"
 
 	<body>
 		<h3>Formulario</h3>
@@ -27,6 +27,12 @@ Desde un punto de vista general, los formularios presentan la estructura:
 		</form>
 	</body>
 ~~~
+
+!!! danger
+
+    Es importante conocer la estructura de un formulario, un gran porcentaje de webs tienen formularios, son la base!!!!
+
+
 
 ###**<span style="color:#2980B9">Elementos de un formulario</span>**
 

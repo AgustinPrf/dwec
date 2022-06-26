@@ -10,9 +10,9 @@ Todos los prototipos y desarrollos posteriores crecieron bajo la guía del conso
 
 Hoy en día los sitios web siguen un modelo basado en la programación cliente-servidor con tres elementos comunes:
 
-1. **El lado del servidor** [ *server-side* ] Incluye el hardware y software del servidor Web así como diferentes elementos de programación y tecnologías incrustadas. Las tecnologías pueden abarcar un rango amplio desde programas CGI escritos en PERL hasta aplicaciones multihilo ( También denominado multiproceso hace referencia a la posibilidad de ejecutar diferentes trozos de código de una misma aplicación de forma simultánea ) basadas en Java, incluyendo tecnologías de servidor de bases de datos que soporten múltiples sitios web.
-2. **El lado del cliente** [ *client-side* ] Este elemento hace referencia a los navegadores web y está soportado por tecnologías como HTML, CSS y lenguajes como JavaScript y controles ActiveX, los cuales se utilizan para crear la presentación de la página o proporcionar características interactivas. Es justamente aquí dónde nos vamos a centrar a lo largo de todo el módulo.
-3. **La red** [ *Network* ] Describe los diferentes elementos de conectividad ( Capacidad que tiene un dispositivo para poder conectarse a otros. Aquí se detallan los diferentes protocolos y material utilizado para poder realizar dicha conexión ) utilizados para mostrar el sitio web al usuario.
+1. **<span style="color:green">El lado del servidor</span>** [ *server-side* ] Incluye el hardware y software del servidor Web así como diferentes elementos de programación y tecnologías incrustadas. Las tecnologías pueden abarcar un rango amplio desde programas CGI escritos en PERL hasta aplicaciones multihilo ( También denominado multiproceso hace referencia a la posibilidad de ejecutar diferentes trozos de código de una misma aplicación de forma simultánea ) basadas en Java, incluyendo tecnologías de servidor de bases de datos que soporten múltiples sitios web.
+2. **<span style="color:green">El lado del cliente</span>** [ *client-side* ] Este elemento hace referencia a los navegadores web y está soportado por tecnologías como HTML, CSS y lenguajes como JavaScript y controles ActiveX, los cuales se utilizan para crear la presentación de la página o proporcionar características interactivas. Es justamente aquí dónde nos vamos a centrar a lo largo de todo el módulo.
+3. **<span style="color:green">La red</span>** [ *Network* ] Describe los diferentes elementos de conectividad ( Capacidad que tiene un dispositivo para poder conectarse a otros. Aquí se detallan los diferentes protocolos y material utilizado para poder realizar dicha conexión ) utilizados para mostrar el sitio web al usuario.
 
 <center>![Estructura cliente servidor](./imagenes/unidad_1/cliente_servidor.jpg)</center>
 
@@ -53,6 +53,7 @@ A continuación te mostramos un esquema de las **4 capas del desarrollo web en e
 
 
 
+
 ##**<u style="color:#2980B9"> 4.- NAVEGADORES </u>**
 Para realizar cualquier desarrollo web, es imprescindible comprobar que el resultado que queremos es el adecuado con la mayor cantidad de navegadores posibles, especialmente aquellos más usados. Además de procesar etiquetas HTML, los navegadores suelen interpretar lenguajes de script, siendo Javascript uno de los más populares.
 
@@ -68,12 +69,12 @@ Tales documentos, comúnmente denominados páginas web, poseen hipervínculos qu
 
 Para acceder a estos recursos, se utiliza un identificador único llamado URL (Uniform Resource Locator). El **formato general de una URL** es :
 
-<center>**protocolo:**//máquina/directorio/archivo</center>
+<center style="color:green">**protocolo:**//máquina/directorio/archivo</center>
 
-<u>**Aclaraciones**</u>
+!!! danger
+    - Si no se especifica el directorio, toma como directorio el raíz.
+    - Si no se especifica el fichero, toma alguno de los nombres por defecto (“index.html”, “index.php”, etc...)
 
-- Si no se especifica el directorio, toma como directorio el raíz.
-- Si no se especifica el fichero, toma alguno de los nombres por defecto (“index.html”, “index.php”, etc...)
 
 
 ###**<span style="color:#2980B9">Funciones del navegador</span>**
@@ -86,7 +87,7 @@ Los estándares web son un conjunto de recomendaciones dadas por el World Wide W
 
 Se puede comprobar de manera online si un documento Web cumple el estándar definido por W3C mediante:
 
-<center>**https://validator.w3.org/**</center>
+<center style="color:green">**https://validator.w3.org/**</center>
 
 Actualmente la mayoría de navegadores aceptan páginas no estándar, pero cuanto más estándar se la aplicación web desarrollada, mayor probabilidad que funcione correctamente en todos los navegadores. 
 
@@ -98,7 +99,7 @@ Actualmente la mayoría de navegadores aceptan páginas no estándar, pero cuant
 
 
 #####**<span style="color:#2980B9">Microsoft Edge</span>**  -  *Antiguo Internet Explorer* 
-  * **URL Oficial** → https://www.microsoft.com/es-es/windows/microsoft-edge
+  * **URL Oficial** → <span style="color:green"> https://www.microsoft.com/es-es/windows/microsoft-edge </span>
   * *Antiguamente se llamaba Internet Explorer. Microsoft Edge está diseñado para ser un navegador web ligero con un motor de renderizado de código abierto construido en torno a los estándares web.*
 
 <center>![Navegador Edge](./imagenes/unidad_1/nav_edge.jpg)</center>
@@ -106,7 +107,7 @@ Actualmente la mayoría de navegadores aceptan páginas no estándar, pero cuant
 
 #####**<span style="color:#2980B9">Mozilla Firefox</span>**
 
-  * **URL Oficial** → https://www.mozilla.org/es-ES/firefox/new/
+  * **URL Oficial** →  <span style="color:green">https://www.mozilla.org/es-ES/firefox/new/</span>
   * *Mozilla Firefox es un navegador web libre y de código abierto desarrollado por la Corporación Mozilla y la Fundación Mozilla. Usa el motor Gecko para renderizar páginas webs, el cual implementa actuales y futuros estándares web.*
     * *Posee una versión para desarrolladores: “Firefox Developer Edition” https://www.mozilla.org/en-US/firefox/developer/?utm_source=firebug&utm_medium=lp&utm_campaign=switch&utm_content=landingpage*
 
@@ -114,14 +115,14 @@ Actualmente la mayoría de navegadores aceptan páginas no estándar, pero cuant
 
 #####**<span style="color:#2980B9">Google Chrome</span>**
 
-  * **URL Oficial** → https://www.google.com/chrome/
+  * **URL Oficial** → <span style="color:green"> https://www.google.com/chrome/</span>
   * *Google Chrome es un navegador web desarrollado por Google y compilado con base en varios componentes e infraestructuras de desarrollo de aplicaciones (frameworks) de código abierto, como el motor de renderizado Blink (bifurcación o fork de WebKit). Está disponible gratuitamente bajo condiciones específicas del software privativo o cerrado.*
 
 <center>![Navegador Chrome](./imagenes/unidad_1/nav_chrome.jpg)</center>
 
 #####**<span style="color:#2980B9">Safari</span>**
 
-  * **URL oficial** → http://www.apple.com/es/safari/
+  * **URL oficial** → <span style="color:green"> http://www.apple.com/es/safari/</span>
   * *Safari es un navegador web de código cerrado desarrollado por Apple Inc. Está disponible para OS X, iOS (el sistema usado por el iPhone, el iPod touch y iPad) y Windows (sin soporte desde el 2012).*
 
 <center>![Navegador Safari](./imagenes/unidad_1/nav_safari.jpg)</center>
@@ -129,7 +130,7 @@ Actualmente la mayoría de navegadores aceptan páginas no estándar, pero cuant
 
 #####**<span style="color:#2980B9">Opera</span>**
 
-  * **URL oficial** → http://www.opera.com/es
+  * **URL oficial** → <span style="color:green"> http://www.opera.com/es </span>
 
   * *Opera es un navegador web creado por la empresa noruega Opera Software. Usa el motor de renderizado Blink. Tiene versiones para escritorio, teléfonos móviles y tabletas.*
 
@@ -170,7 +171,7 @@ Existen diversos entornos de desarrollo, desde los más sencillos (Brackets, Not
 
 Recomendamos Visual Studio Code. Es software libre y muy potente
 
-<center> **https://code.visualstudio.com/**</center>
+<center style="color:green"> **https://code.visualstudio.com/**</center>
 
 Aquí algunos manuales libres de uso de Visual Studio Code en castellano:
 
@@ -183,13 +184,13 @@ Aquí algunos manuales libres de uso de Visual Studio Code en castellano:
 Durante el curso, se utilizarán repositorios Git tanto para la entrega de prácticas como para facilitaros el disponer de un repositorio con control de versiones.
 Utilizaremos una cuenta Git en Github :
 
-<center>**https://www-github.com**</center>
+<center style="color:green">**https://www-github.com**</center>
 
 Podéis instalarlo en:
 
 * **Ubuntu:**
 
-~~~
+~~~javascript
 	sudo apt-get update
 	sudo apt-get install git
 ~~~
@@ -212,7 +213,7 @@ Para facilitar la tarea del uso de Git es recomendable instalar alguna extensió
 ##**<u style="color:#2980B9"> 8 .- CONTROL DE VERSIONES: GIT – GITHUB </u>**
 
 Git es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia y la confiabilidad del mantenimiento de versiones de aplicaciones cuando éstas tienen un gran número de archivos de código fuente. Su propósito es llevar registro de los cambios en archivos de computadora y coordinar el trabajo que varias personas realizan sobre archivos compartidos Si estás en una distribución basada en Debian como Ubuntu, puedes usar apt-get:
-~~~
+~~~javascript
 	apt-get install git
 ~~~
 
@@ -223,47 +224,47 @@ Para instalar git en otros sistemas operativos puedes utilizar como referencia l
 ###**<span style="color:#2980B9">Órdenes básicas en git</span>**
 Crear un subdirectorio nuevo llamado .git, el cual contiene todos los archivos necesarios del repositorio
 <center>
-~~~
+~~~javascript
 git init
 ~~~
 </center>
 
 Descargar información de una determinada rama, unifica los comando fetch y merge.
 <center>
-~~~
+~~~javascript
 git pull
 ~~~
 </center>
 
 Comienza a trackear el archivo “nombre_archivo”.
 <center>
-~~~
+~~~javascript
 git add <nombre_archivo>
 ~~~
 </center>
 
 Confirma los cambios realizados. El “mensaje” generalmente se usa para asociar al commit una breve descripción de los cambios realizados.
 <center>
-~~~
+~~~javascript
 git commit -am "<mensaje>"
 ~~~
 </center>
 
 Commitea los cambios desde el branch local origin al branch “nombre_rama”.
 <center>
-~~~
+~~~javascript
 git push origin <nombre_rama>
 ~~~
 </center>
 
 Para consultar más comando, puedes visitar la web:
 
-<center>**https://git-scm.com/docs**</center>
+<center style="color:green">**https://git-scm.com/docs**</center>
 
 ###**<span style="color:#2980B9">Github</span>**
 GitHub es una forja (plataforma de desarrollo colaborativo) para alojar proyectos utilizando el sistema de control de versiones Git. Se utiliza principalmente para la creación de código fuente de programas de ordenador. El software que opera GitHub fue escrito en Ruby on Rails El 4 de junio de 2018, Microsoft compró GitHub por la cantidad de 7.500 millones de dólares, este cambio de propietarios provocó la salida de varios proyecto desde este repositorio debido la posibilidad de acceso a códigos fuentes por parte de una compañía que su negocios es el software:
 
-<center>**http://www.github.com**</center>
+<center style="color:green">**http://www.github.com**</center>
 
 <center>![Github](./imagenes/unidad_1/github.jpg)</center>
 
@@ -274,11 +275,11 @@ Ahora que ya conoces las herramientas que puedes utilizar para comenzar a progra
 ###**<span style="color:#2980B9">Etiqueta script</span>**
 Los navegadores web te permiten varias opciones de inserción de código de JavaScript. Podremos insertar código usando las etiquetas **script** y empleando un atributo **type** indicaremos qué tipo de lenguaje de script estamos utilizando.
 
-~~~~
+~~~javascript
 <script type=”text/javascript”>
 // El código javascript vendrá aquí
 </script>
-~~~~
+~~~
 
 ###**<span style="color:#2980B9">Fichero externo</span>**
 
@@ -287,23 +288,23 @@ La rapidez de carga de las páginas se consigue al tener el código de JavaScrip
 
 Para ello tendremos que añadir a la etiqueta **script** el atributo **src** , con el nombre del fichero que contiene el código de JavaScript. Generalmente los ficheros que contienen texto de JavaScript tendrán la *extensión .js* .
 <center>
-~~~~
+~~~javascript
 <script type=”text/javascript” src=”tucodigo.js”> </script>
-~~~~
+~~~
 </center>
 
 ###**<span style="color:#2980B9">En código html</span>**
 Otra alternativa consiste en incorporar javascript directamente en elementos html. Numerosos autores no recomiendan esta opción, con el principal motivo de que dificulta considerablemente el mantenimiento de aplicaciones.
 
-~~~~
+~~~javascript
 <body>
 	<p onclick=”alert(‘un mensaje de prueba’)”>Párrafo de texto</p>
 <body>
-~~~~
+~~~
 
 ###**<span style="color:#2980B9">Etiqueta noscript</span>**
 El lenguaje HTML define la etiqueta **noscript** para mostrar un mensaje al usuario cuando su navegador no puede ejecutar JavaScript. Esta etiqueta debe incluir en el interior el mensaje a mostrar, además puede incluir cualquier elemento o etiqueta XHTML.
-~~~~
+~~~javascript
 <head>
 	... 
 </head>
@@ -316,4 +317,4 @@ El lenguaje HTML define la etiqueta **noscript** para mostrar un mensaje al usua
 	</p>
 	<noscript>
 <body>
-~~~~
+~~~
