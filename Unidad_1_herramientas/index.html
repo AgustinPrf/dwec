@@ -796,9 +796,9 @@ Todos los prototipos y desarrollos posteriores crecieron bajo la guía del conso
 <h2 id="2-estructura-cliente-servidor"><strong><u style="color:#2980B9"> 2.- ESTRUCTURA CLIENTE SERVIDOR </u></strong></h2>
 <p>Hoy en día los sitios web siguen un modelo basado en la programación cliente-servidor con tres elementos comunes:</p>
 <ol>
-<li><strong>El lado del servidor</strong> [ <em>server-side</em> ] Incluye el hardware y software del servidor Web así como diferentes elementos de programación y tecnologías incrustadas. Las tecnologías pueden abarcar un rango amplio desde programas CGI escritos en PERL hasta aplicaciones multihilo ( También denominado multiproceso hace referencia a la posibilidad de ejecutar diferentes trozos de código de una misma aplicación de forma simultánea ) basadas en Java, incluyendo tecnologías de servidor de bases de datos que soporten múltiples sitios web.</li>
-<li><strong>El lado del cliente</strong> [ <em>client-side</em> ] Este elemento hace referencia a los navegadores web y está soportado por tecnologías como HTML, CSS y lenguajes como JavaScript y controles ActiveX, los cuales se utilizan para crear la presentación de la página o proporcionar características interactivas. Es justamente aquí dónde nos vamos a centrar a lo largo de todo el módulo.</li>
-<li><strong>La red</strong> [ <em>Network</em> ] Describe los diferentes elementos de conectividad ( Capacidad que tiene un dispositivo para poder conectarse a otros. Aquí se detallan los diferentes protocolos y material utilizado para poder realizar dicha conexión ) utilizados para mostrar el sitio web al usuario.</li>
+<li><strong><span style="color:green">El lado del servidor</span></strong> [ <em>server-side</em> ] Incluye el hardware y software del servidor Web así como diferentes elementos de programación y tecnologías incrustadas. Las tecnologías pueden abarcar un rango amplio desde programas CGI escritos en PERL hasta aplicaciones multihilo ( También denominado multiproceso hace referencia a la posibilidad de ejecutar diferentes trozos de código de una misma aplicación de forma simultánea ) basadas en Java, incluyendo tecnologías de servidor de bases de datos que soporten múltiples sitios web.</li>
+<li><strong><span style="color:green">El lado del cliente</span></strong> [ <em>client-side</em> ] Este elemento hace referencia a los navegadores web y está soportado por tecnologías como HTML, CSS y lenguajes como JavaScript y controles ActiveX, los cuales se utilizan para crear la presentación de la página o proporcionar características interactivas. Es justamente aquí dónde nos vamos a centrar a lo largo de todo el módulo.</li>
+<li><strong><span style="color:green">La red</span></strong> [ <em>Network</em> ] Describe los diferentes elementos de conectividad ( Capacidad que tiene un dispositivo para poder conectarse a otros. Aquí se detallan los diferentes protocolos y material utilizado para poder realizar dicha conexión ) utilizados para mostrar el sitio web al usuario.</li>
 </ol>
 <p><center><img alt="Estructura cliente servidor" src="../imagenes/unidad_1/cliente_servidor.jpg" /></center></p>
 <h2 id="3-lenguajes-de-programacion-en-clientes-web"><strong><u style="color:#2980B9"> 3.- LENGUAJES DE PROGRAMACIÓN EN CLIENTES WEB </u></strong></h2>
@@ -860,30 +860,32 @@ Cada tipo general de programación tiene su propio lugar y la mezcla es generalm
 La funcionalidad básica de un navegador web es permitir la visualización de documentos de texto, posiblemente con recursos multimedia incrustados. Además, permite visitar páginas web y hacer actividades en ella, es decir, podemos enlazar un sitio con otro, imprimir, enviar y recibir correo, entre otras funcionalidades más. Los documentos que se muestran en un navegador pueden estar ubicados en la computadora en donde está el usuario, pero también pueden estar en cualquier otro dispositivo que esté conectado en la computadora del usuario o a través de Internet, y que tenga los recursos necesarios para la transmisión de los documentos (un software servidor web).
 Tales documentos, comúnmente denominados páginas web, poseen hipervínculos que enlazan una porción de texto o una imagen a otro documento, normalmente relacionado con el texto o la imagen.El seguimiento de enlaces de una página a otra, ubicada en cualquier computadora conectada a Internet, se llama navegación, de donde se origina el nombre navegador.</p>
 <p>Para acceder a estos recursos, se utiliza un identificador único llamado URL (Uniform Resource Locator). El <strong>formato general de una URL</strong> es :</p>
-<p><center><strong>protocolo:</strong>//máquina/directorio/archivo</center></p>
-<p><u><strong>Aclaraciones</strong></u></p>
+<p><center style="color:green"><strong>protocolo:</strong>//máquina/directorio/archivo</center></p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
 <ul>
 <li>Si no se especifica el directorio, toma como directorio el raíz.</li>
 <li>Si no se especifica el fichero, toma alguno de los nombres por defecto (“index.html”, “index.php”, etc...)</li>
 </ul>
+</div>
 <h3 id="funciones-del-navegador"><strong><span style="color:#2980B9">Funciones del navegador</span></strong></h3>
 <p>La comunicación entre el servidor web y el navegador se realiza mediante el protocolo HTTP, aunque la mayoría de los navegadores soportan otros protocolos como FTP y HTTPS (una versión cifrada de HTTP basada en Secure Socket Layer o Capa de Conexión Segura (SSL)). La función principal del navegador es obtener documentos HTML e interpretarlos para mostrarlos en pantalla. En la actualidad, no solamente descargan este tipo de  documentos sino que muestran con el documento sus imágenes, sonidos e incluso vídeos streaming en diferentes formatos y protocolos. Además, permiten almacenar la información en el disco o crear marcadores (bookmarks) de las páginas más visitadas. Algunos de los navegadores web más populares se incluyen en lo que se denomina una Suite. Estas Suite disponen de varios programas integrados para leer noticias de Usenet y correo electrónico mediante los protocolos NNTP, IMAP y POP.</p>
 <p>Los primeros navegadores web sólo soportaban una versión muy simple de HTML. El rápido desarrollo de los navegadores web propietarios condujo al desarrollo de dialectos no estándares de HTML y a problemas de interoperabilidad en la web. Los más modernos ( como Google Chrome, Mozilla, Netscape, Opera e Internet Explorer/Microsoft Edg e) soportan los estándares HTML y XHTML (comenzando con HTML 4.01, los cuales “deberían” visualizarse de la misma manera en todos ellos).</p>
 <p>Los estándares web son un conjunto de recomendaciones dadas por el World Wide Web consortium W3C) y otras organizaciones internacionales acerca de cómo crear e interpretar documentos basados en la web. Su objetivo es crear una web que trabaje mejor para todos, con sitios accesibles a más personas y que funcionen en cualquier dispositivo de acceso a Internet.</p>
 <p>Se puede comprobar de manera online si un documento Web cumple el estándar definido por W3C mediante:</p>
-<p><center><strong>https://validator.w3.org/</strong></center></p>
+<p><center style="color:green"><strong>https://validator.w3.org/</strong></center></p>
 <p>Actualmente la mayoría de navegadores aceptan páginas no estándar, pero cuanto más estándar se la aplicación web desarrollada, mayor probabilidad que funcione correctamente en todos los navegadores. </p>
 <p><strong>¡¡Importante!!</strong> Es una práctica imprescindible el comprobar que cualquier desarrollo Web funcione correctamente en los principales navegadores.</p>
 <h2 id="5-principales-navegadores"><strong><u style="color:#2980B9"> 5.- PRINCIPALES NAVEGADORES </u></strong></h2>
 <h5 id="microsoft-edge-antiguo-internet-explorer"><strong><span style="color:#2980B9">Microsoft Edge</span></strong>  -  <em>Antiguo Internet Explorer</em></h5>
 <ul>
-<li><strong>URL Oficial</strong> → https://www.microsoft.com/es-es/windows/microsoft-edge</li>
+<li><strong>URL Oficial</strong> → <span style="color:green"> https://www.microsoft.com/es-es/windows/microsoft-edge </span></li>
 <li><em>Antiguamente se llamaba Internet Explorer. Microsoft Edge está diseñado para ser un navegador web ligero con un motor de renderizado de código abierto construido en torno a los estándares web.</em></li>
 </ul>
 <p><center><img alt="Navegador Edge" src="../imagenes/unidad_1/nav_edge.jpg" /></center></p>
 <h5 id="mozilla-firefox"><strong><span style="color:#2980B9">Mozilla Firefox</span></strong></h5>
 <ul>
-<li><strong>URL Oficial</strong> → https://www.mozilla.org/es-ES/firefox/new/</li>
+<li><strong>URL Oficial</strong> →  <span style="color:green">https://www.mozilla.org/es-ES/firefox/new/</span></li>
 <li><em>Mozilla Firefox es un navegador web libre y de código abierto desarrollado por la Corporación Mozilla y la Fundación Mozilla. Usa el motor Gecko para renderizar páginas webs, el cual implementa actuales y futuros estándares web.</em><ul>
 <li><em>Posee una versión para desarrolladores: “Firefox Developer Edition” https://www.mozilla.org/en-US/firefox/developer/?utm_source=firebug&amp;utm_medium=lp&amp;utm_campaign=switch&amp;utm_content=landingpage</em></li>
 </ul>
@@ -892,20 +894,20 @@ Tales documentos, comúnmente denominados páginas web, poseen hipervínculos qu
 <p><center><img alt="Navegador Firefox" src="../imagenes/unidad_1/nav_firefox.jpg" /></center></p>
 <h5 id="google-chrome"><strong><span style="color:#2980B9">Google Chrome</span></strong></h5>
 <ul>
-<li><strong>URL Oficial</strong> → https://www.google.com/chrome/</li>
+<li><strong>URL Oficial</strong> → <span style="color:green"> https://www.google.com/chrome/</span></li>
 <li><em>Google Chrome es un navegador web desarrollado por Google y compilado con base en varios componentes e infraestructuras de desarrollo de aplicaciones (frameworks) de código abierto, como el motor de renderizado Blink (bifurcación o fork de WebKit). Está disponible gratuitamente bajo condiciones específicas del software privativo o cerrado.</em></li>
 </ul>
 <p><center><img alt="Navegador Chrome" src="../imagenes/unidad_1/nav_chrome.jpg" /></center></p>
 <h5 id="safari"><strong><span style="color:#2980B9">Safari</span></strong></h5>
 <ul>
-<li><strong>URL oficial</strong> → http://www.apple.com/es/safari/</li>
+<li><strong>URL oficial</strong> → <span style="color:green"> http://www.apple.com/es/safari/</span></li>
 <li><em>Safari es un navegador web de código cerrado desarrollado por Apple Inc. Está disponible para OS X, iOS (el sistema usado por el iPhone, el iPod touch y iPad) y Windows (sin soporte desde el 2012).</em></li>
 </ul>
 <p><center><img alt="Navegador Safari" src="../imagenes/unidad_1/nav_safari.jpg" /></center></p>
 <h5 id="opera"><strong><span style="color:#2980B9">Opera</span></strong></h5>
 <ul>
 <li>
-<p><strong>URL oficial</strong> → http://www.opera.com/es</p>
+<p><strong>URL oficial</strong> → <span style="color:green"> http://www.opera.com/es </span></p>
 </li>
 <li>
 <p><em>Opera es un navegador web creado por la empresa noruega Opera Software. Usa el motor de renderizado Blink. Tiene versiones para escritorio, teléfonos móviles y tabletas.</em></p>
@@ -943,7 +945,7 @@ Tales documentos, comúnmente denominados páginas web, poseen hipervínculos qu
 <p>Existen diversos entornos de desarrollo, desde los más sencillos (Brackets, Notepad++, Sublime, Visual Studio Code, etc...) a interfaces más complejas (Aptana, Eclipse, etc...) En principio podéis usar aquel que queráis.</p>
 <h3 id="visual-studio-code"><strong><span style="color:#2980B9">Visual Studio Code</span></strong></h3>
 <p>Recomendamos Visual Studio Code. Es software libre y muy potente</p>
-<p><center> <strong>https://code.visualstudio.com/</strong></center></p>
+<p><center style="color:green"> <strong>https://code.visualstudio.com/</strong></center></p>
 <p>Aquí algunos manuales libres de uso de Visual Studio Code en castellano:</p>
 <ul>
 <li><em>http://www.mclibre.org/consultar/informatica/lecciones/vsc-instalacion.html</em></li>
@@ -952,13 +954,13 @@ Tales documentos, comúnmente denominados páginas web, poseen hipervínculos qu
 <h3 id="control-de-versiones-en-visual-studio-code"><strong><span style="color:#2980B9">Control de versiones en Visual Studio Code</span></strong></h3>
 <p>Durante el curso, se utilizarán repositorios Git tanto para la entrega de prácticas como para facilitaros el disponer de un repositorio con control de versiones.
 Utilizaremos una cuenta Git en Github :</p>
-<p><center><strong>https://www-github.com</strong></center></p>
+<p><center style="color:green"><strong>https://www-github.com</strong></center></p>
 <p>Podéis instalarlo en:</p>
 <ul>
 <li><strong>Ubuntu:</strong></li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>    sudo apt-get update
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    sudo apt-get install git
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">sudo</span><span class="w"> </span><span class="nx">apt</span><span class="o">-</span><span class="nx">get</span><span class="w"> </span><span class="nx">update</span><span class="w"></span>
+<span class="w">    </span><span class="nx">sudo</span><span class="w"> </span><span class="nx">apt</span><span class="o">-</span><span class="nx">get</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="nx">git</span><span class="w"></span>
 </code></pre></div>
 <ul>
 <li><strong>Windows:</strong> <ul>
@@ -988,78 +990,78 @@ Utilizaremos una cuenta Git en Github :</p>
 </ul>
 <h2 id="8-control-de-versiones-git-github"><strong><u style="color:#2980B9"> 8 .- CONTROL DE VERSIONES: GIT – GITHUB </u></strong></h2>
 <p>Git es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia y la confiabilidad del mantenimiento de versiones de aplicaciones cuando éstas tienen un gran número de archivos de código fuente. Su propósito es llevar registro de los cambios en archivos de computadora y coordinar el trabajo que varias personas realizan sobre archivos compartidos Si estás en una distribución basada en Debian como Ubuntu, puedes usar apt-get:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>    apt-get install git
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">apt</span><span class="o">-</span><span class="nx">get</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="nx">git</span><span class="w"></span>
 </code></pre></div></p>
 <p>Para instalar git en otros sistemas operativos puedes utilizar como referencia la información de la web:</p>
 <p><center>https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Instalación-de-Git</center></p>
 <h3 id="ordenes-basicas-en-git"><strong><span style="color:#2980B9">Órdenes básicas en git</span></strong></h3>
 <p>Crear un subdirectorio nuevo llamado .git, el cual contiene todos los archivos necesarios del repositorio
 <center>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>git init
+<div class="highlight"><pre><span></span><code><span class="nx">git</span><span class="w"> </span><span class="nx">init</span><span class="w"></span>
 </code></pre></div>
 </center></p>
 <p>Descargar información de una determinada rama, unifica los comando fetch y merge.
 <center>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git pull
+<div class="highlight"><pre><span></span><code><span class="nx">git</span><span class="w"> </span><span class="nx">pull</span><span class="w"></span>
 </code></pre></div>
 </center></p>
 <p>Comienza a trackear el archivo “nombre_archivo”.
 <center>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>git add &lt;nombre_archivo&gt;
+<div class="highlight"><pre><span></span><code><span class="nx">git</span><span class="w"> </span><span class="nx">add</span><span class="w"> </span><span class="o">&lt;</span><span class="nx">nombre_archivo</span><span class="o">&gt;</span><span class="w"></span>
 </code></pre></div>
 </center></p>
 <p>Confirma los cambios realizados. El “mensaje” generalmente se usa para asociar al commit una breve descripción de los cambios realizados.
 <center>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>git commit -am &quot;&lt;mensaje&gt;&quot;
+<div class="highlight"><pre><span></span><code><span class="nx">git</span><span class="w"> </span><span class="nx">commit</span><span class="w"> </span><span class="o">-</span><span class="nx">am</span><span class="w"> </span><span class="s2">&quot;&lt;mensaje&gt;&quot;</span><span class="w"></span>
 </code></pre></div>
 </center></p>
 <p>Commitea los cambios desde el branch local origin al branch “nombre_rama”.
 <center>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>git push origin &lt;nombre_rama&gt;
+<div class="highlight"><pre><span></span><code><span class="nx">git</span><span class="w"> </span><span class="nx">push</span><span class="w"> </span><span class="nx">origin</span><span class="w"> </span><span class="o">&lt;</span><span class="nx">nombre_rama</span><span class="o">&gt;</span><span class="w"></span>
 </code></pre></div>
 </center></p>
 <p>Para consultar más comando, puedes visitar la web:</p>
-<p><center><strong>https://git-scm.com/docs</strong></center></p>
+<p><center style="color:green"><strong>https://git-scm.com/docs</strong></center></p>
 <h3 id="github"><strong><span style="color:#2980B9">Github</span></strong></h3>
 <p>GitHub es una forja (plataforma de desarrollo colaborativo) para alojar proyectos utilizando el sistema de control de versiones Git. Se utiliza principalmente para la creación de código fuente de programas de ordenador. El software que opera GitHub fue escrito en Ruby on Rails El 4 de junio de 2018, Microsoft compró GitHub por la cantidad de 7.500 millones de dólares, este cambio de propietarios provocó la salida de varios proyecto desde este repositorio debido la posibilidad de acceso a códigos fuentes por parte de una compañía que su negocios es el software:</p>
-<p><center><strong>http://www.github.com</strong></center></p>
+<p><center style="color:green"><strong>http://www.github.com</strong></center></p>
 <p><center><img alt="Github" src="../imagenes/unidad_1/github.jpg" /></center></p>
 <h2 id="9-integracion-de-codigo-javascript-con-html"><strong><u style="color:#2980B9"> 9.- INTEGRACIÓN DE CÓDIGO JAVASCRIPT CON HTML </u></strong></h2>
 <p>Ahora que ya conoces las herramientas que puedes utilizar para comenzar a programar en JavaScript, vamos a ver la forma de integrar el código de JavaScript en tu código HTML.</p>
 <h3 id="etiqueta-script"><strong><span style="color:#2980B9">Etiqueta script</span></strong></h3>
 <p>Los navegadores web te permiten varias opciones de inserción de código de JavaScript. Podremos insertar código usando las etiquetas <strong>script</strong> y empleando un atributo <strong>type</strong> indicaremos qué tipo de lenguaje de script estamos utilizando.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>&lt;script type=”text/javascript”&gt;
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>// El código javascript vendrá aquí
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>&lt;/script&gt;
+<div class="highlight"><pre><span></span><code><span class="o">&lt;</span><span class="nx">script</span><span class="w"> </span><span class="nx">type</span><span class="o">=</span><span class="err">”</span><span class="nx">text</span><span class="o">/</span><span class="nx">javascript</span><span class="err">”</span><span class="o">&gt;</span><span class="w"></span>
+<span class="c1">// El código javascript vendrá aquí</span><span class="w"></span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span><span class="w"></span>
 </code></pre></div>
 <h3 id="fichero-externo"><strong><span style="color:#2980B9">Fichero externo</span></strong></h3>
 <p>Otra forma de integrar el código de JavaScript es incrustar un fichero externo que contenga el código de JavaScript. Ésta sería la <strong>forma más recomendable</strong>, ya que así se consigue una separación entre el código y la estructura de la página web y como ventajas adicionales podrás compartir código entre diferentes páginas, centralizar el código para la depuración de errores, tendrás mayor claridad en tus desarrollos, más modularidad, seguridad del código y conseguirás que las páginas carguen más rápido. 
 La rapidez de carga de las páginas se consigue al tener el código de JavaScript en un fichero independiente, ya que si más de una página tiene que acceder a ese fichero lo cogerá automáticamente de la caché del navegador con lo que se acelerará la carga de la página.</p>
 <p>Para ello tendremos que añadir a la etiqueta <strong>script</strong> el atributo <strong>src</strong> , con el nombre del fichero que contiene el código de JavaScript. Generalmente los ficheros que contienen texto de JavaScript tendrán la <em>extensión .js</em> .
 <center>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>&lt;script type=”text/javascript” src=”tucodigo.js”&gt; &lt;/script&gt;
+<div class="highlight"><pre><span></span><code><span class="o">&lt;</span><span class="nx">script</span><span class="w"> </span><span class="nx">type</span><span class="o">=</span><span class="err">”</span><span class="nx">text</span><span class="o">/</span><span class="nx">javascript</span><span class="err">”</span><span class="w"> </span><span class="nx">src</span><span class="o">=</span><span class="err">”</span><span class="nx">tucodigo</span><span class="p">.</span><span class="nx">js</span><span class="err">”</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&lt;</span><span class="err">/script&gt;</span><span class="w"></span>
 </code></pre></div>
 </center></p>
 <h3 id="en-codigo-html"><strong><span style="color:#2980B9">En código html</span></strong></h3>
 <p>Otra alternativa consiste en incorporar javascript directamente en elementos html. Numerosos autores no recomiendan esta opción, con el principal motivo de que dificulta considerablemente el mantenimiento de aplicaciones.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>&lt;body&gt;
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>    &lt;p onclick=”alert(‘un mensaje de prueba’)”&gt;Párrafo de texto&lt;/p&gt;
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>&lt;body&gt;
+<div class="highlight"><pre><span></span><code><span class="o">&lt;</span><span class="nx">body</span><span class="o">&gt;</span><span class="w"></span>
+<span class="w">    </span><span class="o">&lt;</span><span class="nx">p</span><span class="w"> </span><span class="nx">onclick</span><span class="o">=</span><span class="err">”</span><span class="nx">alert</span><span class="p">(</span><span class="err">‘</span><span class="nx">un</span><span class="w"> </span><span class="nx">mensaje</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">prueba</span><span class="err">’</span><span class="p">)</span><span class="err">”</span><span class="o">&gt;</span><span class="nx">Párrafo</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">texto</span><span class="o">&lt;</span><span class="err">/p&gt;</span><span class="w"></span>
+<span class="o">&lt;</span><span class="nx">body</span><span class="o">&gt;</span><span class="w"></span>
 </code></pre></div>
 <h3 id="etiqueta-noscript"><strong><span style="color:#2980B9">Etiqueta noscript</span></strong></h3>
 <p>El lenguaje HTML define la etiqueta <strong>noscript</strong> para mostrar un mensaje al usuario cuando su navegador no puede ejecutar JavaScript. Esta etiqueta debe incluir en el interior el mensaje a mostrar, además puede incluir cualquier elemento o etiqueta XHTML.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>&lt;head&gt;
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>    ... 
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>&lt;/head&gt;
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>&lt;body&gt;
-<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>    &lt;noscript&gt;
-<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>    &lt;p&gt; Bienvenido a Mi Sitio&lt;/p&gt;
-<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>    &lt;p&gt; 
-<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>        La página que estás viendo requiere para su funcionamiento el uso de JavaScript. 
-<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>        Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo
-<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>    &lt;/p&gt;
-<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>    &lt;noscript&gt;
-<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>&lt;body&gt;
+<div class="highlight"><pre><span></span><code><span class="o">&lt;</span><span class="nx">head</span><span class="o">&gt;</span><span class="w"></span>
+<span class="w">    </span><span class="p">...</span><span class="w"> </span>
+<span class="o">&lt;</span><span class="err">/head&gt;</span><span class="w"></span>
+<span class="o">&lt;</span><span class="nx">body</span><span class="o">&gt;</span><span class="w"></span>
+<span class="w">    </span><span class="o">&lt;</span><span class="nx">noscript</span><span class="o">&gt;</span><span class="w"></span>
+<span class="w">    </span><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="w"> </span><span class="nx">Bienvenido</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="nx">Mi</span><span class="w"> </span><span class="nx">Sitio</span><span class="o">&lt;</span><span class="err">/p&gt;</span><span class="w"></span>
+<span class="w">    </span><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="w"> </span>
+<span class="w">        </span><span class="nx">La</span><span class="w"> </span><span class="nx">página</span><span class="w"> </span><span class="nx">que</span><span class="w"> </span><span class="nx">estás</span><span class="w"> </span><span class="nx">viendo</span><span class="w"> </span><span class="nx">requiere</span><span class="w"> </span><span class="nx">para</span><span class="w"> </span><span class="nx">su</span><span class="w"> </span><span class="nx">funcionamiento</span><span class="w"> </span><span class="nx">el</span><span class="w"> </span><span class="nx">uso</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">JavaScript</span><span class="p">.</span><span class="w"> </span>
+<span class="w">        </span><span class="nx">Si</span><span class="w"> </span><span class="nx">lo</span><span class="w"> </span><span class="nx">has</span><span class="w"> </span><span class="nx">deshabilitado</span><span class="w"> </span><span class="nx">intencionadamente</span><span class="p">,</span><span class="w"> </span><span class="nx">por</span><span class="w"> </span><span class="nx">favor</span><span class="w"> </span><span class="nx">vuelve</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="nx">activarlo</span><span class="w"></span>
+<span class="w">    </span><span class="o">&lt;</span><span class="err">/p&gt;</span><span class="w"></span>
+<span class="w">    </span><span class="o">&lt;</span><span class="nx">noscript</span><span class="o">&gt;</span><span class="w"></span>
+<span class="o">&lt;</span><span class="nx">body</span><span class="o">&gt;</span><span class="w"></span>
 </code></pre></div></p>
 
               
